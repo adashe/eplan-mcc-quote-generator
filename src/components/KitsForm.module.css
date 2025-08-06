@@ -18,6 +18,8 @@
 }
 .kitRowLabel {
     display: inline-block;
+    width: 420px;
+    text-align: left;
 }
 .kitRowInput {
     width: 40px;
@@ -38,7 +40,6 @@ input.kitRowInput:focus {
 }
 span.kitRowDesc {
     margin: 0px 40px;
-    width: 400px;
 }
 .materialSymbolsOutlined {
     font-family: "Material Symbols Outlined";

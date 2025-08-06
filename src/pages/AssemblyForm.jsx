@@ -34,7 +34,7 @@ function AssemblyForm() {
                 <RestartButton />
                 <LinkButton route={"/options"}>Options &rarr;</LinkButton>
             </TabNavigation>
-            <h2>SMCC KITS</h2>
+            <h2>MCC KITS</h2>
             <form onSubmit={handleSubmit}>
                 <input
                     className={styles.searchBar}

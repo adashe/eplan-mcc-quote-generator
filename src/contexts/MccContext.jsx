@@ -25,7 +25,8 @@ const initialProjectInfo = { p21Num: 55555 };
 // Calculate the price of each individual kit, for use in total price calculation and kits view
 function calcKitPrice(kitID) {
     // Check in both kitsData and optionsData for the kit
-    // Vulnerable to break if the data is differently organized (for different MCCs)
+    // Vulnerable to break if the
+    // data is differently organized (for different MCCs)
     let kArr = kitsData.filter((kit) => kit.id === kitID);
     if (kArr.length < 1) {
         kArr = optionsData.filter((kit) => kit.id === kitID);
@@ -34,7 +35,7 @@ function calcKitPrice(kitID) {
 
     // Cycle through kit parts array, use each part objects' key (ID) to look up in partsData, and sum the price
     let sum = 0;
-    console.log(kit);
+
     kit?.parts?.forEach((part) => {
         const partID = Object.keys(part)[0];
         const qty = Object.values(part)[0];

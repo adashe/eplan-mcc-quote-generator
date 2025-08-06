@@ -6,6 +6,7 @@ import Button from "../../components/buttons/Button";
 import TabNavigation from "../../components/TabNavigation";
 import LinkButton from "../../components/buttons/LinkButton";
 import { XlsxButton } from "../../components/buttons/XlsxButton";
+import ImxButton from "../../components/buttons/ImxButton";
 
 function PartSummary() {
     const { kitsData, optionsData, partsData, assembly, baseAssembly } =
@@ -55,7 +56,7 @@ function PartSummary() {
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <Button isActive={false}>Part Summary</Button>
                 <LinkButton route={"/totals"}>Totals</LinkButton>
-                <XlsxButton />
+                <ImxButton />
             </TabNavigation>
             <h2>PART SUMMARY</h2>
             <ul>
