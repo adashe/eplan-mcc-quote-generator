@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { MccProvider } from "./contexts/MccContext";
+import AssemblyForm from "./pages/AssemblyForm";
+import OptionsForm from "./pages/OptionsForm";
+
+import ProjectInfo from "./pages/ProjectInfo";
+import KitSummary from "./pages/KitSummary/KitSummary";
+import PartSummary from "./pages/PartSummary/PartSummary";
+import Totals from "./pages/Totals";
 
 function App() {
-  const [count, setCount] = useState(0)
+    return (
+        <>
+            <MccProvider>
+                <BrowserRouter>
+                    <Routes>
+                        <Route index element={<AssemblyForm />} />
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+                        <Route path="assembly" element={<AssemblyForm />} />
+                        <Route path="options" element={<OptionsForm />} />
+                        <Route path="projectInfo" element={<ProjectInfo />} />
+                        <Route path="kitSummary" element={<KitSummary />} />
+                        <Route path="partSummary" element={<PartSummary />} />
+                        <Route path="totals" element={<Totals />} />
+                    </Routes>
+                </BrowserRouter>
+            </MccProvider>
+        </>
+    );
 }
 
-export default App
+export default App;

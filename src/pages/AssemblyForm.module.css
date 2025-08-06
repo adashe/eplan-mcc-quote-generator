@@ -1,0 +1,6 @@
+.searchBar {
+    margin-bottom: 40px;
+}
+.searchBar::placeholder {
+    font-style: italic;
+}

@@ -1,0 +1,11 @@
+.page {
+    width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px var(--color-light--2);
+    margin: 40px auto;
+    padding: 40px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

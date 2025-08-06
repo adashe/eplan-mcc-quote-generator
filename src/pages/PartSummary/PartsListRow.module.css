@@ -1,0 +1,29 @@
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 4px;
+    color: var(--color-dark--1);
+    border-bottom: 1px solid var(--color-light--1);
+}
+.listHeader {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-dark--0);
+    font-size: 16px;
+}
+.listItem div {
+    width: 80px;
+    overflow: hidden;
+}
+div.qtyCol {
+    width: 40px;
+}
+div.partNumCol {
+    width: 140px;
+}
+div.partDescCol {
+    width: 300px;
+}

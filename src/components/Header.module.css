@@ -1,0 +1,8 @@
+.companyName {
+    color: var(--color-brand--0);
+    font-size: 22px;
+}
+.pageTitle {
+    color: var(--color-dark--0);
+    font-size: 34px;
+}

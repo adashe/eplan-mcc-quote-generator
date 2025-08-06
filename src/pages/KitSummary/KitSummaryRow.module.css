@@ -1,0 +1,31 @@
+.headerRow {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    margin-top: 16px;
+    border-bottom: 1px solid var(--color-light--1);
+    cursor: pointer;
+}
+div.headerRow {
+    min-width: 200px;
+}
+.kitCol {
+    width: 100px;
+    text-align: left;
+    font-size: 14px;
+}
+.kitDesc {
+    width: 440px;
+    text-align: left;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.kitQty {
+    width: 60px;
+}
+.materialSymbolsOutlined {
+    font-family: "Material Symbols Outlined";
+    font-size: 16px;
+}
