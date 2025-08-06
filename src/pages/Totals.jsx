@@ -4,7 +4,7 @@ import LinkButton from "../components/buttons/LinkButton";
 import PageWide from "../components/PageWide";
 import { useMcc } from "../contexts/MccContext";
 import styles from "./Totals.module.css";
-import { XlsxButton } from "../components/buttons/XlsxButton";
+import ImxButton from "../components/buttons/ImxButton";
 
 function Totals() {
     const { partsData, assembly, options, baseAssembly, calcKitPrice } =
@@ -50,8 +50,7 @@ function Totals() {
 
                 <LinkButton route={"/partSummary"}>Part Summary</LinkButton>
                 <Button isActive={false}>Totals</Button>
-
-                <XlsxButton />
+                <ImxButton />
             </TabNavigation>
             <h2>Totals</h2>
             <ul className={styles.totalsUl}>

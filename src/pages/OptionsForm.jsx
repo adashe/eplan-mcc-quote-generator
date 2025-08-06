@@ -12,7 +12,7 @@ function OptionsForm() {
                 <LinkButton route={"/assembly"}>&larr; KITS</LinkButton>
                 <LinkButton route={"/kitSummary"}>SUBMIT &rarr;</LinkButton>
             </TabNavigation>
-            <h2>SMCC OPTIONS</h2>
+            <h2>MCC OPTIONS</h2>
             <form>
                 <div>
                     <label>
