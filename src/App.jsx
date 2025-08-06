@@ -14,7 +14,7 @@ function App() {
         <>
             <MccProvider>
                 <BrowserRouter>
-                    <Routes>
+                    <Routes basename="/eplan-mcc-quote-generator/">
                         <Route index element={<AssemblyForm />} />
 
                         <Route path="assembly" element={<AssemblyForm />} />
@@ -23,6 +23,7 @@ function App() {
                         <Route path="kitSummary" element={<KitSummary />} />
                         <Route path="partSummary" element={<PartSummary />} />
                         <Route path="totals" element={<Totals />} />
+                        <Route path="*" element={<AssemblyForm />} />
                     </Routes>
                 </BrowserRouter>
             </MccProvider>
