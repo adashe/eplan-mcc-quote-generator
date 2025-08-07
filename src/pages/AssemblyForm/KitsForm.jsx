@@ -8,7 +8,7 @@ export function KitsForm({ children }) {
                     Quantity
                 </div>
                 <div className={`${styles.column} ${styles.columnHeader}`}>
-                    Subassembly
+                    Starters
                 </div>
                 <div className={`${styles.column} ${styles.columnHeader}`}>
                     FLA
