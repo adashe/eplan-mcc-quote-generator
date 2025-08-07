@@ -36,18 +36,12 @@ export function KitRow({ kit }) {
                         add
                     </span>
                     <span
-                        className={`${styles.kitRowDesc} ${
-                            kit.id.includes("vfd") ? styles.vfdRow : ""
-                        } ${
-                            kit.id.includes("Vacuum") &&
-                            !kit.id.includes("breaker") &&
-                            !kit.id.includes("vfd") &&
-                            !kit.id.includes("SS")
-                                ? styles.vacuumRow
-                                : ""
-                        } ${
-                            kit.id.includes("breaker") ? styles.breakerRow : ""
-                        } ${kit.id.includes("SS") ? styles.ssRow : ""}`}
+                        className={`${styles.kitRowDesc} 
+                        ${kit.type === "vfd-1" ? styles.vfd1Row : ""} 
+                        ${kit.type === "vfd-2" ? styles.vfd2Row : ""} 
+                        ${kit.type === "vacuum" ? styles.vacuumRow : ""} 
+                        ${kit.type === "breaker" ? styles.breakerRow : ""} 
+                        ${kit.type === "vacuum-ss" ? styles.ssRow : ""}`}
                     >
                         {kit.description}
                     </span>

@@ -12,7 +12,8 @@
         "price": 1082.95,
         "fla": 4.6,
         "msp": "6A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-1"
     },
     {
         "id": "vfd1hpWrapBnd",
@@ -27,7 +28,8 @@
         "price": 1082.95,
         "fla": 4.6,
         "msp": "6A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-1"
     },
     {
         "id": "vfd1hpTopBrush",
@@ -42,7 +44,8 @@
         "price": 1082.95,
         "fla": 4.6,
         "msp": "6A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-1"
     },
     {
         "id": "vfd1hpTopBrushRev",
@@ -57,7 +60,8 @@
         "price": 1082.95,
         "fla": 4.6,
         "msp": "6A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-1"
     },
     {
         "id": "vfd1hpTopBrushBnd",
@@ -72,7 +76,8 @@
         "price": 1082.95,
         "fla": 4.6,
         "msp": "6A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-1"
     },
     {
         "id": "vfd1hpOmni",
@@ -87,7 +92,8 @@
         "price": 1082.95,
         "fla": 4.6,
         "msp": "6A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-1"
     },
     {
         "id": "vfd1hpMitter",
@@ -102,7 +108,8 @@
         "price": 1082.95,
         "fla": 4.6,
         "msp": "6A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-1"
     },
     {
         "id": "1hpMitter",
@@ -117,7 +124,8 @@
         "price": 1082.95,
         "fla": 4.6,
         "msp": "6A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "none"
     },
     {
         "id": "vfd3hpOmni1",
@@ -132,7 +140,8 @@
         "price": 635.25,
         "fla": 4.6,
         "msp": "6/12A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-2"
     },
     {
         "id": "vfd3hpRocker1",
@@ -147,7 +156,8 @@
         "price": 635.25,
         "fla": 4.6,
         "msp": "6/12A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-2"
     },
     {
         "id": "vfd3hpTireBrush1",
@@ -162,7 +172,8 @@
         "price": 635.25,
         "fla": 4.6,
         "msp": "6/12A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-2"
     },
     {
         "id": "vfd3hpTireShine1",
@@ -177,7 +188,8 @@
         "price": 635.25,
         "fla": 4.6,
         "msp": "6/12A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-2"
     },
     {
         "id": "vfd3hpSideBrush1",
@@ -192,7 +204,8 @@
         "price": 635.25,
         "fla": 4.6,
         "msp": "6/12A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-2"
     },
     {
         "id": "vfd3hpGrillBrush1",
@@ -207,7 +220,8 @@
         "price": 635.25,
         "fla": 4.6,
         "msp": "6/12A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-2"
     },
     {
         "id": "vfd3hpWheelBlaster1",
@@ -222,7 +236,8 @@
         "price": 635.25,
         "fla": 4.6,
         "msp": "6/12A",
-        "cont": "12A"
+        "cont": "12A",
+        "type": "vfd-2"
     },
     {
         "id": "3hpBoosterPump",
@@ -237,7 +252,8 @@
         "price": 264.99,
         "fla": 8.4,
         "msp": "10A",
-        "cont": "18A"
+        "cont": "18A",
+        "type": "none"
     },
     {
         "id": "3hpPUOmni",
@@ -252,7 +268,8 @@
         "price": 264.99,
         "fla": 8.4,
         "msp": "10A",
-        "cont": "18A"
+        "cont": "18A",
+        "type": "none"
     },
     {
         "id": "3hpPUTireShine",
@@ -267,7 +284,8 @@
         "price": 264.99,
         "fla": 8.4,
         "msp": "10A",
-        "cont": "18A"
+        "cont": "18A",
+        "type": "none"
     },
     {
         "id": "3hpPUTopBrush",
@@ -282,7 +300,8 @@
         "price": 264.99,
         "fla": 8.4,
         "msp": "10A",
-        "cont": "18A"
+        "cont": "18A",
+        "type": "none"
     },
     {
         "id": "vfd3hpConveyor",
@@ -297,7 +316,8 @@
         "price": 264.99,
         "fla": 8.4,
         "msp": "10A",
-        "cont": "18A"
+        "cont": "18A",
+        "type": "vfd-1"
     },
     {
         "id": "5hpBooster",
@@ -312,7 +332,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "5hpPrepGun",
@@ -327,7 +348,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "5hpPU2FLOmni",
@@ -342,7 +364,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "5hpPUGrillBrush",
@@ -357,7 +380,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "5hpPURockers",
@@ -372,7 +396,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "5hpPUSideBrush",
@@ -387,7 +412,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "5hpPUTopBrush",
@@ -402,7 +428,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "5hpPUTireBrush",
@@ -417,7 +444,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "5hpPUTireShine",
@@ -432,7 +460,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "5hpPUConveyor",
@@ -447,7 +476,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "5hpPUTwinConveyor",
@@ -462,7 +492,8 @@
         "price": 264.99,
         "fla": 14.3,
         "msp": "20A",
-        "cont": "32A"
+        "cont": "32A",
+        "type": "none"
     },
     {
         "id": "breaker1hpRO",
@@ -477,7 +508,8 @@
         "price": 277.09,
         "fla": 4.3,
         "msp": "6A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker2hpOzone",
@@ -492,7 +524,8 @@
         "price": 277.09,
         "fla": 4.6,
         "msp": "10A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker3hpRO",
@@ -507,7 +540,8 @@
         "price": 277.09,
         "fla": 8.4,
         "msp": "12A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker5hpHydraflex",
@@ -522,7 +556,8 @@
         "price": 277.09,
         "fla": 8.4,
         "msp": "12A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker5hpAirComp",
@@ -537,7 +572,8 @@
         "price": 277.09,
         "fla": 14.3,
         "msp": "25A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker5hpBoosterPump",
@@ -552,7 +588,8 @@
         "price": 277.09,
         "fla": 14.3,
         "msp": "25A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker5hpRO",
@@ -567,7 +604,8 @@
         "price": 277.09,
         "fla": 14.3,
         "msp": "25A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker5hpReclaim",
@@ -582,7 +620,8 @@
         "price": 277.09,
         "fla": 14.3,
         "msp": "25A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker5hpRejectPump",
@@ -597,7 +636,8 @@
         "price": 277.09,
         "fla": 14.3,
         "msp": "25A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker5hpRepressPump",
@@ -612,7 +652,8 @@
         "price": 277.09,
         "fla": 14.3,
         "msp": "25A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker6hpHydraflex",
@@ -627,7 +668,8 @@
         "price": 277.09,
         "fla": 20.0,
         "msp": "25A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker7hpAirComp",
@@ -642,7 +684,8 @@
         "price": 277.09,
         "fla": 20.0,
         "msp": "25A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker10hpAirComp",
@@ -657,7 +700,8 @@
         "price": 277.09,
         "fla": 24.0,
         "msp": "32A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker25hpVacuum",
@@ -672,7 +716,8 @@
         "price": 361.79,
         "fla": 62.0,
         "msp": "75A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker30hpVacuum",
@@ -687,7 +732,8 @@
         "price": 410.19,
         "fla": 75.0,
         "msp": "90A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker40hpVacuum",
@@ -702,7 +748,8 @@
         "price": 410.19,
         "fla": 101.0,
         "msp": "150A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "breaker50hpVacuum",
@@ -717,7 +764,8 @@
         "price": 603.79,
         "fla": 124,
         "msp": "175A",
-        "cont": null
+        "cont": null,
+        "type": "breaker"
     },
     {
         "id": "7hp2FLOther",
@@ -732,7 +780,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hpHaloPump",
@@ -747,7 +796,8 @@
         "price": 289.19,
         "fla": 21.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hpPrepGun",
@@ -762,7 +812,8 @@
         "price": 289.19,
         "fla": 21.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hp2FLWraps",
@@ -777,7 +828,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hp2FLTireRocker",
@@ -792,7 +844,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hp2FL63inSides",
@@ -807,7 +860,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hp2FLGrillBrush",
@@ -822,7 +876,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hp2FLOmni",
@@ -837,7 +892,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hp2FLTopBrushRocker",
@@ -852,7 +908,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hp3FLOmni",
@@ -867,7 +924,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hpConveyor",
@@ -882,7 +940,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hp2FLConveyorTireShine",
@@ -897,7 +956,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hpTwinConveyor",
@@ -912,7 +972,8 @@
         "price": 289.19,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "7hp2FLTwinConveyorTireShine",
@@ -927,7 +988,8 @@
         "price": 578.38,
         "fla": 20.0,
         "msp": "25A",
-        "cont": "38A"
+        "cont": "38A",
+        "type": "none"
     },
     {
         "id": "10hpOther",
@@ -942,7 +1004,8 @@
         "price": 301.29,
         "fla": 26.7,
         "msp": "32A",
-        "cont": "40A"
+        "cont": "40A",
+        "type": "none"
     },
     {
         "id": "10hpPUOther",
@@ -957,7 +1020,8 @@
         "price": 301.29,
         "fla": 27.4,
         "msp": "32A",
-        "cont": "40A"
+        "cont": "40A",
+        "type": "none"
     },
     {
         "id": "10hp3FLWrapsTire",
@@ -972,7 +1036,8 @@
         "price": 301.29,
         "fla": 27.4,
         "msp": "32A",
-        "cont": "40A"
+        "cont": "40A",
+        "type": "none"
     },
     {
         "id": "10hp3FLTopBrushRocker",
@@ -987,7 +1052,8 @@
         "price": 301.29,
         "fla": 27.4,
         "msp": "32A",
-        "cont": "40A"
+        "cont": "40A",
+        "type": "none"
     },
     {
         "id": "10hp3FLTopSideOmniRocker",
@@ -1002,7 +1068,8 @@
         "price": 301.29,
         "fla": 27.4,
         "msp": "32A",
-        "cont": "40A"
+        "cont": "40A",
+        "type": "none"
     },
     {
         "id": "10hpBlower",
@@ -1017,7 +1084,8 @@
         "price": 301.29,
         "fla": 27.4,
         "msp": "32A",
-        "cont": "40A"
+        "cont": "40A",
+        "type": "none"
     },
     {
         "id": "10hpConveyor",
@@ -1032,7 +1100,8 @@
         "price": 301.29,
         "fla": 27.4,
         "msp": "32A",
-        "cont": "40A"
+        "cont": "40A",
+        "type": "none"
     },
     {
         "id": "10hp2FLConveyorTireShine",
@@ -1047,7 +1116,8 @@
         "price": 301.29,
         "fla": 27.4,
         "msp": "32A",
-        "cont": "40A"
+        "cont": "40A",
+        "type": "none"
     },
     {
         "id": "10hpTwinConveyor",
@@ -1062,7 +1132,8 @@
         "price": 602.58,
         "fla": 27.4,
         "msp": "32A",
-        "cont": "40A"
+        "cont": "40A",
+        "type": "none"
     },
     {
         "id": "10hp2FLTwinConveyorTireShine",
@@ -1077,7 +1148,8 @@
         "price": 602.58,
         "fla": 27.4,
         "msp": "32A",
-        "cont": "40A"
+        "cont": "40A",
+        "type": "none"
     },
     {
         "id": "15hpPUOther",
@@ -1092,7 +1164,8 @@
         "price": 410.19,
         "fla": 42.1,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "15hpOther",
@@ -1107,7 +1180,8 @@
         "price": 410.19,
         "fla": 42.1,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "15hpBlower",
@@ -1122,7 +1196,8 @@
         "price": 410.19,
         "fla": 37.5,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "vfd15hpBlower",
@@ -1137,7 +1212,8 @@
         "price": 1996.5,
         "fla": 37.5,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "vfd-1"
     },
     {
         "id": "15hpMammothBlower",
@@ -1152,7 +1228,8 @@
         "price": 470.69,
         "fla": 48.0,
         "msp": "58A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "vfd15hpMammothBlower",
@@ -1167,7 +1244,8 @@
         "price": 2238.5,
         "fla": 48.0,
         "msp": "58A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "vfd-1"
     },
     {
         "id": "15hpVacuum",
@@ -1182,7 +1260,8 @@
         "price": 410.19,
         "fla": 40.5,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "15hpOmniTop",
@@ -1197,7 +1276,8 @@
         "price": 422.29,
         "fla": 40.5,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "15hpOmniSides",
@@ -1212,7 +1292,8 @@
         "price": 422.29,
         "fla": 40.5,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "15hpOmniPend",
@@ -1227,7 +1308,8 @@
         "price": 422.29,
         "fla": 40.5,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "15hpOmniTurbo",
@@ -1242,7 +1324,8 @@
         "price": 422.29,
         "fla": 40.5,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "15hpOmniWheelBlaster",
@@ -1257,7 +1340,8 @@
         "price": 422.29,
         "fla": 40.5,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "15hpOmniMirrorRinse",
@@ -1272,7 +1356,8 @@
         "price": 422.29,
         "fla": 40.5,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "vfd15hpOmni",
@@ -1287,7 +1372,8 @@
         "price": 1996.5,
         "fla": 40.5,
         "msp": "50A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "vfd-1"
     },
     {
         "id": "vfd15hpSTIConveyor",
@@ -1302,7 +1388,8 @@
         "price": 2238.5,
         "fla": 39.7,
         "msp": "50A",
-        "cont": "50A"
+        "cont": "50A",
+        "type": "vfd-1"
     },
     {
         "id": "vfd20hpSTIConveyor",
@@ -1317,7 +1404,8 @@
         "price": 2534.95,
         "fla": 52.9,
         "msp": "58A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "vfd-1"
     },
     {
         "id": "20hpOmniPump",
@@ -1332,7 +1420,8 @@
         "price": 458.59,
         "fla": 54.0,
         "msp": "58A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "20hpPUOther",
@@ -1347,7 +1436,8 @@
         "price": 458.59,
         "fla": 54.2,
         "msp": "58A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "none"
     },
     {
         "id": "20hpVacuum",
@@ -1362,7 +1452,8 @@
         "price": 458.59,
         "fla": 52.0,
         "msp": "58A",
-        "cont": "65A"
+        "cont": "65A",
+        "type": "vacuum"
     },
     {
         "id": "25hpVacuum",
@@ -1377,7 +1468,8 @@
         "price": 470.69,
         "fla": 62.0,
         "msp": "75A",
-        "cont": "80A"
+        "cont": "80A",
+        "type": "vacuum"
     },
     {
         "id": "30hpVacuum",
@@ -1392,7 +1484,8 @@
         "price": 482.79,
         "fla": 75.0,
         "msp": "90A",
-        "cont": "95A"
+        "cont": "95A",
+        "type": "vacuum"
     },
     {
         "id": "40hpVacuum",
@@ -1407,7 +1500,8 @@
         "price": 519.09,
         "fla": 101.0,
         "msp": "125A",
-        "cont": null
+        "cont": null,
+        "type": "vacuum"
     },
     {
         "id": "50hpVacuum",
@@ -1422,7 +1516,8 @@
         "price": 961.95,
         "fla": 124.0,
         "msp": "175A",
-        "cont": null
+        "cont": null,
+        "type": "vacuum"
     },
     {
         "id": "vfd25hpVacuum",
@@ -1437,7 +1532,8 @@
         "price": 5473.17,
         "fla": 62.0,
         "msp": "90A",
-        "cont": "80A"
+        "cont": "80A",
+        "type": "vfd-1"
     },
     {
         "id": "40hpVacuumSS",
@@ -1452,6 +1548,7 @@
         "price": 2163.5,
         "fla": 101.0,
         "msp": "125A",
-        "cont": null
+        "cont": null,
+        "type": "vacuum-ss"
     }
 ]
