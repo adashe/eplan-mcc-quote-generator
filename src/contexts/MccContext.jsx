@@ -20,7 +20,7 @@ const initialBaseAssembly = optionsData.reduce((prev, curr) => {
     return prev;
 }, {});
 
-const initialProjectInfo = { p21Num: 55555 };
+const initialProjectInfo = {};
 
 // Calculate the price of each individual kit, for use in total price calculation and kits view
 function calcKitPrice(kitID) {

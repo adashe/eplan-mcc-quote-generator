@@ -10,23 +10,20 @@ import Totals from "./pages/Totals";
 
 function App() {
     return (
-        <>
-            <MccProvider>
-                <BrowserRouter basename="/eplan-mcc-quote-generator/">
-                    <Routes>
-                        <Route index element={<AssemblyForm />} />
-
-                        <Route path="assembly" element={<AssemblyForm />} />
-                        <Route path="options" element={<OptionsForm />} />
-                        <Route path="projectInfo" element={<ProjectInfo />} />
-                        <Route path="kitSummary" element={<KitSummary />} />
-                        <Route path="partSummary" element={<PartSummary />} />
-                        <Route path="totals" element={<Totals />} />
-                        <Route path="*" element={<AssemblyForm />} />
-                    </Routes>
-                </BrowserRouter>
-            </MccProvider>
-        </>
+        <MccProvider>
+            <BrowserRouter basename="/eplan-mcc-quote-generator/">
+                <Routes>
+                    <Route index element={<AssemblyForm />} />
+                    <Route path="assembly" element={<AssemblyForm />} />
+                    <Route path="options" element={<OptionsForm />} />
+                    <Route path="kitSummary" element={<KitSummary />} />
+                    <Route path="partSummary" element={<PartSummary />} />
+                    <Route path="totals" element={<Totals />} />
+                    <Route path="projectInfo" element={<ProjectInfo />} />
+                    <Route path="*" element={<AssemblyForm />} />
+                </Routes>
+            </BrowserRouter>
+        </MccProvider>
     );
 }
 

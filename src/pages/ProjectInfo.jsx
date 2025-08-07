@@ -3,19 +3,27 @@ import BackButton from "../components/buttons/BackButton";
 import Button from "../components/buttons/Button";
 import PageNarrow from "../components/PageNarrow";
 import { useMcc } from "../contexts/MccContext";
+import TabNavigation from "../components/TabNavigation";
+import LinkButton from "../components/buttons/LinkButton";
+import ImxButton from "../components/buttons/ImxButton";
 
 function ProjectInfo() {
     const { projectInfo, handleChangeProjectInfo } = useMcc();
 
     return (
         <PageNarrow>
+            <TabNavigation>
+                <LinkButton route={"/kitSummary"}>&larr; Summary</LinkButton>
+                <ImxButton />
+            </TabNavigation>
+            <h2>PROJECT DETAILS</h2>
             <form>
                 <div>
                     <label>
-                        P21 Number:
+                        Project Number:
                         <input
                             type="text"
-                            name="p21Num"
+                            name="projectNumber"
                             value={projectInfo.p21Num || ""}
                             onChange={handleChangeProjectInfo}
                         />
@@ -33,42 +41,7 @@ function ProjectInfo() {
                         />
                     </label>
                 </div>
-
-                <div>
-                    <label>
-                        Company:
-                        <input type="text" name="company" />
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        Contact:
-                        <input
-                            type="text"
-                            name="contact"
-                            value={projectInfo.contact || ""}
-                            onChange={handleChangeProjectInfo}
-                        />
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        Engineer:
-                        <input
-                            type="text"
-                            name="engineer"
-                            value={projectInfo.engineer || ""}
-                            onChange={handleChangeProjectInfo}
-                        />
-                    </label>
-                </div>
             </form>
-            <Link to="/kitSummary">
-                <Button>Submit</Button>
-            </Link>
-            <BackButton />
         </PageNarrow>
     );
 }

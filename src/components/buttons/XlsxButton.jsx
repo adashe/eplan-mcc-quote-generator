@@ -51,7 +51,7 @@ export function XlsxButton() {
 
             // Build the download array
             let rows = [];
-            const quoteID = projectInfo.p21Num;
+            const quoteID = projectInfo.projectNumber;
 
             const selectedPartsArr = partsData.filter(
                 (part) => partsList[part.id] > 0

@@ -6,8 +6,6 @@ import PageWide from "../../components/PageWide";
 import KitSummaryRow from "./KitSummaryRow";
 
 import TabNavigation from "../../components/TabNavigation";
-import { XlsxButton } from "../../components/buttons/XlsxButton";
-import ImxButton from "../../components/buttons/ImxButton";
 
 function KitSummary() {
     const { kitsData, optionsData, assembly, baseAssembly } = useMcc();
@@ -27,7 +25,7 @@ function KitSummary() {
                 <Button isActive={false}>Kit Summary</Button>
                 <LinkButton route={"/partSummary"}>Part Summary</LinkButton>
                 <LinkButton route={"/totals"}>Totals</LinkButton>
-                <ImxButton />
+                <LinkButton route={"/projectInfo"}>Download IMX</LinkButton>
             </TabNavigation>
             <h2>KIT SUMMARY</h2>
 
