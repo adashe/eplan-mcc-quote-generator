@@ -56,7 +56,7 @@ function PartSummary() {
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <Button isActive={false}>Part Summary</Button>
                 <LinkButton route={"/totals"}>Totals</LinkButton>
-                <LinkButton route={"/projectInfo"}>Download IMX</LinkButton>
+                <LinkButton route={"/projectInfo"}>Prepare IMX</LinkButton>
             </TabNavigation>
             <h2>PART SUMMARY</h2>
             <ul>

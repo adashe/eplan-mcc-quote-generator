@@ -39,7 +39,22 @@ export function KitRow({ kit }) {
                     >
                         add
                     </span>
-                    <span className={styles.kitRowDesc}>{kit.description}</span>
+                    <span
+                        className={`${styles.kitRowDesc} ${
+                            kit.id.includes("vfd") ? styles.vfdRow : ""
+                        } ${
+                            kit.id.includes("Vacuum") &&
+                            !kit.id.includes("breaker") &&
+                            !kit.id.includes("vfd") &&
+                            !kit.id.includes("SS")
+                                ? styles.vacuumRow
+                                : ""
+                        } ${
+                            kit.id.includes("breaker") ? styles.breakerRow : ""
+                        } ${kit.id.includes("SS") ? styles.ssRow : ""}`}
+                    >
+                        {kit.description}
+                    </span>
                 </label>
             </div>
 

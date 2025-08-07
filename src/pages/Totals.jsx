@@ -50,7 +50,7 @@ function Totals() {
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <LinkButton route={"/partSummary"}>Part Summary</LinkButton>
                 <Button isActive={false}>Totals</Button>
-                <LinkButton route={"/projectInfo"}>Download IMX</LinkButton>
+                <LinkButton route={"/projectInfo"}>Prepare IMX</LinkButton>
             </TabNavigation>
             <h2>Totals</h2>
             <ul className={styles.totalsUl}>

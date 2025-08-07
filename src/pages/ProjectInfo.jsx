@@ -1,4 +1,5 @@
 import { useMcc } from "../contexts/MccContext";
+import styles from "./ProjectInfo.module.css";
 
 import PageNarrow from "../components/PageNarrow";
 import TabNavigation from "../components/TabNavigation";
@@ -19,23 +20,24 @@ function ProjectInfo() {
             <form>
                 <div>
                     <label>
-                        Project Number:
-                        <input
-                            type="text"
-                            name="projectNumber"
-                            value={projectInfo.p21Num || ""}
-                            onChange={handleChangeProjectInfo}
-                        />
-                    </label>
-                </div>
-
-                <div>
-                    <label>
                         Project Name:
                         <input
                             type="text"
                             name="projectName"
                             value={projectInfo.projectName || ""}
+                            onChange={handleChangeProjectInfo}
+                        />
+                    </label>
+                </div>
+                <span className={styles.exampleText}>ex. "WestRiver208V</span>
+
+                <div>
+                    <label>
+                        Library Name:
+                        <input
+                            type="text"
+                            name="libraryName"
+                            value={projectInfo.libraryName || ""}
                             onChange={handleChangeProjectInfo}
                         />
                     </label>
