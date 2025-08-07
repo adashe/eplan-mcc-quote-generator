@@ -22,27 +22,14 @@ const initialBaseAssembly = optionsData.reduce((prev, curr) => {
 
 const initialProjectInfo = {};
 
-// Calculate the price of each individual kit, for use in total price calculation and kits view
-function calcKitPrice(kitID) {
-    // Check in both kitsData and optionsData for the kit
-    // Vulnerable to break if the
-    // data is differently organized (for different MCCs)
-    let kArr = kitsData.filter((kit) => kit.id === kitID);
-    if (kArr.length < 1) {
-        kArr = optionsData.filter((kit) => kit.id === kitID);
-    }
-    const kit = kArr[0];
-
-    // Cycle through kit parts array, use each part objects' key (ID) to look up in partsData, and sum the price
+// Calculate total assembly FLA
+function calcTotalFLA(assembly) {
     let sum = 0;
 
-    kit?.parts?.forEach((part) => {
-        const partID = Object.keys(part)[0];
-        const qty = Object.values(part)[0];
+    const kArr = kitsData.filter((kit) => assembly[kit.id] > 0);
 
-        const pArr = partsData.filter((part) => part.id === partID);
-        const p = pArr[0];
-        sum += p?.price * qty || 0;
+    kArr.forEach((kit) => {
+        sum += kit.fla * assembly[kit.id];
     });
 
     return sum;
@@ -142,7 +129,7 @@ function MccProvider({ children }) {
                 handleIncrementAssembly,
                 handleChangeOptions,
                 handleChangeProjectInfo,
-                calcKitPrice,
+                calcTotalFLA,
             }}
         >
             {children}

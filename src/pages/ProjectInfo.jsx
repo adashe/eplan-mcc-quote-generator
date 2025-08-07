@@ -18,7 +18,7 @@ function ProjectInfo() {
             </TabNavigation>
             <h2>PROJECT DETAILS</h2>
             <form>
-                <div>
+                <div className={styles.formDiv}>
                     <label>
                         Project Name:
                         <input
@@ -28,10 +28,12 @@ function ProjectInfo() {
                             onChange={handleChangeProjectInfo}
                         />
                     </label>
+                    <div className={styles.exampleText}>
+                        ex. "WestRiver208V"
+                    </div>
                 </div>
-                <span className={styles.exampleText}>ex. "WestRiver208V</span>
 
-                <div>
+                <div className={styles.formDiv}>
                     <label>
                         Library Name:
                         <input
@@ -41,6 +43,9 @@ function ProjectInfo() {
                             onChange={handleChangeProjectInfo}
                         />
                     </label>
+                    <div className={styles.exampleText}>
+                        ex. "ConstructionKit_208VMCC"
+                    </div>
                 </div>
             </form>
         </PageNarrow>

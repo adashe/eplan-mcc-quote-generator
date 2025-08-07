@@ -1,3 +1,11 @@
+.formDiv {
+    margin: 14px 0;
+}
+.formDiv input {
+    margin: 4px 10px;
+}
 .exampleText {
     font-size: 12px;
+    margin: auto 10px;
+    font-style: italic;
 }
