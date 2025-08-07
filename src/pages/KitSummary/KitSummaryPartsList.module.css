@@ -10,12 +10,3 @@
     width: 100px;
     overflow: hidden;
 }
-div.qtyCol {
-    width: 60px;
-}
-div.partNumCol {
-    width: 140px;
-}
-div.partDescCol {
-    width: 300px;
-}

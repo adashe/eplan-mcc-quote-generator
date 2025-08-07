@@ -11,6 +11,10 @@
 div.headerRow {
     min-width: 200px;
 }
+.materialSymbolsOutlined {
+    font-family: "Material Symbols Outlined";
+    font-size: 16px;
+}
 .kitCol {
     width: 100px;
     text-align: left;

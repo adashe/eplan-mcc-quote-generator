@@ -6,7 +6,6 @@ import AssemblyForm from "./pages/AssemblyForm/AssemblyForm";
 import OptionsForm from "./pages/OptionsForm";
 import ProjectInfo from "./pages/ProjectInfo";
 import KitSummary from "./pages/KitSummary/KitSummary";
-import PartSummary from "./pages/PartSummary/PartSummary";
 import Totals from "./pages/Totals";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
                     <Route path="assembly" element={<AssemblyForm />} />
                     <Route path="options" element={<OptionsForm />} />
                     <Route path="kitSummary" element={<KitSummary />} />
-                    <Route path="partSummary" element={<PartSummary />} />
                     <Route path="totals" element={<Totals />} />
                     <Route path="projectInfo" element={<ProjectInfo />} />
                     <Route path="*" element={<AssemblyForm />} />

@@ -23,7 +23,6 @@ function KitSummary() {
             <TabNavigation>
                 <LinkButton route={"/assembly"}>Edit Inputs</LinkButton>
                 <Button isActive={false}>Kit Summary</Button>
-                <LinkButton route={"/partSummary"}>Part Summary</LinkButton>
                 <LinkButton route={"/totals"}>Totals</LinkButton>
                 <LinkButton route={"/projectInfo"}>Prepare IMX</LinkButton>
             </TabNavigation>

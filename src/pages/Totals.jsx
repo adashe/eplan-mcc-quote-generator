@@ -48,7 +48,6 @@ function Totals() {
             <TabNavigation>
                 <LinkButton route={"/smcc"}>Edit Inputs</LinkButton>
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
-                <LinkButton route={"/partSummary"}>Part Summary</LinkButton>
                 <Button isActive={false}>Totals</Button>
                 <LinkButton route={"/projectInfo"}>Prepare IMX</LinkButton>
             </TabNavigation>

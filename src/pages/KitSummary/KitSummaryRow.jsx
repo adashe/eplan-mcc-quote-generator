@@ -5,7 +5,7 @@ import styles from "./KitSummaryRow.module.css";
 import KitSummaryPartsList from "./KitSummaryPartsList";
 
 function KitSummaryRow({ kit }) {
-    const { assembly, baseAssembly, calcKitPrice } = useMcc();
+    const { assembly, baseAssembly } = useMcc();
     const [isOpen, setIsOpen] = useState(false);
 
     const quantity = assembly[kit.id] || baseAssembly[kit.id];
@@ -18,15 +18,10 @@ function KitSummaryRow({ kit }) {
         <div>
             <div className={styles.headerRow} onClick={handleOpen}>
                 <div className={styles.kitDesc}>{kit.description}</div>
-                <div className={`${styles.kitCol} ${styles.kitQty}`}>
-                    Qty: {quantity}
-                </div>
-
+                <div className={styles.kitCol}>Qty: {quantity}</div>
+                <div className={styles.kitCol}>FLA: {kit.fla}A</div>
                 <div className={styles.kitCol}>
-                    Price: ${calcKitPrice(kit.id).toFixed(2)}
-                </div>
-                <div className={styles.kitCol}>
-                    Total: ${(calcKitPrice(kit.id) * quantity).toFixed(2)}
+                    Total FLA: {(kit.fla * quantity).toFixed(2)}A
                 </div>
 
                 {isOpen ? (
@@ -43,10 +38,7 @@ function KitSummaryRow({ kit }) {
             <div>
                 {isOpen ? (
                     <div>
-                        <KitSummaryPartsList
-                            parts={kit.parts}
-                            kitQuantity={quantity}
-                        />
+                        <KitSummaryPartsList kit={kit} kitQuantity={quantity} />
                     </div>
                 ) : (
                     ""
