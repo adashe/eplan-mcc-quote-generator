@@ -1,10 +1,11 @@
-import TabNavigation from "../components/TabNavigation";
-import Button from "../components/buttons/Button";
-import LinkButton from "../components/buttons/LinkButton";
-import PageWide from "../components/PageWide";
 import { useMcc } from "../contexts/MccContext";
 import styles from "./Totals.module.css";
-import ImxButton from "../components/buttons/ImxButton";
+
+import PageWide from "../components/PageWide";
+import TabNavigation from "../components/TabNavigation";
+
+import Button from "../components/buttons/Button";
+import LinkButton from "../components/buttons/LinkButton";
 
 function Totals() {
     const { partsData, assembly, options, baseAssembly, calcKitPrice } =
@@ -47,10 +48,9 @@ function Totals() {
             <TabNavigation>
                 <LinkButton route={"/smcc"}>Edit Inputs</LinkButton>
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
-
                 <LinkButton route={"/partSummary"}>Part Summary</LinkButton>
                 <Button isActive={false}>Totals</Button>
-                <ImxButton />
+                <LinkButton route={"/projectInfo"}>Download IMX</LinkButton>
             </TabNavigation>
             <h2>Totals</h2>
             <ul className={styles.totalsUl}>

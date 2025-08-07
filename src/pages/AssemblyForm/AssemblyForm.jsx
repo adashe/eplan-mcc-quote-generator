@@ -1,14 +1,14 @@
 import { useState } from "react";
-import PageNarrow from "../components/PageNarrow.jsx";
-
-import { KitsForm } from "../components/KitsForm.jsx";
-import { KitRow } from "../components/KitRow.jsx";
-
-import { useMcc } from "../contexts/MccContext.jsx";
+import { useMcc } from "../../contexts/MccContext.jsx";
 import styles from "./AssemblyForm.module.css";
-import LinkButton from "../components/buttons/LinkButton.jsx";
-import TabNavigation from "../components/TabNavigation.jsx";
-import RestartButton from "../components/buttons/RestartButton.jsx";
+
+import PageNarrow from "../../components/PageNarrow.jsx";
+import TabNavigation from "../../components/TabNavigation.jsx";
+
+import { KitsForm } from "./KitsForm.jsx";
+import { KitRow } from "./KitRow.jsx";
+import LinkButton from "../../components/buttons/LinkButton.jsx";
+import RestartButton from "../../components/buttons/RestartButton.jsx";
 
 function AssemblyForm() {
     const { kitsData } = useMcc();

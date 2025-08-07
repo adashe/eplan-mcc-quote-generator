@@ -1,6 +1,7 @@
+import styles from "./LinkButton.module.css";
+
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import styles from "./LinkButton.module.css";
 
 function LinkButton({ route, children }) {
     return (

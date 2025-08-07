@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MccProvider } from "./contexts/MccContext";
 
-import AssemblyForm from "./pages/AssemblyForm";
+import AssemblyForm from "./pages/AssemblyForm/AssemblyForm";
 import OptionsForm from "./pages/OptionsForm";
 import ProjectInfo from "./pages/ProjectInfo";
 import KitSummary from "./pages/KitSummary/KitSummary";

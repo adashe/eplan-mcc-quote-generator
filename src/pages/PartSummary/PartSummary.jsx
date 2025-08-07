@@ -1,9 +1,11 @@
-import PageWide from "../../components/PageWide";
 import { useMcc } from "../../contexts/MccContext";
-import { PartsListRow } from "./PartsListRow";
 import styles from "./PartsListRow.module.css";
-import Button from "../../components/buttons/Button";
+
+import PageWide from "../../components/PageWide";
 import TabNavigation from "../../components/TabNavigation";
+
+import { PartsListRow } from "./PartsListRow";
+import Button from "../../components/buttons/Button";
 import LinkButton from "../../components/buttons/LinkButton";
 
 function PartSummary() {

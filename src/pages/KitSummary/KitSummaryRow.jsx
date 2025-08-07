@@ -1,7 +1,8 @@
-import styles from "./KitSummaryRow.module.css";
-import { useMcc } from "../../contexts/MccContext";
-import KitSummaryPartsList from "./KitSummaryPartsList";
 import { useState } from "react";
+import { useMcc } from "../../contexts/MccContext";
+import styles from "./KitSummaryRow.module.css";
+
+import KitSummaryPartsList from "./KitSummaryPartsList";
 
 function KitSummaryRow({ kit }) {
     const { assembly, baseAssembly, calcKitPrice } = useMcc();

@@ -1,11 +1,11 @@
 import { useMcc } from "../../contexts/MccContext";
-import Button from "../../components/buttons/Button";
-import LinkButton from "../../components/buttons/LinkButton";
 
 import PageWide from "../../components/PageWide";
-import KitSummaryRow from "./KitSummaryRow";
-
 import TabNavigation from "../../components/TabNavigation";
+
+import KitSummaryRow from "./KitSummaryRow";
+import Button from "../../components/buttons/Button";
+import LinkButton from "../../components/buttons/LinkButton";
 
 function KitSummary() {
     const { kitsData, optionsData, assembly, baseAssembly } = useMcc();

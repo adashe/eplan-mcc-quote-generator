@@ -1,4 +1,4 @@
-import { useMcc } from "../contexts/MccContext";
+import { useMcc } from "../../contexts/MccContext";
 import styles from "./KitsForm.module.css";
 
 // Select the entire value when user clicks in the input box (for easier editing)
