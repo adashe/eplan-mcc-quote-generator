@@ -8,7 +8,7 @@ import TabNavigation from "../../components/TabNavigation.jsx";
 import { KitsForm } from "./KitsForm.jsx";
 import { KitRow } from "./KitRow.jsx";
 import LinkButton from "../../components/buttons/LinkButton.jsx";
-import RestartButton from "../../components/buttons/RestartButton.jsx";
+import ResetButton from "../../components/buttons/ResetButton.jsx";
 
 function AssemblyForm() {
     const { kitsData } = useMcc();
@@ -31,10 +31,12 @@ function AssemblyForm() {
     return (
         <PageNarrow>
             <TabNavigation>
-                <RestartButton />
+                <LinkButton route={"/"}>&larr; Generators</LinkButton>
+                <ResetButton />
                 <LinkButton route={"/options"}>Options &rarr;</LinkButton>
             </TabNavigation>
             <h2>MCC KITS</h2>
+
             <form onSubmit={handleSubmit}>
                 <input
                     className={styles.searchBar}
@@ -45,6 +47,7 @@ function AssemblyForm() {
                     placeholder="Search"
                 />
             </form>
+
             <KitsForm>
                 {filteredData.map((kit) => (
                     <KitRow kit={kit} key={kit.id} />

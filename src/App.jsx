@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MccProvider } from "./contexts/MccContext";
 
+import GeneratorMenu from "./pages/GeneratorMenu";
 import AssemblyForm from "./pages/AssemblyForm/AssemblyForm";
 import OptionsForm from "./pages/OptionsForm";
 import ProjectInfo from "./pages/ProjectInfo";
@@ -13,7 +14,7 @@ function App() {
         <MccProvider>
             <BrowserRouter basename="/eplan-mcc-quote-generator/">
                 <Routes>
-                    <Route index element={<AssemblyForm />} />
+                    <Route index element={<GeneratorMenu />} />
                     <Route path="assembly" element={<AssemblyForm />} />
                     <Route path="options" element={<OptionsForm />} />
                     <Route path="kitSummary" element={<KitSummary />} />

@@ -56,6 +56,13 @@ function MccProvider({ children }) {
     const [baseAssembly, setBaseAssembly] = useState(initialBaseAssembly);
     const [projectInfo, setProjectInfo] = useState(initialProjectInfo);
 
+    function handleReset() {
+        setAssembly(initialAssembly);
+        setOptions(initialOptions);
+        setBaseAssembly(initialBaseAssembly);
+        setProjectInfo(initialProjectInfo);
+    }
+
     function handleChangeAssembly(e) {
         const { name, value } = e.target;
 
@@ -130,6 +137,7 @@ function MccProvider({ children }) {
                 options,
                 baseAssembly,
                 projectInfo,
+                handleReset,
                 handleChangeAssembly,
                 handleIncrementAssembly,
                 handleChangeOptions,

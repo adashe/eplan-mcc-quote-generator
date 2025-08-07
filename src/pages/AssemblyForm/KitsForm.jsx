@@ -11,7 +11,7 @@ export function KitsForm({ children }) {
                     Subassembly
                 </div>
                 <div className={`${styles.column} ${styles.columnHeader}`}>
-                    Kit Price
+                    FLA
                 </div>
             </div>
             {children}

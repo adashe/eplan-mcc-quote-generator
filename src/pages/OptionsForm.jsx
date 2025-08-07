@@ -4,6 +4,7 @@ import PageNarrow from "../components/PageNarrow";
 import TabNavigation from "../components/TabNavigation";
 
 import LinkButton from "../components/buttons/LinkButton";
+import ResetButton from "../components/buttons/ResetButton";
 
 function OptionsForm() {
     const { options, handleChangeOptions } = useMcc();

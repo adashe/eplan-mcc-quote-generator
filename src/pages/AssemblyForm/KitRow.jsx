@@ -7,12 +7,8 @@ function handleSelect(e) {
 }
 
 export function KitRow({ kit }) {
-    const {
-        assembly,
-        handleChangeAssembly,
-        handleIncrementAssembly,
-        calcKitPrice,
-    } = useMcc();
+    const { assembly, handleChangeAssembly, handleIncrementAssembly } =
+        useMcc();
 
     return (
         <div className={styles.row}>
@@ -58,9 +54,7 @@ export function KitRow({ kit }) {
                 </label>
             </div>
 
-            <div className={styles.column}>
-                ${calcKitPrice(kit.id).toFixed(2)}
-            </div>
+            <div className={styles.column}>{kit.fla}A</div>
         </div>
     );
 }
