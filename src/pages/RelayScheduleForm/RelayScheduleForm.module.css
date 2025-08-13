@@ -42,3 +42,18 @@
 .medInput {
     width: 160px;
 }
+.relayUl {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 40px;
+}
+.relayLi {
+    display: flex;
+}
+.relayLi div {
+    width: 100px;
+    margin: 6px 10px;
+}
+div.relayLiDesc {
+    width: 140px;
+}

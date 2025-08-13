@@ -20,7 +20,8 @@ function RelayScheduleForm() {
     const [relaySchedule, setRelaySchedule] = useState({});
 
     // Identifies the  number of available relays based on STC selection
-    const numRelays = Number(options?.stc?.slice(4) || 0);
+    // const numRelays = Number(options?.stc?.slice(4) || 0);
+    const numRelays = 128;
 
     // Creates an array of numRelays values to use in the Relay Number selector
     let relaysArr = [];
@@ -41,6 +42,11 @@ function RelayScheduleForm() {
             [relayNumber]: { description, controlVoltage },
         }));
     }
+
+    // Build array with submmitted values to iterate over to create li tags
+    const completedRelaysArr = relaysArr.filter(
+        (relay) => relaySchedule[relay]
+    );
 
     return (
         <PageWide>
@@ -107,7 +113,17 @@ function RelayScheduleForm() {
                 </button>
             </form>
 
-            <ul></ul>
+            <ul className={styles.relayUl}>
+                {completedRelaysArr.map((relay) => (
+                    <li key={relay} className={styles.relayLi}>
+                        <div>Relay {relay}</div>
+                        <div className={styles.relayLiDesc}>
+                            {relaySchedule[relay].description}
+                        </div>
+                        <div>{relaySchedule[relay].controlVoltage}</div>
+                    </li>
+                ))}
+            </ul>
         </PageWide>
     );
 }
