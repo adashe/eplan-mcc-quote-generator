@@ -24,6 +24,7 @@ function KitSummary() {
                 <LinkButton route={"/assembly"}>Edit Inputs</LinkButton>
                 <Button isActive={false}>Kit Summary</Button>
                 <LinkButton route={"/totals"}>Totals</LinkButton>
+                <LinkButton route={"/relaySchedule"}>Relay Schedule</LinkButton>
                 <LinkButton route={"/projectInfo"}>Prepare IMX</LinkButton>
             </TabNavigation>
             <h2>KIT SUMMARY</h2>

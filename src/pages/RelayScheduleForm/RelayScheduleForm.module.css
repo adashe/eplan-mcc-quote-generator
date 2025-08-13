@@ -1,0 +1,44 @@
+.relayForm {
+    display: flex;
+}
+.relayFormBtn {
+    color: var(--color-dark--0);
+    background-color: var(--color-brand--0);
+    text-transform: uppercase;
+    width: 160px;
+    height: 40px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.relayFormBtn:hover {
+    background-color: var(--color-brand--1);
+}
+.inactive {
+    background-color: var(--color-light--0);
+}
+.inactive:hover {
+    background-color: var(--color-light--0);
+    cursor: auto;
+}
+.relayFormBtn {
+    margin: auto 10px;
+    width: 100px;
+    height: 50px;
+}
+
+.autocompleteInput {
+    width: 100px;
+    margin: 10px;
+}
+.wideInput {
+    width: 300px;
+}
+.medInput {
+    width: 160px;
+}

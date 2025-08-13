@@ -12,7 +12,6 @@ import ResetButton from "../../components/buttons/ResetButton.jsx";
 
 function AssemblyForm() {
     const { kitsData } = useMcc();
-
     const [filter, setFilter] = useState("");
 
     function handleUpdateFilter(e) {

@@ -21,9 +21,10 @@ function Totals() {
                 <LinkButton route={"/assembly"}>Edit Inputs</LinkButton>
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <Button isActive={false}>Totals</Button>
+                <LinkButton route={"/relaySchedule"}>Relay Schedule</LinkButton>
                 <LinkButton route={"/projectInfo"}>Prepare IMX</LinkButton>
             </TabNavigation>
-            <h2>Totals</h2>
+            <h2>TOTALS</h2>
             <h3 className={styles.partNum}>
                 MCC-208V-{totalFLA}-{motorCount}
             </h3>
