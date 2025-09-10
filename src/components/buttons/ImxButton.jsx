@@ -79,7 +79,9 @@ function ImxButton() {
         // console.log({ motorsGroupedByType });
 
         // Add whole groups to bussbar
-        console.log("------------------1st iteration-----------------------");
+        console.log(
+            "------------------1st iteration WHOLE GROUPS------------------"
+        );
         priorityArr.forEach((type) => {
             const typeGroup = motorsGroupedByType[type];
             // console.log(type, { typeGroup });
@@ -96,9 +98,9 @@ function ImxButton() {
                         console.log(
                             "added",
                             type,
-                            "len",
+                            "typeCount",
                             typeGroup.length,
-                            "bussCap",
+                            "bussCapacity",
                             bussbarCapacity
                         );
                     } else {
@@ -108,26 +110,28 @@ function ImxButton() {
                         console.log(
                             "not added",
                             type,
-                            "len",
+                            "typeCount",
                             typeGroup.length,
-                            "bussCap",
+                            "bussCapacity",
                             bussbarCapacity
                         );
                         offBussMotors = [...offBussMotors, ...typeGroup];
                     }
                 } else {
-                    console.log(type, "none");
+                    console.log("none", type);
                 }
             } else {
                 console.log(
-                    "------------------------BUSSBAR COMPLETE--------------------"
+                    "・ :*:・ﾟ☆.・ ゜-: ✧ :- ⋇⋆✦⋆⋇⭒❃BUSSBAR COMPLETE.✮ :▹‧͙⁺ ˚*・༓ ☾.｡*ﾟ+. *."
                 );
             }
         });
 
         // Add individual motors to bussbar in descending order of type, then HP
         if (bussbarCapacity > 0) {
-            console.log("-------------------2nd iteration-------------------");
+            console.log(
+                "----------------2nd iteration PARTIAL GROUPS--------------"
+            );
             priorityArr.forEach((type) => {
                 const typeGroup = motorsGroupedByType[type];
 
@@ -141,6 +145,12 @@ function ImxButton() {
                         if (bussbarCapacity > 0) {
                             onBussMotors = [...onBussMotors, motor];
                             bussbarCapacity -= 1;
+                            console.log(
+                                "added",
+                                motor.description,
+                                "bussCapacity",
+                                bussbarCapacity
+                            );
 
                             // Remove motor from offbuss array
                             const index = offBussMotors.findIndex(
@@ -149,7 +159,7 @@ function ImxButton() {
                             offBussMotors.splice(index, 1);
                         } else {
                             console.log(
-                                "------------------------BUSSBAR COMPLETE--------------------"
+                                "・ :*:・ﾟ☆.・ ゜-: ✧ :- ⋇⋆✦⋆⋇⭒❃BUSSBAR COMPLETE.✮ :▹‧͙⁺ ˚*・༓ ☾.｡*ﾟ+. *."
                             );
                         }
                     });
