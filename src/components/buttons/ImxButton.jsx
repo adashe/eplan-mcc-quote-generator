@@ -1,6 +1,155 @@
+import { useMcc } from "../../contexts/MccContext";
 import Button from "./Button";
 
 function ImxButton() {
+    const { kitsData, assembly } = useMcc();
+
+    function buildOnBuss() {
+        let bussbarCapacity = 21;
+        let onBussMotors = [];
+        let offBussMotors = [];
+
+        // Build an array of all included motor objects out of assembly
+        let motorsArr = [];
+
+        for (const k in assembly) {
+            const kit = kitsData.filter((kit) => kit.id === k)[0];
+
+            // Include duplicate motors in the array
+            for (let i = 0; i < assembly[kit.id]; i++) {
+                motorsArr.push(kit);
+            }
+        }
+
+        // Remove vfds from motorsArr
+        const filteredMotorsArr = motorsArr.filter(
+            (motor) => motor.type !== "vfd-1" && motor.type !== "vfd-2"
+        );
+
+        let initialMotorsArr = [];
+        filteredMotorsArr.forEach((motor) =>
+            initialMotorsArr.push(motor.description)
+        );
+        console.log("initial motors arr", initialMotorsArr);
+
+        // Build prioritized array of function groups to iterate over remaining hp groups
+        const priorityArr = [
+            "blower",
+            "conveyor",
+            "wrap",
+            "topBrush",
+            "otherSpare",
+            "omni",
+            "otherBrush",
+            "rocker",
+            "sideEquip",
+            "tireShine",
+            "pump",
+            "pumpBreaker",
+            "prepGun",
+            "hydraflex",
+            "otherBreaker",
+            "mitter",
+        ];
+
+        const motorsGroupedByType = Object.groupBy(
+            filteredMotorsArr,
+            ({ type }) => type
+        );
+        // console.log({ motorsGroupedByType });
+
+        // Add whole groups to bussbar
+        console.log("------------------1st iteration-----------------------");
+        priorityArr.forEach((type) => {
+            const typeGroup = motorsGroupedByType[type];
+            // console.log(type, { typeGroup });
+
+            if (bussbarCapacity > 0) {
+                if (typeGroup) {
+                    // Sort in order of HP descdending so onBussMotors is sorted
+                    typeGroup.sort((a, b) => b.hp - a.hp);
+                    // console.log(type, { typeGroup });
+                    if (typeGroup.length <= bussbarCapacity) {
+                        onBussMotors = [...onBussMotors, ...typeGroup];
+                        bussbarCapacity -= typeGroup.length;
+                        delete motorsGroupedByType[type];
+                        console.log(
+                            "added",
+                            type,
+                            "len",
+                            typeGroup.length,
+                            "bussCap",
+                            bussbarCapacity
+                        );
+                    } else {
+                        // Add motors to offBuss if the whole group won't fit
+                        // Will later individually remove motors from this arr
+                        // in the next iteration
+                        console.log(
+                            "not added",
+                            type,
+                            "len",
+                            typeGroup.length,
+                            "bussCap",
+                            bussbarCapacity
+                        );
+                        offBussMotors = [...offBussMotors, ...typeGroup];
+                    }
+                } else {
+                    console.log(type, "none");
+                }
+            } else {
+                console.log(
+                    "------------------------BUSSBAR COMPLETE--------------------"
+                );
+            }
+        });
+
+        // Add individual motors to bussbar in descending order of type, then HP
+        if (bussbarCapacity > 0) {
+            console.log("-------------------2nd iteration-------------------");
+            priorityArr.forEach((type) => {
+                const typeGroup = motorsGroupedByType[type];
+
+                if (typeGroup) {
+                    // Sort motors within the group by HP
+                    typeGroup.sort((a, b) => b.hp - a.hp);
+                    console.log(type, { typeGroup });
+
+                    // Add individual motors to onBussMotors
+                    typeGroup.forEach((motor) => {
+                        if (bussbarCapacity > 0) {
+                            onBussMotors = [...onBussMotors, motor];
+                            bussbarCapacity -= 1;
+
+                            // Remove motor from offbuss array
+                            const index = offBussMotors.findIndex(
+                                (m) => m.id === motor.id
+                            );
+                            offBussMotors.splice(index, 1);
+                        } else {
+                            console.log(
+                                "------------------------BUSSBAR COMPLETE--------------------"
+                            );
+                        }
+                    });
+                }
+            });
+        }
+
+        // make sure bussbar is sorted in descending HP order
+
+        const onBussDesc = [];
+        onBussMotors.forEach((motor) => onBussDesc.push(motor.description));
+        console.log("ON BUSS", onBussDesc);
+
+        const offBussDesc = [];
+        offBussMotors.forEach((motor) => offBussDesc.push(motor.description));
+        console.log("OFF BUSS", offBussDesc);
+    }
+
+    buildOnBuss();
+
     function downloadImx() {
         if (window.confirm("Are you sure you want to download this file?")) {
             const projName = "208VMCC"; // placeholder for input from proj info form

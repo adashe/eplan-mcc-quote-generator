@@ -13,7 +13,8 @@
         "fla": 4.6,
         "msp": "6A",
         "cont": "12A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 1.5
     },
     {
         "id": "vfd1hpWrapBnd",
@@ -29,7 +30,8 @@
         "fla": 4.6,
         "msp": "6A",
         "cont": "12A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 1.5
     },
     {
         "id": "vfd1hpTopBrush",
@@ -45,7 +47,8 @@
         "fla": 4.6,
         "msp": "6A",
         "cont": "12A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 1.5
     },
     {
         "id": "vfd1hpTopBrushRev",
@@ -61,7 +64,8 @@
         "fla": 4.6,
         "msp": "6A",
         "cont": "12A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 1.5
     },
     {
         "id": "vfd1hpTopBrushBnd",
@@ -77,7 +81,8 @@
         "fla": 4.6,
         "msp": "6A",
         "cont": "12A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 1.5
     },
     {
         "id": "vfd1hpOmni",
@@ -93,7 +98,8 @@
         "fla": 4.6,
         "msp": "6A",
         "cont": "12A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 1.5
     },
     {
         "id": "vfd1hpMitter",
@@ -109,7 +115,8 @@
         "fla": 4.6,
         "msp": "6A",
         "cont": "12A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 1.5
     },
     {
         "id": "1hpMitter",
@@ -125,7 +132,8 @@
         "fla": 4.6,
         "msp": "6A",
         "cont": "12A",
-        "type": "none"
+        "type": "mitter",
+        "hp": 1.5
     },
     {
         "id": "vfd3hpOmni1",
@@ -141,7 +149,8 @@
         "fla": 4.6,
         "msp": "6/12A",
         "cont": "12A",
-        "type": "vfd-2"
+        "type": "vfd-2",
+        "hp": 3
     },
     {
         "id": "vfd3hpRocker1",
@@ -157,7 +166,8 @@
         "fla": 4.6,
         "msp": "6/12A",
         "cont": "12A",
-        "type": "vfd-2"
+        "type": "vfd-2",
+        "hp": 3
     },
     {
         "id": "vfd3hpTireBrush1",
@@ -173,7 +183,8 @@
         "fla": 4.6,
         "msp": "6/12A",
         "cont": "12A",
-        "type": "vfd-2"
+        "type": "vfd-2",
+        "hp": 3
     },
     {
         "id": "vfd3hpTireShine1",
@@ -189,7 +200,8 @@
         "fla": 4.6,
         "msp": "6/12A",
         "cont": "12A",
-        "type": "vfd-2"
+        "type": "vfd-2",
+        "hp": 3
     },
     {
         "id": "vfd3hpSideBrush1",
@@ -205,7 +217,8 @@
         "fla": 4.6,
         "msp": "6/12A",
         "cont": "12A",
-        "type": "vfd-2"
+        "type": "vfd-2",
+        "hp": 3
     },
     {
         "id": "vfd3hpGrillBrush1",
@@ -221,7 +234,8 @@
         "fla": 4.6,
         "msp": "6/12A",
         "cont": "12A",
-        "type": "vfd-2"
+        "type": "vfd-2",
+        "hp": 3
     },
     {
         "id": "vfd3hpWheelBlaster1",
@@ -237,7 +251,8 @@
         "fla": 4.6,
         "msp": "6/12A",
         "cont": "12A",
-        "type": "vfd-2"
+        "type": "vfd-2",
+        "hp": 3
     },
     {
         "id": "3hpBoosterPump",
@@ -253,7 +268,8 @@
         "fla": 8.4,
         "msp": "10A",
         "cont": "18A",
-        "type": "none"
+        "type": "pump",
+        "hp": 3
     },
     {
         "id": "3hpPUOmni",
@@ -269,7 +285,8 @@
         "fla": 8.4,
         "msp": "10A",
         "cont": "18A",
-        "type": "none"
+        "type": "omni",
+        "hp": 3
     },
     {
         "id": "3hpPUTireShine",
@@ -285,7 +302,8 @@
         "fla": 8.4,
         "msp": "10A",
         "cont": "18A",
-        "type": "none"
+        "type": "tireShine",
+        "hp": 3
     },
     {
         "id": "3hpPUTopBrush",
@@ -301,7 +319,8 @@
         "fla": 8.4,
         "msp": "10A",
         "cont": "18A",
-        "type": "none"
+        "type": "topBrush",
+        "hp": 3
     },
     {
         "id": "vfd3hpConveyor",
@@ -317,7 +336,8 @@
         "fla": 8.4,
         "msp": "10A",
         "cont": "18A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 3
     },
     {
         "id": "5hpBooster",
@@ -333,7 +353,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "none",
+        "hp": 5
     },
     {
         "id": "5hpPrepGun",
@@ -349,7 +370,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "prepGun",
+        "hp": 5
     },
     {
         "id": "5hpPU2FLOmni",
@@ -365,7 +387,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "omni",
+        "hp": 5
     },
     {
         "id": "5hpPUGrillBrush",
@@ -381,7 +404,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "otherBrush",
+        "hp": 5
     },
     {
         "id": "5hpPURockers",
@@ -397,7 +421,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "rocker",
+        "hp": 5
     },
     {
         "id": "5hpPUSideBrush",
@@ -413,7 +438,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "otherBrush",
+        "hp": 5
     },
     {
         "id": "5hpPUTopBrush",
@@ -429,7 +455,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "topBrush",
+        "hp": 5
     },
     {
         "id": "5hpPUTireBrush",
@@ -445,7 +472,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "otherBrush",
+        "hp": 5
     },
     {
         "id": "5hpPUTireShine",
@@ -461,7 +489,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "tireShine",
+        "hp": 5
     },
     {
         "id": "5hpPUConveyor",
@@ -477,7 +506,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "conveyor",
+        "hp": 5
     },
     {
         "id": "5hpPUTwinConveyor",
@@ -493,7 +523,8 @@
         "fla": 14.3,
         "msp": "20A",
         "cont": "32A",
-        "type": "none"
+        "type": "conveyor",
+        "hp": 5
     },
     {
         "id": "breaker1hpRO",
@@ -509,7 +540,8 @@
         "fla": 4.3,
         "msp": "6A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 1.5
     },
     {
         "id": "breaker2hpOzone",
@@ -525,7 +557,8 @@
         "fla": 4.6,
         "msp": "10A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 2
     },
     {
         "id": "breaker3hpRO",
@@ -541,7 +574,8 @@
         "fla": 8.4,
         "msp": "12A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 3
     },
     {
         "id": "breaker5hpHydraflex",
@@ -557,7 +591,8 @@
         "fla": 8.4,
         "msp": "12A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 5
     },
     {
         "id": "breaker5hpAirComp",
@@ -573,7 +608,8 @@
         "fla": 14.3,
         "msp": "25A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 5
     },
     {
         "id": "breaker5hpBoosterPump",
@@ -589,7 +625,8 @@
         "fla": 14.3,
         "msp": "25A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 5
     },
     {
         "id": "breaker5hpRO",
@@ -605,7 +642,8 @@
         "fla": 14.3,
         "msp": "25A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 5
     },
     {
         "id": "breaker5hpReclaim",
@@ -621,7 +659,8 @@
         "fla": 14.3,
         "msp": "25A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 5
     },
     {
         "id": "breaker5hpRejectPump",
@@ -637,7 +676,8 @@
         "fla": 14.3,
         "msp": "25A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 5
     },
     {
         "id": "breaker5hpRepressPump",
@@ -653,7 +693,8 @@
         "fla": 14.3,
         "msp": "25A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 5
     },
     {
         "id": "breaker6hpHydraflex",
@@ -669,7 +710,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 6
     },
     {
         "id": "breaker7hpAirComp",
@@ -685,7 +727,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 7
     },
     {
         "id": "breaker10hpAirComp",
@@ -701,7 +744,8 @@
         "fla": 24.0,
         "msp": "32A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 10
     },
     {
         "id": "breaker25hpVacuum",
@@ -717,7 +761,8 @@
         "fla": 62.0,
         "msp": "75A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 25
     },
     {
         "id": "breaker30hpVacuum",
@@ -733,7 +778,8 @@
         "fla": 75.0,
         "msp": "90A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 30
     },
     {
         "id": "breaker40hpVacuum",
@@ -749,7 +795,8 @@
         "fla": 101.0,
         "msp": "150A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 40
     },
     {
         "id": "breaker50hpVacuum",
@@ -765,7 +812,8 @@
         "fla": 124,
         "msp": "175A",
         "cont": null,
-        "type": "breaker"
+        "type": "breaker",
+        "hp": 50
     },
     {
         "id": "7hp2FLOther",
@@ -781,7 +829,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "none",
+        "hp": 7.5
     },
     {
         "id": "7hpHaloPump",
@@ -797,7 +846,8 @@
         "fla": 21.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "pump",
+        "hp": 7.5
     },
     {
         "id": "7hpPrepGun",
@@ -813,7 +863,8 @@
         "fla": 21.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "prepGun",
+        "hp": 7.5
     },
     {
         "id": "7hp2FLWraps",
@@ -829,7 +880,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "wrap",
+        "hp": 7.5
     },
     {
         "id": "7hp2FLTireRocker",
@@ -845,7 +897,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "rocker",
+        "hp": 7.5
     },
     {
         "id": "7hp2FL63inSides",
@@ -861,7 +914,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "none",
+        "hp": 7.5
     },
     {
         "id": "7hp2FLGrillBrush",
@@ -877,7 +931,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "otherBrush",
+        "hp": 7.5
     },
     {
         "id": "7hp2FLOmni",
@@ -893,7 +948,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "omni",
+        "hp": 7.5
     },
     {
         "id": "7hp2FLTopBrushRocker",
@@ -909,7 +965,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "rocker",
+        "hp": 7.5
     },
     {
         "id": "7hp3FLOmni",
@@ -925,7 +982,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "omni",
+        "hp": 7.5
     },
     {
         "id": "7hpConveyor",
@@ -941,7 +999,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "conveyor",
+        "hp": 7.5
     },
     {
         "id": "7hp2FLConveyorTireShine",
@@ -957,7 +1016,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "conveyor",
+        "hp": 7.5
     },
     {
         "id": "7hpTwinConveyor",
@@ -973,7 +1033,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "conveyor",
+        "hp": 7.5
     },
     {
         "id": "7hp2FLTwinConveyorTireShine",
@@ -989,7 +1050,8 @@
         "fla": 20.0,
         "msp": "25A",
         "cont": "38A",
-        "type": "none"
+        "type": "conveyor",
+        "hp": 7.5
     },
     {
         "id": "10hpOther",
@@ -1005,7 +1067,8 @@
         "fla": 26.7,
         "msp": "32A",
         "cont": "40A",
-        "type": "none"
+        "type": "none",
+        "hp": 10
     },
     {
         "id": "10hpPUOther",
@@ -1021,7 +1084,8 @@
         "fla": 27.4,
         "msp": "32A",
         "cont": "40A",
-        "type": "none"
+        "type": "none",
+        "hp": 10
     },
     {
         "id": "10hp3FLWrapsTire",
@@ -1037,7 +1101,8 @@
         "fla": 27.4,
         "msp": "32A",
         "cont": "40A",
-        "type": "none"
+        "type": "wrap",
+        "hp": 10
     },
     {
         "id": "10hp3FLTopBrushRocker",
@@ -1053,7 +1118,8 @@
         "fla": 27.4,
         "msp": "32A",
         "cont": "40A",
-        "type": "none"
+        "type": "rocker",
+        "hp": 10
     },
     {
         "id": "10hp3FLTopSideOmniRocker",
@@ -1069,7 +1135,8 @@
         "fla": 27.4,
         "msp": "32A",
         "cont": "40A",
-        "type": "none"
+        "type": "rocker",
+        "hp": 10
     },
     {
         "id": "10hpBlower",
@@ -1085,7 +1152,8 @@
         "fla": 27.4,
         "msp": "32A",
         "cont": "40A",
-        "type": "none"
+        "type": "blower",
+        "hp": 10
     },
     {
         "id": "10hpConveyor",
@@ -1101,7 +1169,8 @@
         "fla": 27.4,
         "msp": "32A",
         "cont": "40A",
-        "type": "none"
+        "type": "conveyor",
+        "hp": 10
     },
     {
         "id": "10hp2FLConveyorTireShine",
@@ -1117,7 +1186,8 @@
         "fla": 27.4,
         "msp": "32A",
         "cont": "40A",
-        "type": "none"
+        "type": "conveyor",
+        "hp": 10
     },
     {
         "id": "10hpTwinConveyor",
@@ -1133,7 +1203,8 @@
         "fla": 27.4,
         "msp": "32A",
         "cont": "40A",
-        "type": "none"
+        "type": "conveyor",
+        "hp": 10
     },
     {
         "id": "10hp2FLTwinConveyorTireShine",
@@ -1149,7 +1220,8 @@
         "fla": 27.4,
         "msp": "32A",
         "cont": "40A",
-        "type": "none"
+        "type": "conveyor",
+        "hp": 10
     },
     {
         "id": "15hpPUOther",
@@ -1165,7 +1237,8 @@
         "fla": 42.1,
         "msp": "50A",
         "cont": "65A",
-        "type": "none"
+        "type": "none",
+        "hp": 15
     },
     {
         "id": "15hpOther",
@@ -1181,7 +1254,8 @@
         "fla": 42.1,
         "msp": "50A",
         "cont": "65A",
-        "type": "none"
+        "type": "none",
+        "hp": 15
     },
     {
         "id": "15hpBlower",
@@ -1197,7 +1271,8 @@
         "fla": 37.5,
         "msp": "50A",
         "cont": "65A",
-        "type": "none"
+        "type": "blower",
+        "hp": 15
     },
     {
         "id": "vfd15hpBlower",
@@ -1213,7 +1288,8 @@
         "fla": 37.5,
         "msp": "50A",
         "cont": "65A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 15
     },
     {
         "id": "15hpMammothBlower",
@@ -1229,7 +1305,8 @@
         "fla": 48.0,
         "msp": "58A",
         "cont": "65A",
-        "type": "none"
+        "type": "blower",
+        "hp": 15
     },
     {
         "id": "vfd15hpMammothBlower",
@@ -1245,7 +1322,8 @@
         "fla": 48.0,
         "msp": "58A",
         "cont": "65A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 15
     },
     {
         "id": "15hpVacuum",
@@ -1261,7 +1339,8 @@
         "fla": 40.5,
         "msp": "50A",
         "cont": "65A",
-        "type": "none"
+        "type": "none",
+        "hp": 15
     },
     {
         "id": "15hpOmniTop",
@@ -1277,7 +1356,8 @@
         "fla": 40.5,
         "msp": "50A",
         "cont": "65A",
-        "type": "none"
+        "type": "omni",
+        "hp": 15
     },
     {
         "id": "15hpOmniSides",
@@ -1293,7 +1373,8 @@
         "fla": 40.5,
         "msp": "50A",
         "cont": "65A",
-        "type": "none"
+        "type": "omni",
+        "hp": 15
     },
     {
         "id": "15hpOmniPend",
@@ -1309,7 +1390,8 @@
         "fla": 40.5,
         "msp": "50A",
         "cont": "65A",
-        "type": "none"
+        "type": "omni",
+        "hp": 15
     },
     {
         "id": "15hpOmniTurbo",
@@ -1325,7 +1407,8 @@
         "fla": 40.5,
         "msp": "50A",
         "cont": "65A",
-        "type": "none"
+        "type": "omni",
+        "hp": 15
     },
     {
         "id": "15hpOmniWheelBlaster",
@@ -1341,7 +1424,8 @@
         "fla": 40.5,
         "msp": "50A",
         "cont": "65A",
-        "type": "none"
+        "type": "omni",
+        "hp": 15
     },
     {
         "id": "15hpOmniMirrorRinse",
@@ -1357,7 +1441,8 @@
         "fla": 40.5,
         "msp": "50A",
         "cont": "65A",
-        "type": "none"
+        "type": "omni",
+        "hp": 15
     },
     {
         "id": "vfd15hpOmni",
@@ -1373,7 +1458,8 @@
         "fla": 40.5,
         "msp": "50A",
         "cont": "65A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 15
     },
     {
         "id": "vfd15hpSTIConveyor",
@@ -1389,7 +1475,8 @@
         "fla": 39.7,
         "msp": "50A",
         "cont": "50A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 15
     },
     {
         "id": "vfd20hpSTIConveyor",
@@ -1405,7 +1492,8 @@
         "fla": 52.9,
         "msp": "58A",
         "cont": "65A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 20
     },
     {
         "id": "20hpOmniPump",
@@ -1421,7 +1509,8 @@
         "fla": 54.0,
         "msp": "58A",
         "cont": "65A",
-        "type": "none"
+        "type": "none",
+        "hp": 20
     },
     {
         "id": "20hpPUOther",
@@ -1437,7 +1526,8 @@
         "fla": 54.2,
         "msp": "58A",
         "cont": "65A",
-        "type": "none"
+        "type": "none",
+        "hp": 20
     },
     {
         "id": "20hpVacuum",
@@ -1453,7 +1543,8 @@
         "fla": 52.0,
         "msp": "58A",
         "cont": "65A",
-        "type": "vacuum"
+        "type": "vacuum",
+        "hp": 20
     },
     {
         "id": "25hpVacuum",
@@ -1469,7 +1560,8 @@
         "fla": 62.0,
         "msp": "75A",
         "cont": "80A",
-        "type": "vacuum"
+        "type": "vacuum",
+        "hp": 25
     },
     {
         "id": "30hpVacuum",
@@ -1485,7 +1577,8 @@
         "fla": 75.0,
         "msp": "90A",
         "cont": "95A",
-        "type": "vacuum"
+        "type": "vacuum",
+        "hp": 30
     },
     {
         "id": "40hpVacuum",
@@ -1501,7 +1594,8 @@
         "fla": 101.0,
         "msp": "125A",
         "cont": null,
-        "type": "vacuum"
+        "type": "vacuum",
+        "hp": 40
     },
     {
         "id": "50hpVacuum",
@@ -1517,7 +1611,8 @@
         "fla": 124.0,
         "msp": "175A",
         "cont": null,
-        "type": "vacuum"
+        "type": "vacuum",
+        "hp": 50
     },
     {
         "id": "vfd25hpVacuum",
@@ -1533,7 +1628,8 @@
         "fla": 62.0,
         "msp": "90A",
         "cont": "80A",
-        "type": "vfd-1"
+        "type": "vfd-1",
+        "hp": 25
     },
     {
         "id": "40hpVacuumSS",
@@ -1549,6 +1645,7 @@
         "fla": 101.0,
         "msp": "125A",
         "cont": null,
-        "type": "vacuum-ss"
+        "type": "vacuum-ss",
+        "hp": 40
     }
 ]
