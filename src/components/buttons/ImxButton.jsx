@@ -9,7 +9,11 @@ function ImxButton() {
         let onBussMotors = [];
         let offBussMotors = [];
 
-        // Build an array of all included motor objects out of assembly
+        console.log(
+            "|||||||||||||||||||||||BEGIN BUSSBAR CALC||||||||||||||||||||||||||||"
+        );
+
+        // Build an array of all included motor objects from assembly
         let motorsArr = [];
 
         for (const k in assembly) {
@@ -21,18 +25,34 @@ function ImxButton() {
             }
         }
 
+        // Add vfds to offBussMotors
+        const vfdsArr = motorsArr.filter(
+            (motor) => motor.type === "vfd-1" || motor.type === "vfd-2"
+        );
+
+        vfdsArr.sort((a, b) => b.hp - a.hp);
+        vfdsArr.forEach((motor) => {
+            offBussMotors = [...offBussMotors, motor];
+        });
+
+        // TEST: print vfds pulled from motorsArr
+        const offBussVfds = [];
+        offBussMotors.forEach((motor) => offBussVfds.push(motor.description));
+        console.log("removed vfds", offBussVfds);
+
         // Remove vfds from motorsArr
         const filteredMotorsArr = motorsArr.filter(
             (motor) => motor.type !== "vfd-1" && motor.type !== "vfd-2"
         );
 
+        // TEST: print initial motors
         let initialMotorsArr = [];
         filteredMotorsArr.forEach((motor) =>
             initialMotorsArr.push(motor.description)
         );
         console.log("initial motors arr", initialMotorsArr);
 
-        // Build prioritized array of function groups to iterate over remaining hp groups
+        // Build prioritized array of function groups to iterate over hp groups
         const priorityArr = [
             "blower",
             "conveyor",
@@ -137,8 +157,7 @@ function ImxButton() {
             });
         }
 
-        // make sure bussbar is sorted in descending HP order
-
+        // TEST: print results
         const onBussDesc = [];
         onBussMotors.forEach((motor) => onBussDesc.push(motor.description));
         console.log("ON BUSS", onBussDesc);
