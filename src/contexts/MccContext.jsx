@@ -8,7 +8,7 @@ const MccContext = createContext();
 
 // Build initial assembly object based on kits in kitsData
 const initialAssembly = kitsData.reduce((prev, curr) => {
-    prev[curr.id] = 0;
+    prev[curr.id] = 1;
     return prev;
 }, {});
 
