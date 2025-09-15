@@ -194,7 +194,7 @@ function ImxButton() {
         console.log(numLsaGroups);
 
         // calculate average FLA per container by dividing off buss FLA by the number of containers
-        const LsaPerGroup = totalOffBussFLA / numLsaGroups;
+        const LsaPerGroup = Math.ceil(totalOffBussFLA / numLsaGroups);
         console.log(LsaPerGroup);
 
         // create arrays to represent each container
