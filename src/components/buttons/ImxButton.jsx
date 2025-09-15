@@ -181,14 +181,29 @@ function ImxButton() {
         console.log("OFF BUSS", offBussDesc);
 
         // count up total off buss FLA (reusable calculation)
+        let totalOffBussFLA = 0;
+
+        offBussMotors.forEach((motor) => {
+            totalOffBussFLA += motor.fla;
+            // console.log(motor.description, motor.fla, totalOffBussFLA);
+        });
+        console.log(totalOffBussFLA);
 
         // calculate number of containers by dividing FLA by 63 (max amps per group) and rounding up
+        const numLsaGroups = Math.ceil(totalOffBussFLA / 63);
+        console.log(numLsaGroups);
 
         // calculate average FLA per container by dividing off buss FLA by the number of containers
+        const LsaPerGroup = totalOffBussFLA / numLsaGroups;
+        console.log(LsaPerGroup);
 
         // create arrays to represent each container
 
         // sort offbuss list by function
+        // const motorsGroupedByType = Object.groupBy(
+        //     offBussMotors,
+        //     ({ type }) => type
+        // );
 
         // sort off buss function groups by size from largest to smallest
 
