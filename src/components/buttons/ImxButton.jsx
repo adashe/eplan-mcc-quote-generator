@@ -4,6 +4,15 @@ import Button from "./Button";
 function ImxButton() {
     const { kitsData, assembly } = useMcc();
 
+    // Helper function to generate an array of motors descriptions
+    function checkMotors(arrayofMotorObjects) {
+        let arr = [];
+        arrayofMotorObjects.forEach((motor) => {
+            arr.push(motor.description);
+        });
+        return arr;
+    }
+
     function buildOnBuss() {
         let bussbarCapacity = 21;
         let onBussMotors = [];
@@ -35,22 +44,16 @@ function ImxButton() {
             offBussMotors = [...offBussMotors, motor];
         });
 
-        // TEST: print vfds pulled from motorsArr
-        const offBussVfds = [];
-        offBussMotors.forEach((motor) => offBussVfds.push(motor.description));
-        console.log("removed vfds", offBussVfds);
+        // CHECK: print vfds pulled from motorsArr
+        console.log("removed vfds", checkMotors(offBussMotors));
 
         // Remove vfds from motorsArr
         const filteredMotorsArr = motorsArr.filter(
             (motor) => motor.type !== "vfd-1" && motor.type !== "vfd-2"
         );
 
-        // TEST: print initial motors
-        let initialMotorsArr = [];
-        filteredMotorsArr.forEach((motor) =>
-            initialMotorsArr.push(motor.description)
-        );
-        console.log("initial motors arr", initialMotorsArr);
+        // CHECK: print initial motors array
+        console.log("filtered motors", checkMotors(filteredMotorsArr));
 
         // Build prioritized array of function groups to iterate over hp groups
         const priorityArr = [
@@ -79,9 +82,7 @@ function ImxButton() {
         // console.log({ motorsGroupedByType });
 
         // Add whole groups to bussbar
-        console.log(
-            "------------------1st iteration WHOLE GROUPS------------------"
-        );
+        console.log("-------------1st iteration WHOLE GROUPS-------------");
         priorityArr.forEach((type) => {
             const typeGroup = motorsGroupedByType[type];
             // console.log(type, { typeGroup });
@@ -167,50 +168,56 @@ function ImxButton() {
             });
         }
 
-        // TEST: print results
-        const onBussDesc = [];
-        onBussMotors.forEach((motor) => onBussDesc.push(motor.description));
-        console.log("ON BUSS", onBussDesc);
+        // CHECK: print on buss motor list
+        console.log("ON BUSS", checkMotors(onBussMotors));
 
         buildOffBuss(offBussMotors);
     }
 
-    function buildOffBuss(offBussMotors) {
-        const offBussDesc = [];
-        offBussMotors.forEach((motor) => offBussDesc.push(motor.description));
-        console.log("OFF BUSS", offBussDesc);
-
-        // count up total off buss FLA (reusable calculation)
-        let totalOffBussFLA = 0;
-
-        offBussMotors.forEach((motor) => {
-            totalOffBussFLA += motor.fla;
-            // console.log(motor.description, motor.fla, totalOffBussFLA);
+    // Helper function to calculate the FLA of an array of motors
+    function calcGroupFLA(arrayOfMotorObjects) {
+        let fla = 0;
+        arrayOfMotorObjects.forEach((motor) => {
+            fla += motor?.fla || 0;
         });
-        console.log(totalOffBussFLA);
+        return fla;
+    }
+
+    function buildOffBuss(offBussMotors) {
+        // CHECK: print off buss motor list
+        console.log("OFF BUSS", checkMotors(offBussMotors));
+
+        // calculate total off buss FLA
+        const totalOffBussFLA = calcGroupFLA(offBussMotors);
+        console.log("off buss fla", totalOffBussFLA);
 
         // calculate number of containers by dividing FLA by 63 (max amps per group) and rounding up
         const numLsaGroups = Math.ceil(totalOffBussFLA / 63);
-        console.log(numLsaGroups);
-
-        // calculate average FLA per container by dividing off buss FLA by the number of containers
-        const LsaPerGroup = Math.ceil(totalOffBussFLA / numLsaGroups);
-        console.log(LsaPerGroup);
+        console.log("num lsa groups", numLsaGroups);
 
         // create arrays to represent each container
+        let lsaGroups = {};
 
-        // sort offbuss list by function
-        // const motorsGroupedByType = Object.groupBy(
-        //     offBussMotors,
-        //     ({ type }) => type
-        // );
-
-        // sort off buss function groups by size from largest to smallest
+        for (let i = 0; i < numLsaGroups; i++) {
+            lsaGroups[i] = [];
+        }
 
         // add whole function groups to containers from largest to smallest into containers
         // up to the "ideal" FLA limit
 
-        // add partial function groups to remaining containers up to 63 FLA
+        for (const key in lsaGroups) {
+            while (
+                lsaGroups[key].length < 9 &&
+                63 - calcGroupFLA(lsaGroups[key]) >= offBussMotors[0].fla
+            ) {
+                lsaGroups[key] = [...lsaGroups[key], offBussMotors.shift()];
+            }
+        }
+
+        // CHECK: print lsa containers
+        for (const group in lsaGroups) {
+            console.log(group, lsaGroups[group]);
+        }
     }
 
     buildOnBuss();
