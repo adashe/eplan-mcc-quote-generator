@@ -7,7 +7,7 @@ import LinkButton from "../components/buttons/LinkButton";
 function GeneratorMenu() {
     return (
         <PageNarrow>
-            <LinkButton route={"/assembly"}>MCC 208V</LinkButton>
+            <LinkButton route={"/assembly"}>MCC 480V</LinkButton>
         </PageNarrow>
     );
 }
