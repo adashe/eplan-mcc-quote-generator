@@ -5,7 +5,7 @@ import PageNarrow from "../components/PageNarrow";
 import TabNavigation from "../components/TabNavigation";
 
 import LinkButton from "../components/buttons/LinkButton";
-import ImxButton from "../components/buttons/ImxButton";
+import EECButton from "../components/buttons/EECButton";
 
 function ProjectInfo() {
     const { projectInfo, handleChangeProjectInfo } = useMcc();
@@ -14,7 +14,7 @@ function ProjectInfo() {
         <PageNarrow>
             <TabNavigation>
                 <LinkButton route={"/kitSummary"}>&larr; Summary</LinkButton>
-                <ImxButton />
+                <EECButton />
             </TabNavigation>
             <h2>PROJECT DETAILS</h2>
             <form>
@@ -30,21 +30,6 @@ function ProjectInfo() {
                     </label>
                     <div className={styles.exampleText}>
                         ex. "WestRiver208V"
-                    </div>
-                </div>
-
-                <div className={styles.formDiv}>
-                    <label>
-                        Library Name:
-                        <input
-                            type="text"
-                            name="libraryName"
-                            value={projectInfo.libraryName || ""}
-                            onChange={handleChangeProjectInfo}
-                        />
-                    </label>
-                    <div className={styles.exampleText}>
-                        ex. "ConstructionKit_208VMCC"
                     </div>
                 </div>
             </form>
