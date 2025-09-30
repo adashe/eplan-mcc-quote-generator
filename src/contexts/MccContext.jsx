@@ -1,6 +1,6 @@
 import { createContext, useState, useContext } from "react";
 
-import kitsData from "../data/v208mccKits.json";
+import kitsData from "../data/v460mccKits.json";
 import optionsData from "../data/mccOptionsKits.json";
 import partsData from "../data/mccParts";
 
