@@ -29,7 +29,7 @@ function Totals() {
                 MCC-208V-{totalFLA}-{motorCount}
             </h3>
             <ul className={styles.totalsUl}>
-                <li className={styles.totalsLi}>VOLTAGE: 260V</li>
+                <li className={styles.totalsLi}>VOLTAGE: 460V</li>
                 <li className={styles.totalsLi}>TOTAL FLA: {totalFLA}A</li>
                 <li className={styles.totalsLi}>MOTOR COUNT: {motorCount}</li>
                 <li className={styles.totalsLi}>MCC TYPE: STANDARD</li>
