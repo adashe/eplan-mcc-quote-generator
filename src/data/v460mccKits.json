@@ -4,385 +4,440 @@
         "description": "1.5HP Wrap VFD",
         "fla": 2.3,
         "type": "vfd-1",
-        "hp": 1.5
+        "hp": 1.5,
+        "shoeMM": 45
     },
     {
         "id": "vfd1hpWrapBnd",
         "description": "1.5HP Wrap VFD BND",
         "fla": 2.3,
         "type": "vfd-1",
-        "hp": 1.5
+        "hp": 1.5,
+        "shoeMM": 45
     },
     {
         "id": "vfd1hpTopBrush",
         "description": "1.5HP Top Brush VFD",
         "fla": 2.3,
         "type": "vfd-1",
-        "hp": 1.5
+        "hp": 1.5,
+        "shoeMM": 45
     },
     {
         "id": "vfd1hpTopBrushRev",
         "description": "1.5HP Top Brush VFD REV",
         "fla": 2.3,
         "type": "vfd-1",
-        "hp": 1.5
+        "hp": 1.5,
+        "shoeMM": 45
     },
     {
         "id": "vfd1hpTopBrushBnd",
         "description": "1.5HP Top Brush VFD BND",
         "fla": 2.3,
         "type": "vfd-1",
-        "hp": 1.5
+        "hp": 1.5,
+        "shoeMM": 45
     },
     {
         "id": "vfd1hpOmni",
         "description": "1.5HP Omni VFD",
         "fla": 2.3,
         "type": "vfd-1",
-        "hp": 1.5
+        "hp": 1.5,
+        "shoeMM": 45
     },
     {
         "id": "vfd1hpMitter",
         "description": "1.5HP Mitter VFD",
         "fla": 2.3,
         "type": "vfd-1",
-        "hp": 1.5
+        "hp": 1.5,
+        "shoeMM": 45
     },
     {
         "id": "1hpMitter",
         "description": "1.5HP Mitter",
         "fla": 2.3,
         "type": "mitter",
-        "hp": 1.5
+        "hp": 1.5,
+        "shoeMM": 45
     },
     {
         "id": "vfd3hpOmni1",
         "description": "3HP Omni 1 VFD",
         "fla": 2.3,
         "type": "vfd-2",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "vfd3hpRocker1",
         "description": "3HP Rocker 1 VFD",
         "fla": 2.3,
         "type": "vfd-2",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "vfd3hpTireBrush1",
         "description": "3HP Tire Brush 1 VFD",
         "fla": 2.3,
         "type": "vfd-2",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "vfd3hpTireShine1",
         "description": "3HP Tire Shine 1 VFD",
         "fla": 2.3,
         "type": "vfd-2",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "vfd3hpSideBrush1",
         "description": "3HP Side Brush 1 VFD",
         "fla": 2.3,
         "type": "vfd-2",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "vfd3hpGrillBrush1",
         "description": "3HP Grill Brush 1 VFD",
         "fla": 2.3,
         "type": "vfd-2",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "vfd3hpWheelBlaster1",
         "description": "3HP Wheel Blaster 1 VFD",
         "fla": 2.3,
         "type": "vfd-2",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "3hpBoosterPump",
         "description": "3HP Booster Pump",
         "fla": 4.1,
         "type": "pump",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "3hpPUOmni",
         "description": "3HP P/U Omni",
         "fla": 4.1,
         "type": "omni",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "3hpPUTireShine",
         "description": "3HP P/U Tire Shine",
         "fla": 4.1,
         "type": "tireShine",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "3hpPUTopBrush",
         "description": "3HP P/U Top Brush",
         "fla": 4.1,
         "type": "topBrush",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "vfd3hpConveyor",
         "description": "3HP Conveyor VFD",
         "fla": 4.1,
         "type": "vfd-1",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "5hpBooster",
         "description": "5HP Booster",
         "fla": 6.5,
         "type": "none",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "5hpPrepGun",
         "description": "5HP Prep Gun",
         "fla": 6.5,
         "type": "prepGun",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "5hpPU2FLOmni",
         "description": "5HP P/U 2FL Omni",
         "fla": 6.5,
         "type": "omni",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "5hpPUGrillBrush",
         "description": "5HP P/U Grill Brush",
         "fla": 6.5,
         "type": "otherBrush",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "5hpPURockers",
         "description": "5HP P/U Rockers",
         "fla": 6.5,
         "type": "rocker",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "5hpPUSideBrush",
         "description": "5HP P/U Side Brush",
         "fla": 6.5,
         "type": "otherBrush",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "5hpPUTopBrush",
         "description": "5HP P/U Top Brush",
         "fla": 6.5,
         "type": "topBrush",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "5hpPUTireBrush",
         "description": "5HP P/U Tire Brush",
         "fla": 6.5,
         "type": "otherBrush",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "5hpPUTireShine",
         "description": "5HP P/U Tire Shine",
         "fla": 6.5,
         "type": "tireShine",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "5hpPUConveyor",
         "description": "5HP P/U Conveyor",
         "fla": 6.5,
         "type": "conveyor",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "5hpPUTwinConveyor",
         "description": "5HP P/U Twin Conveyor",
         "fla": 6.5,
         "type": "conveyor",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "breaker1hpRO",
         "description": "1.5HP R/O Breaker",
         "fla": 2.3,
         "type": "breaker",
-        "hp": 1.5
+        "hp": 1.5,
+        "shoeMM": 45
     },
     {
         "id": "breaker2hpOzone",
         "description": "2HP Ozone Breaker",
         "fla": 6.6,
         "type": "breaker",
-        "hp": 2
+        "hp": 2,
+        "shoeMM": 45
     },
     {
         "id": "breaker3hpRO",
         "description": "3HP R/O Breaker",
         "fla": 6.6,
         "type": "breaker",
-        "hp": 3
+        "hp": 3,
+        "shoeMM": 45
     },
     {
         "id": "breaker5hpHydraflex",
         "description": "5HP Hydraflex Breaker",
         "fla": 6.6,
         "type": "breaker",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "breaker5hpAirComp",
         "description": "5HP Air Comp Breaker",
         "fla": 6.6,
         "type": "breaker",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "breaker5hpBoosterPump",
         "description": "5HP Booster Pump Breaker",
         "fla": 6.6,
         "type": "breaker",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "breaker5hpRO",
         "description": "5HP R/O Breaker",
         "fla": 6.6,
         "type": "breaker",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "breaker5hpReclaim",
         "description": "5HP Reclaim Breaker",
         "fla": 6.6,
         "type": "breaker",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "breaker5hpRejectPump",
         "description": "5HP Reject Pump Breaker",
         "fla": 6.6,
         "type": "breaker",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "breaker5hpRepressPump",
         "description": "5HP Repress Pump Breaker",
         "fla": 6.6,
         "type": "breaker",
-        "hp": 5
+        "hp": 5,
+        "shoeMM": 45
     },
     {
         "id": "breaker6hpHydraflex",
         "description": "6HP Hydraflex Breaker",
         "fla": 12.0,
         "type": "breaker",
-        "hp": 6
+        "hp": 6,
+        "shoeMM": 45
     },
     {
         "id": "breaker7hpAirComp",
         "description": "7HP Air Comp Breaker",
         "fla": 10.0,
         "type": "breaker",
-        "hp": 7
+        "hp": 7,
+        "shoeMM": 45
     },
     {
         "id": "breaker10hpAirComp",
         "description": "10HP Air Comp Breaker",
         "fla": 16.0,
         "type": "breaker",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "breaker25hpVacuum",
         "description": "25HP Vacuum Breaker",
         "fla": 28.0,
         "type": "breaker",
-        "hp": 25
+        "hp": 25,
+        "shoeMM": 45
     },
     {
         "id": "breaker30hpVacuum",
         "description": "30HP Vacuum Breaker",
         "fla": 34.1,
         "type": "breaker",
-        "hp": 30
+        "hp": 30,
+        "shoeMM": 45
     },
     {
         "id": "breaker40hpVacuum",
         "description": "40HP Vacuum Breaker",
         "fla": 46.0,
         "type": "breaker",
-        "hp": 40
+        "hp": 40,
+        "shoeMM": 45
     },
     {
         "id": "breaker50hpVacuum",
         "description": "50HP Vacuum Breaker",
         "fla": 56.0,
         "type": "breaker",
-        "hp": 50
+        "hp": 50,
+        "shoeMM": 45
     },
     {
         "id": "7hp2FLOther",
         "description": "7.5HP 2FL **Other**",
         "fla": 9.2,
         "type": "none",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hpHaloPump",
         "description": "7.5HP Halo Pump",
         "fla": 9.5,
         "type": "pump",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hpPrepGun",
         "description": "7.5HP Prep Gun",
         "fla": 9.5,
         "type": "prepGun",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hp2FLWraps",
         "description": "7.5HP 2FL Wraps",
         "fla": 9.2,
         "type": "wrap",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hp2FLTireRocker",
         "description": "7.5HP 2FL Tire/Rocker",
         "fla": 9.2,
         "type": "rocker",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hp2FL63inSides",
         "description": "7.5HP 2FL 63\" Sides",
         "fla": 9.2,
         "type": "none",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hp2FLGrillBrush",
         "description": "7.5HP 2FL Grill Brush",
         "fla": 9.2,
         "type": "otherBrush",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hp2FLOmni",
@@ -390,293 +445,335 @@
         "price": 289.19,
         "cont": "38A",
         "type": "omni",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hp2FLTopBrushRocker",
         "description": "7.5HP 2FL Top Brush/Rocker",
         "fla": 9.2,
         "type": "rocker",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hp3FLOmni",
         "description": "7.5HP 3FL Omni",
         "fla": 9.2,
         "type": "omni",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hpConveyor",
         "description": "7.5HP Conveyor",
         "fla": 9.2,
         "type": "conveyor",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hp2FLConveyorTireShine",
         "description": "7.5HP 2FL Conveyor/Tire Shine",
         "fla": 9.2,
         "type": "conveyor",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hpTwinConveyor",
         "description": "7.5HP 2FL Twin Conveyor",
         "fla": 9.2,
         "type": "conveyor",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "7hp2FLTwinConveyorTireShine",
         "description": "7.5HP 2FL Twin Converyor/Tire Shine",
         "fla": 9.2,
         "type": "conveyor",
-        "hp": 7.5
+        "hp": 7.5,
+        "shoeMM": 45
     },
     {
         "id": "10hpOther",
         "description": "10HP **OTHER**",
         "fla": 12.4,
         "type": "none",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "10hpPUOther",
         "description": "10HP P/U **OTHER**",
         "fla": 12.4,
         "type": "none",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "10hp3FLWrapsTire",
         "description": "10HP 3FL Wraps/Tire",
         "fla": 12.4,
         "type": "wrap",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "10hp3FLTopBrushRocker",
         "description": "10HP 3FL Top Brush/Rocker",
         "fla": 12.4,
         "type": "rocker",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "10hp3FLTopSideOmniRocker",
         "description": "10HP 3FL Top/Side Omni, Rocker",
         "fla": 12.4,
         "type": "rocker",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "10hpBlower",
         "description": "10HP Blower",
         "fla": 12.4,
         "type": "blower",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "10hpConveyor",
         "description": "10HP Conveyor",
         "fla": 12.4,
         "type": "conveyor",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "10hp2FLConveyorTireShine",
         "description": "10HP 2FL Conveyor/Tire Shine",
         "fla": 12.4,
         "type": "conveyor",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "10hpTwinConveyor",
         "description": "10HP Twin Conveyor",
         "fla": 12.4,
         "type": "conveyor",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "10hp2FLTwinConveyorTireShine",
         "description": "10HP 2FL Twin Conveyor/Tire Shine",
         "fla": 12.4,
         "type": "conveyor",
-        "hp": 10
+        "hp": 10,
+        "shoeMM": 45
     },
     {
         "id": "15hpPUOther",
         "description": "15HP P/U **OTHER**",
         "fla": 18.3,
         "type": "none",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "15hpOther",
         "description": "15HP **OTHER**",
         "fla": 18.3,
         "type": "none",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "15hpBlower",
         "description": "15HP Blower",
         "fla": 16.5,
         "type": "blower",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "vfd15hpBlower",
         "description": "15HP Blower VFD",
         "fla": 16.5,
         "type": "vfd-1",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "15hpMammothBlower",
         "description": "15HP Mammoth Blower",
         "fla": 21.0,
         "type": "blower",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "vfd15hpMammothBlower",
         "description": "15HP Mammoth Blower VFD",
         "fla": 21.0,
         "type": "vfd-1",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "15hpVacuum",
         "description": "15HP Vacuum",
         "fla": 18.3,
         "type": "none",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "15hpOmniTop",
         "description": "15HP Omni Top",
         "fla": 18.3,
         "type": "omni",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "15hpOmniSides",
         "description": "15HP Omni Sides",
         "fla": 18.3,
         "type": "omni",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "15hpOmniPend",
         "description": "15HP Omni Pend",
         "fla": 18.3,
         "type": "omni",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "15hpOmniTurbo",
         "description": "15HP Omni Turbo",
         "fla": 18.3,
         "type": "omni",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "15hpOmniWheelBlaster",
         "description": "15HP Omni Wheel Blaster",
         "fla": 18.3,
         "type": "omni",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "15hpOmniMirrorRinse",
         "description": "15HP Omni Mirror Rinse",
         "fla": 18.3,
         "type": "omni",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "vfd15hpOmni",
         "description": "15HP Omni VFD",
         "fla": 18.3,
         "type": "vfd-1",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "vfd15hpSTIConveyor",
         "description": "15HP STI Conveyor VFD",
         "fla": 18.3,
         "type": "vfd-1",
-        "hp": 15
+        "hp": 15,
+        "shoeMM": 45
     },
     {
         "id": "vfd20hpSTIConveyor",
         "description": "20HP STI Conveyor VFD",
         "fla": 23.5,
         "type": "vfd-1",
-        "hp": 20
+        "hp": 20,
+        "shoeMM": 45
     },
     {
         "id": "20hpOmniPump",
         "description": "20HP Omni Pump",
         "fla": 23.5,
         "type": "none",
-        "hp": 20
+        "hp": 20,
+        "shoeMM": 45
     },
     {
         "id": "20hpPUOther",
         "description": "20HP P/U **Other**",
         "fla": 23.5,
         "type": "none",
-        "hp": 20
+        "hp": 20,
+        "shoeMM": 45
     },
     {
         "id": "20hpVacuum",
         "description": "20HP Vacuum",
         "fla": 23.5,
         "type": "vacuum",
-        "hp": 20
+        "hp": 20,
+        "shoeMM": 45
     },
     {
         "id": "25hpVacuum",
         "description": "25HP Vacuum",
         "fla": 28.0,
         "type": "vacuum",
-        "hp": 25
+        "hp": 25,
+        "shoeMM": 45
     },
     {
         "id": "30hpVacuum",
         "description": "30HP Vacuum",
         "fla": 34.1,
         "type": "vacuum",
-        "hp": 30
+        "hp": 30,
+        "shoeMM": 45
     },
     {
         "id": "40hpVacuum",
         "description": "40HP Vacuum",
         "fla": 46.0,
         "type": "vacuum",
-        "hp": 40
+        "hp": 40,
+        "shoeMM": 45
     },
     {
         "id": "50hpVacuum",
         "description": "50HP Vacuum",
         "fla": 56.0,
         "type": "vacuum",
-        "hp": 50
+        "hp": 50,
+        "shoeMM": 45
     },
     {
         "id": "vfd25hpVacuum",
         "description": "25HP Vacuum VFD",
         "fla": 46.0,
         "type": "vfd-1",
-        "hp": 25
+        "hp": 25,
+        "shoeMM": 45
     },
     {
         "id": "40hpVacuumSS",
         "description": "40HP Vacuum SS",
         "fla": 46.0,
         "type": "vacuum-ss",
-        "hp": 40
+        "hp": 40,
+        "shoeMM": 45
     }
 ]
