@@ -21,7 +21,7 @@ function KitSummaryRow({ kit }) {
                 <div className={styles.kitCol}>Qty: {quantity}</div>
                 <div className={styles.kitCol}>FLA: {kit.fla}A</div>
                 <div className={styles.kitCol}>
-                    Total FLA: {(kit.fla * quantity).toFixed(2)}A
+                    Total FLA: {(kit.fla * quantity).toFixed(1)}A
                 </div>
 
                 {isOpen ? (

@@ -497,8 +497,7 @@
     {
         "id": "7hp2FLOmni",
         "description": "7.5HP 2FL Omni",
-        "price": 289.19,
-        "cont": "38A",
+        "fla": 9.2,
         "type": "omni",
         "colorCode": null,
         "hp": 7.5,
