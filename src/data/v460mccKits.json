@@ -282,7 +282,7 @@
         "id": "breaker1hpRO",
         "description": "1.5HP R/O Breaker",
         "fla": 2.3,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 1.5,
         "shoeMM": 45
@@ -291,7 +291,7 @@
         "id": "breaker2hpOzone",
         "description": "2HP Ozone Breaker",
         "fla": 6.6,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 2,
         "shoeMM": 45
@@ -300,7 +300,7 @@
         "id": "breaker3hpRO",
         "description": "3HP R/O Breaker",
         "fla": 6.6,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 3,
         "shoeMM": 45
@@ -309,7 +309,7 @@
         "id": "breaker5hpHydraflex",
         "description": "5HP Hydraflex Breaker",
         "fla": 6.6,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 5,
         "shoeMM": 45
@@ -318,7 +318,7 @@
         "id": "breaker5hpAirComp",
         "description": "5HP Air Comp Breaker",
         "fla": 6.6,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 5,
         "shoeMM": 45
@@ -336,7 +336,7 @@
         "id": "breaker5hpRO",
         "description": "5HP R/O Breaker",
         "fla": 6.6,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 5,
         "shoeMM": 45
@@ -345,7 +345,7 @@
         "id": "breaker5hpReclaim",
         "description": "5HP Reclaim Breaker",
         "fla": 6.6,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 5,
         "shoeMM": 45
@@ -372,7 +372,7 @@
         "id": "breaker6hpHydraflex",
         "description": "6HP Hydraflex Breaker",
         "fla": 12.0,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 6,
         "shoeMM": 45
@@ -381,7 +381,7 @@
         "id": "breaker7hpAirComp",
         "description": "7HP Air Comp Breaker",
         "fla": 10.0,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 7,
         "shoeMM": 45
@@ -390,7 +390,7 @@
         "id": "breaker10hpAirComp",
         "description": "10HP Air Comp Breaker",
         "fla": 16.0,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 10,
         "shoeMM": 45
@@ -399,7 +399,7 @@
         "id": "breaker25hpVacuum",
         "description": "25HP Vacuum Breaker",
         "fla": 28.0,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 25,
         "shoeMM": 54
@@ -408,7 +408,7 @@
         "id": "breaker30hpVacuum",
         "description": "30HP Vacuum Breaker",
         "fla": 34.1,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 30,
         "shoeMM": 54
@@ -417,7 +417,7 @@
         "id": "breaker40hpVacuum",
         "description": "40HP Vacuum Breaker",
         "fla": 46.0,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 40,
         "shoeMM": 54
@@ -426,7 +426,7 @@
         "id": "breaker50hpVacuum",
         "description": "50HP Vacuum Breaker",
         "fla": 56.0,
-        "type": "breaker",
+        "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 50,
         "shoeMM": 54
@@ -551,7 +551,7 @@
     },
     {
         "id": "7hp2FLTwinConveyorTireShine",
-        "description": "7.5HP 2FL Twin Converyor/Tire Shine",
+        "description": "7.5HP 2FL Twin Conveyor/Tire Shine",
         "fla": 9.2,
         "type": "conveyor",
         "colorCode": null,
