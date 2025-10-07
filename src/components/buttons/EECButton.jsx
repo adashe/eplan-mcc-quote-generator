@@ -81,10 +81,14 @@ function EECButton() {
         // Build prioritized array of function groups to iterate over hp groups
         const priorityArr = [
             "blower",
+            "vacuum",
             "wrap",
             "topBrush",
             "otherSpare",
+            "d25",
+            "h25",
             "omni",
+            "booster",
             "otherBrush",
             "rocker",
             "sideEquip",

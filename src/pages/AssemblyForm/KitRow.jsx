@@ -37,11 +37,12 @@ export function KitRow({ kit }) {
                     </span>
                     <span
                         className={`${styles.kitRowDesc} 
-                        ${kit.type === "vfd-1" ? styles.vfd1Row : ""} 
-                        ${kit.type === "vfd-2" ? styles.vfd2Row : ""} 
-                        ${kit.type === "vacuum" ? styles.vacuumRow : ""} 
-                        ${kit.type === "breaker" ? styles.breakerRow : ""} 
-                        ${kit.type === "vacuum-ss" ? styles.ssRow : ""}`}
+                        ${kit.colorCode === "vfd-1" ? styles.vfd1Row : ""} 
+                        ${kit.colorCode === "vfd-2" ? styles.vfd2Row : ""} 
+                        ${kit.colorCode === "vacuum" ? styles.vacuumRow : ""} 
+                        ${kit.colorCode === "breaker" ? styles.breakerRow : ""} 
+                        ${kit.colorCode === "prepGun" ? styles.prepGunRow : ""} 
+                        ${kit.colorCode === "vacuum-ss" ? styles.ssRow : ""}`}
                     >
                         {kit.description}
                     </span>
