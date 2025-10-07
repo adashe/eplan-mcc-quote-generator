@@ -50,6 +50,12 @@ export function KitRow({ kit }) {
             </div>
 
             <div className={styles.column}>{kit.fla}A</div>
+            <div className={styles.column}>
+                <input
+                    className={styles.kitRowCheckbox}
+                    type="checkbox"
+                ></input>
+            </div>
         </div>
     );
 }

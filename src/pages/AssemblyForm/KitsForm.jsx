@@ -7,11 +7,16 @@ export function KitsForm({ children }) {
                 <div className={`${styles.column} ${styles.columnHeader}`}>
                     Quantity
                 </div>
-                <div className={`${styles.column} ${styles.columnHeader}`}>
+                <div
+                    className={`${styles.column} ${styles.columnWide} ${styles.columnHeader}`}
+                >
                     Starters
                 </div>
                 <div className={`${styles.column} ${styles.columnHeader}`}>
                     FLA
+                </div>
+                <div className={`${styles.column} ${styles.columnHeader}`}>
+                    Interlock
                 </div>
             </div>
             {children}

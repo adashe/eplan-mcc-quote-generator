@@ -54,6 +54,10 @@
     font-weight: 600;
     text-transform: uppercase;
     padding: 4px;
+    width: 80px;
+}
+.columnWide {
+    width: 260px;
 }
 .kitRowLabel {
     display: inline-block;
@@ -79,6 +83,11 @@ input.kitRowInput:focus {
 }
 span.kitRowDesc {
     margin: 0px 40px;
+}
+input.kitRowCheckbox {
+    margin: 0;
+    padding: 0;
+    width: auto;
 }
 .materialSymbolsOutlined {
     font-family: "Material Symbols Outlined";
