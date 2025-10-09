@@ -9,7 +9,6 @@ function handleSelect(e) {
 export function KitRow({ kit }) {
     const {
         assembly,
-        interlock,
         handleChangeAssembly,
         handleIncrementAssembly,
         handleChangeInterlock,
