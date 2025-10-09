@@ -7,8 +7,13 @@ function handleSelect(e) {
 }
 
 export function KitRow({ kit }) {
-    const { assembly, handleChangeAssembly, handleIncrementAssembly } =
-        useMcc();
+    const {
+        assembly,
+        interlock,
+        handleChangeAssembly,
+        handleIncrementAssembly,
+        handleChangeInterlock,
+    } = useMcc();
 
     return (
         <div className={styles.row}>
@@ -53,7 +58,9 @@ export function KitRow({ kit }) {
             <div className={styles.column}>
                 <input
                     className={styles.kitRowCheckbox}
-                    value={Number(assembly[kit.id]).toString()}
+                    name={kit.id}
+                    // value={interlock[kit.id]}
+                    onChange={handleChangeInterlock}
                     type="checkbox"
                 ></input>
             </div>

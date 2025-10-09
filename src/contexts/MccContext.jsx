@@ -35,6 +35,12 @@ function calcTotalFLA(assembly) {
     return sum;
 }
 
+// Build initial interlock object based on kits in kitsData
+const initialInterlock = kitsData.reduce((prev, curr) => {
+    prev[curr.id] = false;
+    return prev;
+}, {});
+
 function MccProvider({ children }) {
     const [assembly, setAssembly] = useState(initialAssembly);
     // options stores the selections in the options form that will make up the baseAssembly object
@@ -42,6 +48,7 @@ function MccProvider({ children }) {
     // baseAssembly is the assembly object built out of selected options
     const [baseAssembly, setBaseAssembly] = useState(initialBaseAssembly);
     const [projectInfo, setProjectInfo] = useState(initialProjectInfo);
+    const [interlock, setInterlock] = useState(initialInterlock);
 
     function handleReset() {
         setAssembly(initialAssembly);
@@ -114,6 +121,15 @@ function MccProvider({ children }) {
         }));
     }
 
+    function handleChangeInterlock(e) {
+        const { name } = e.target;
+
+        setInterlock((previous) => ({
+            ...previous,
+            [name]: !interlock[name],
+        }));
+    }
+
     return (
         <MccContext.Provider
             value={{
@@ -124,11 +140,13 @@ function MccProvider({ children }) {
                 options,
                 baseAssembly,
                 projectInfo,
+                interlock,
                 handleReset,
                 handleChangeAssembly,
                 handleIncrementAssembly,
                 handleChangeOptions,
                 handleChangeProjectInfo,
+                handleChangeInterlock,
                 calcTotalFLA,
             }}
         >
