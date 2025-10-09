@@ -71,12 +71,12 @@ function EECButton() {
         console.log("removed conveyors", checkMotors(conveyorsArr));
 
         // Remove conveyors from motorsArr
-        const noVfdOrConveyorMotorsArr = noVfdMotorsArr.filter(
+        const noVfdNoConveyorMotorsArr = noVfdMotorsArr.filter(
             (motor) => motor.type !== "conveyor"
         );
 
         // CHECK: print initial motors array
-        console.log("filtered motors", checkMotors(noVfdOrConveyorMotorsArr));
+        console.log("filtered motors", checkMotors(noVfdNoConveyorMotorsArr));
 
         // Build prioritized array of function groups to iterate over hp groups
         const priorityArr = [
@@ -102,7 +102,7 @@ function EECButton() {
         ];
 
         const motorsGroupedByType = Object.groupBy(
-            noVfdOrConveyorMotorsArr,
+            noVfdNoConveyorMotorsArr,
             ({ type }) => type
         );
         // console.log({ motorsGroupedByType });
@@ -208,11 +208,11 @@ function EECButton() {
         const totalOffBussFLA = calcGroupFLA(offBussMotors);
         console.log("off buss fla", totalOffBussFLA);
 
-        // calculate number of containers by dividing FLA by 63 (max amps per group) and rounding up
+        // calculate number of groups by dividing total FLA by 63 (max amps per group) and rounding up
         const numLsaGroups = Math.ceil(totalOffBussFLA / 63);
         console.log("num lsa groups", numLsaGroups);
 
-        // create arrays to represent each container
+        // create arrays to represent each group
         let lsaGroups = {};
 
         for (let i = 0; i < numLsaGroups; i++) {
@@ -221,15 +221,7 @@ function EECButton() {
 
         console.log(lsaGroups);
 
-        // group offbuss motors by type
-        // const motorsGroupedByType = Object.groupBy(
-        //     offBussMotors,
-        //     ({ type }) => type
-        // );
-        // console.log({ motorsGroupedByType });
-
-        // add motorss from largest to smallest into containers
-        // up to the FLA limit
+        // add motors from largest to smallest into containers up to the FLA limit
         for (const key in lsaGroups) {
             while (
                 lsaGroups[key].length < 9 &&
@@ -250,7 +242,21 @@ function EECButton() {
 
     function buildCSV() {
         const { conveyorsArr, onBussMotors, offBussMotors } = buildOnBuss();
+
+        // subdivide offbuss by size
+        const offBussMotors45 = offBussMotors.filter(
+            (motor) => motor.shoeMM == 45
+        );
+        const offBussMotors54 = offBussMotors.filter(
+            (motor) => motor.shoeMM == 54
+        );
+
+        console.log("45", checkMotors(offBussMotors45));
+        console.log("54", checkMotors(offBussMotors54));
+
         const lsaGroups = buildOffBuss(offBussMotors);
+        const lsaGroups45 = buildOffBuss(offBussMotors45);
+        const lsaGroups54 = buildOffBuss(offBussMotors54);
 
         const onBussArr = checkMotors(onBussMotors);
 
@@ -378,11 +384,36 @@ function EECButton() {
             });
 
             // Add offbuss items
+            // Delete lsaGroups once size-based functionality has been implemented
             for (const key in lsaGroups) {
                 const LsaArr = checkMotors(lsaGroups[key]);
                 LsaArr.forEach((motor) => {
                     let row = {
                         name: `c_LSA_SubList_${parseInt(key) + 1}`,
+                        value: motor,
+                        type: "String",
+                    };
+                    rows = [...rows, row];
+                });
+            }
+
+            for (const key in lsaGroups45) {
+                const LsaArr = checkMotors(lsaGroups[key]);
+                LsaArr.forEach((motor) => {
+                    let row = {
+                        name: `c_LSA_SubList_45_${parseInt(key) + 1}`,
+                        value: motor,
+                        type: "String",
+                    };
+                    rows = [...rows, row];
+                });
+            }
+
+            for (const key in lsaGroups54) {
+                const LsaArr = checkMotors(lsaGroups[key]);
+                LsaArr.forEach((motor) => {
+                    let row = {
+                        name: `c_LSA_SubList_54_${parseInt(key) + 1}`,
                         value: motor,
                         type: "String",
                     };
