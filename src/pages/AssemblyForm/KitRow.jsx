@@ -12,7 +12,7 @@ export function KitRow({ kit }) {
 
     return (
         <div className={styles.row}>
-            <div className={styles.column}>
+            <div className={styles.columnXWide}>
                 <label className={styles.kitRowLabel}>
                     <span
                         className={styles.materialSymbolsOutlined}
@@ -53,6 +53,7 @@ export function KitRow({ kit }) {
             <div className={styles.column}>
                 <input
                     className={styles.kitRowCheckbox}
+                    value={Number(assembly[kit.id]).toString()}
                     type="checkbox"
                 ></input>
             </div>
