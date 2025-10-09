@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useMcc } from "../../contexts/MccContext.jsx";
 import styles from "./AssemblyForm.module.css";
 
-import PageNarrow from "../../components/PageNarrow.jsx";
+import PageMedium from "../../components/PageMedium.jsx";
 import TabNavigation from "../../components/TabNavigation.jsx";
 
 import { KitsForm } from "./KitsForm.jsx";
@@ -28,7 +28,7 @@ function AssemblyForm() {
     );
 
     return (
-        <PageNarrow>
+        <PageMedium>
             <TabNavigation>
                 <LinkButton route={"/"}>&larr; Generators</LinkButton>
                 <ResetButton />
@@ -52,7 +52,7 @@ function AssemblyForm() {
                     <KitRow kit={kit} key={kit.id} />
                 ))}
             </KitsForm>
-        </PageNarrow>
+        </PageMedium>
     );
 }
 
