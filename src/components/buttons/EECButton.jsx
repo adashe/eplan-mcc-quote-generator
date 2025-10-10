@@ -212,7 +212,7 @@ function EECButton() {
         const numLsaGroups = Math.ceil(totalOffBussFLA / 63);
         console.log("num lsa groups", numLsaGroups);
 
-        // create arrays to represent each group
+        // create an object of arrays that represent each group
         let lsaGroups = {};
 
         for (let i = 0; i < numLsaGroups; i++) {
@@ -239,6 +239,27 @@ function EECButton() {
 
         return lsaGroups;
     }
+
+    // Organize off buss link bar groups into pages containing <= 14 circuits
+    // function organizeOffBussPages(offBussMotors) {
+    //     // offBussMotors is an object with arrays of motor objects
+
+    //     const pageMax = 14;
+
+    //     // should this be an array of arrays?
+    //     let offBussPages = {};
+
+    //     for (const motorsArr in offBussMotors) {
+    //         while (offBussMotors.keys().length > 0) {
+    //             let page = { motorsArr };
+    //             delete offBussMotors[motorsArr];
+
+    //             for (motorsArr in offBussMotors) {
+    //                 // add second group up to limit of 14 circuits
+    //             }
+    //         }
+    //     }
+    // }
 
     function buildCSV() {
         const { conveyorsArr, onBussMotors, offBussMotors } = buildOnBuss();
