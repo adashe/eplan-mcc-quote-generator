@@ -213,6 +213,7 @@ function EECButton() {
         console.log("num lsa groups", numLsaGroups);
 
         // create an object of arrays that represent each group
+        // TO FIX: should this be an array?
         let lsaGroups = {};
 
         for (let i = 0; i < numLsaGroups; i++) {
