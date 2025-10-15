@@ -55,7 +55,7 @@ function RelayScheduleForm() {
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <LinkButton route={"/totals"}>Totals</LinkButton>
                 <Button isActive={false}>Relay Cards</Button>
-                <LinkButton route={"/projectInfo"}>Prepare IMX</LinkButton>
+                <LinkButton route={"/projectInfo"}>Prepare CSV</LinkButton>
             </TabNavigation>
             <h2>RELAY SCHEDULE</h2>
             <form className={styles.relayForm}>

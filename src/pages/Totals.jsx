@@ -22,7 +22,7 @@ function Totals() {
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <Button isActive={false}>Totals</Button>
                 <LinkButton route={"/relaySchedule"}>Relay Schedule</LinkButton>
-                <LinkButton route={"/projectInfo"}>Prepare IMX</LinkButton>
+                <LinkButton route={"/projectInfo"}>Prepare CSV</LinkButton>
             </TabNavigation>
             <h2>TOTALS</h2>
             <h3 className={styles.partNum}>
