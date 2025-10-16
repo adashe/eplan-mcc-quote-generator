@@ -3,7 +3,7 @@ import { useMcc } from "../../contexts/MccContext";
 import Button from "./Button";
 
 function EECButton() {
-    const { kitsData, assembly } = useMcc();
+    const { kitsData, assembly, projectInfo } = useMcc();
 
     // Helper function to generate an array of motors descriptions
     function checkMotors(arrayofMotorObjects) {
@@ -21,6 +21,36 @@ function EECButton() {
             fla += motor?.fla || 0;
         });
         return fla;
+    }
+
+    // Calculate total panel FLA
+    function calcTotalPanelFLA() {
+        // Build an array of all included motor objects from assembly
+        let motorsArr = [];
+
+        for (const k in assembly) {
+            const kit = kitsData.filter((kit) => kit.id === k)[0];
+
+            // Include duplicate motors in the array
+            for (let i = 0; i < assembly[kit.id]; i++) {
+                motorsArr.push(kit);
+            }
+        }
+
+        return calcGroupFLA(motorsArr);
+    }
+
+    // Calculate largest motor hp
+    function calcLargestMotor() {
+        // Build an array of all included motor HP values from assembly
+        let hpArr = [];
+
+        for (const k in assembly) {
+            const kit = kitsData.filter((kit) => kit.id === k)[0];
+            hpArr.push(kit.hp);
+        }
+
+        return Math.max(...hpArr);
     }
 
     function buildOnBuss() {
@@ -336,12 +366,12 @@ function EECButton() {
                 },
                 {
                     name: "ProductionOrderNumber",
-                    value: "BRENDAN",
+                    value: projectInfo.productionOrderNumber,
                     type: "String",
                 },
                 {
                     name: "SalesOrderNumber",
-                    value: "ERIC",
+                    value: projectInfo.salesOrderNumber,
                     type: "String",
                 },
                 {
@@ -351,7 +381,7 @@ function EECButton() {
                 },
                 {
                     name: "NP_DrawingNumber",
-                    value: "FRED",
+                    value: projectInfo.drawingNumber,
                     type: "String",
                 },
                 {
@@ -371,7 +401,7 @@ function EECButton() {
                 },
                 {
                     name: "NP_LargestMotor",
-                    value: "JASON",
+                    value: calcLargestMotor(),
                     type: "String",
                 },
                 {
@@ -391,7 +421,7 @@ function EECButton() {
                 },
                 {
                     name: "NP_TotalPanelFLC",
-                    value: "ROMEL",
+                    value: calcTotalPanelFLA(),
                     type: "String",
                 },
                 {

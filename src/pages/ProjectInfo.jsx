@@ -32,6 +32,39 @@ function ProjectInfo() {
                         ex. "WestRiver208V"
                     </div>
                 </div>
+                <div className={styles.formDiv}>
+                    <label>
+                        Production Order Number:
+                        <input
+                            type="text"
+                            name="productionOrderNumber"
+                            value={projectInfo.productionOrderNumber || ""}
+                            onChange={handleChangeProjectInfo}
+                        />
+                    </label>
+                </div>
+                <div className={styles.formDiv}>
+                    <label>
+                        Sales Order Number:
+                        <input
+                            type="text"
+                            name="salesOrderNumber"
+                            value={projectInfo.salesOrderNumber || ""}
+                            onChange={handleChangeProjectInfo}
+                        />
+                    </label>
+                </div>
+                <div className={styles.formDiv}>
+                    <label>
+                        Drawing Number:
+                        <input
+                            type="text"
+                            name="drawingNumber"
+                            value={projectInfo.drawingNumber || ""}
+                            onChange={handleChangeProjectInfo}
+                        />
+                    </label>
+                </div>
             </form>
         </PageNarrow>
     );
