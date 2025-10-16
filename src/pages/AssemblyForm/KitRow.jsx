@@ -9,6 +9,7 @@ function handleSelect(e) {
 export function KitRow({ kit }) {
     const {
         assembly,
+        interlock,
         handleChangeAssembly,
         handleIncrementAssembly,
         handleChangeInterlock,
@@ -58,10 +59,11 @@ export function KitRow({ kit }) {
                 <input
                     className={styles.kitRowCheckbox}
                     name={kit.id}
-                    // value={interlock[kit.id]}
+                    value={interlock[kit.id]}
+                    checked={interlock[kit.id]}
                     onChange={handleChangeInterlock}
                     type="checkbox"
-                ></input>
+                />
             </div>
         </div>
     );

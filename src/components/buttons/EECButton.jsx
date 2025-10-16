@@ -3,7 +3,7 @@ import { useMcc } from "../../contexts/MccContext";
 import Button from "./Button";
 
 function EECButton() {
-    const { kitsData, assembly, projectInfo } = useMcc();
+    const { kitsData, assembly, projectInfo, interlock } = useMcc();
 
     // Helper function to generate an array of motors descriptions
     function checkMotors(arrayofMotorObjects) {
@@ -51,6 +51,20 @@ function EECButton() {
         }
 
         return Math.max(...hpArr);
+    }
+
+    // Generate array of interlocked motor types
+    function buildInterlockArr() {
+        let interlockArr = [];
+
+        for (const k in interlock) {
+            if (interlock[k] === true) {
+                const kit = kitsData.filter((kit) => kit.id === k)[0];
+                interlockArr.push(kit.description);
+            }
+        }
+
+        return interlockArr;
     }
 
     function buildOnBuss() {
@@ -350,6 +364,9 @@ function EECButton() {
         );
         console.log("FINAL OFF BUSS 54mm", filteredLsaGroups54);
 
+        const interlockArr = buildInterlockArr();
+
+        // FINALLY Generate the CSV rows
         if (window.confirm("Are you sure you want to download this file?")) {
             let rows = [];
             // Add project info
@@ -503,6 +520,16 @@ function EECButton() {
             unplacedMotorsArr.forEach((motor) => {
                 let row = {
                     name: "c_Unplaced_Motor",
+                    value: motor,
+                    type: "String",
+                };
+                rows = [...rows, row];
+            });
+
+            // Add interlocked motor types
+            interlockArr.forEach((motor) => {
+                let row = {
+                    name: "c_Interlocked_Motor_Type",
                     value: motor,
                     type: "String",
                 };
