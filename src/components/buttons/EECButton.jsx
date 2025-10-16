@@ -28,9 +28,7 @@ function EECButton() {
         let onBussMotors = [];
         let offBussMotors = [];
 
-        // console.log(
-        //     "|||||||||||||||||||||||BEGIN BUSSBAR CALC||||||||||||||||||||||||||||"
-        // );
+        // console.log("|||||||||||||||||BEGIN BUSSBAR CALC||||||||||||||||||||");
 
         // Build an array of all included motor objects from assembly
         let motorsArr = [];
@@ -204,24 +202,10 @@ function EECButton() {
         // CHECK: print off buss motor list
         console.log("OFF BUSS", checkMotors(offBussMotors));
 
-        // calculate total off buss FLA
-        const totalOffBussFLA = calcGroupFLA(offBussMotors);
-        console.log("off buss fla", totalOffBussFLA);
+        // Initialize an array of arrays that represent each group
+        let lsaGroups = [[]];
 
-        // calculate number of groups by dividing total FLA by 63 (max amps per group) and rounding up
-        const numLsaGroups = Math.ceil(totalOffBussFLA / 63);
-        console.log("num lsa groups", numLsaGroups);
-
-        // create an object of arrays that represent each group
-        let lsaGroups = [];
-
-        for (let i = 0; i < numLsaGroups; i++) {
-            lsaGroups[i] = [];
-        }
-
-        // Add motors to groups up to the link bar and FLA limit
-
-        // Empty motor for double VFD spacing
+        // Empty motor object to use for double VFD spacing
         const emptyMotor = {
             id: "empty",
             description: "EMPTY",
@@ -232,13 +216,13 @@ function EECButton() {
             shoeMM: 45,
         };
 
-        // index for LSA groups
+        // Initialize index for LSA groups
         let lsaIndex = 0;
 
         // Iterate over motors and add to lsa groups
         offBussMotors.forEach((motor) => {
             // Check if the current lsa group has quantity or FLA capacity
-            // Increment group if not
+            // Add a new lsa group if not
             if (
                 lsaGroups[lsaIndex]?.length >= 9 ||
                 63 - calcGroupFLA(lsaGroups[lsaIndex]) < motor.fla
@@ -249,7 +233,7 @@ function EECButton() {
 
             // Add motor to lsa group
             if (
-                // if double motor and the lsa group has at least two spaces, add the motor and a blank to the LSA group
+                // If double motor and the lsa group has at least two spaces, add the motor and a blank to the LSA group
                 offBussMotors[0].type == "vfd-2" &&
                 lsaGroups[lsaIndex].length <= 7
             ) {
@@ -260,7 +244,7 @@ function EECButton() {
                     emptyMotor,
                 ];
             } else if (
-                // if double motor at the last index of the LSA array, only add the motor
+                // If double motor at the last index of the LSA array, only add the single motor
                 // (to avoid overflowing 9 motor limit)
                 offBussMotors[0].type == "vfd-2" &&
                 lsaGroups[lsaIndex].length >= 8
@@ -268,7 +252,7 @@ function EECButton() {
                 // console.log("double at end!");
                 lsaGroups[lsaIndex] = [...lsaGroups[lsaIndex], motor];
             } else {
-                // if single motor, add the motor to the LSA group
+                // If single motor, add the motor to the LSA group
                 lsaGroups[lsaIndex] = [...lsaGroups[lsaIndex], motor];
             }
         });
