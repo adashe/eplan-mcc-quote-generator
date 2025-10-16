@@ -432,12 +432,12 @@ function EECButton() {
                 },
                 {
                     name: "b_PMR",
-                    value: "true",
+                    value: projectInfo.phaseMonitorRelay,
                     type: "Boolean",
                 },
                 {
                     name: "b_VT",
-                    value: "true",
+                    value: projectInfo.voltageTester,
                     type: "Boolean",
                 },
                 {

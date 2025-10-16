@@ -80,6 +80,38 @@ function ProjectInfo() {
                         </select>
                     </label>
                 </div>
+
+                <div>
+                    <label>
+                        Phase Monitor Relay:
+                        <select
+                            name="phaseMonitorRelay"
+                            value={projectInfo.phaseMonitorRelay || "..."}
+                            onChange={handleChangeProjectInfo}
+                        >
+                            <option disabled="disabled" value="...">
+                                ...
+                            </option>
+                            <option value="true">Yes</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Voltage Tester:
+                        <select
+                            name="voltageTester"
+                            value={projectInfo.voltageTester || "..."}
+                            onChange={handleChangeProjectInfo}
+                        >
+                            <option disabled="disabled" value="...">
+                                ...
+                            </option>
+                            <option value="true">Yes</option>
+                        </select>
+                    </label>
+                </div>
             </form>
         </PageNarrow>
     );
