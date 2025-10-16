@@ -96,6 +96,10 @@ input.kitRowCheckbox {
     margin: 0;
     padding: 0;
     width: auto;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
 }
 .materialSymbolsOutlined {
     font-family: "Material Symbols Outlined";
