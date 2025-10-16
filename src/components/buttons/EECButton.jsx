@@ -3,7 +3,8 @@ import { useMcc } from "../../contexts/MccContext";
 import Button from "./Button";
 
 function EECButton() {
-    const { kitsData, assembly, projectInfo, interlock } = useMcc();
+    const { kitsData, assembly, projectInfo, interlock, calcTotalFLA } =
+        useMcc();
 
     // Helper function to generate an array of motors descriptions
     function checkMotors(arrayofMotorObjects) {
@@ -21,23 +22,6 @@ function EECButton() {
             fla += motor?.fla || 0;
         });
         return fla;
-    }
-
-    // Calculate total panel FLA
-    function calcTotalPanelFLA() {
-        // Build an array of all included motor objects from assembly
-        let motorsArr = [];
-
-        for (const k in assembly) {
-            const kit = kitsData.filter((kit) => kit.id === k)[0];
-
-            // Include duplicate motors in the array
-            for (let i = 0; i < assembly[kit.id]; i++) {
-                motorsArr.push(kit);
-            }
-        }
-
-        return calcGroupFLA(motorsArr);
     }
 
     // Calculate largest motor hp
@@ -428,7 +412,7 @@ function EECButton() {
                 },
                 {
                     name: "NP_SalesOrder",
-                    value: "ROBERTO",
+                    value: projectInfo.salesOrderNumber,
                     type: "String",
                 },
                 {
@@ -438,7 +422,7 @@ function EECButton() {
                 },
                 {
                     name: "NP_TotalPanelFLC",
-                    value: calcTotalPanelFLA(),
+                    value: calcTotalFLA(assembly).toFixed(2),
                     type: "String",
                 },
                 {
@@ -448,17 +432,17 @@ function EECButton() {
                 },
                 {
                     name: "b_PMR",
-                    value: "false",
+                    value: "true",
                     type: "Boolean",
                 },
                 {
                     name: "b_VT",
-                    value: "false",
+                    value: "true",
                     type: "Boolean",
                 },
                 {
                     name: "i_NmXFMR",
-                    value: 1,
+                    value: projectInfo.numXFMR,
                     type: "Integer",
                 },
                 {

@@ -65,6 +65,21 @@ function ProjectInfo() {
                         />
                     </label>
                 </div>
+                <div>
+                    <label>
+                        Number of Transformers:
+                        <select
+                            name="numXFMR"
+                            value={projectInfo.numXFMR || "..."}
+                            onChange={handleChangeProjectInfo}
+                        >
+                            <option disabled="disabled" value="...">
+                                ...
+                            </option>
+                            <option value="1">1</option>
+                        </select>
+                    </label>
+                </div>
             </form>
         </PageNarrow>
     );
