@@ -219,7 +219,9 @@ function EECButton() {
             lsaGroups[i] = [];
         }
 
-        // add motors from largest to smallest into containers up to the FLA limit
+        // Add motors to groups up to the link bar and FLA limit
+
+        // Empty motor for double VFD spacing
         const emptyMotor = {
             id: "empty",
             description: "EMPTY",
@@ -230,37 +232,43 @@ function EECButton() {
             shoeMM: 45,
         };
 
+        // index for LSA groups
         let lsaIndex = 0;
 
         // Iterate over motors and add to lsa groups
         offBussMotors.forEach((motor) => {
+            // Check if the current lsa group has quantity or FLA capacity
+            // Increment group if not
             if (
-                lsaGroups[lsaIndex]?.length >= 8 ||
+                lsaGroups[lsaIndex]?.length >= 9 ||
                 63 - calcGroupFLA(lsaGroups[lsaIndex]) < motor.fla
             ) {
                 lsaIndex++;
                 lsaGroups[lsaIndex] = [];
             }
 
+            // Add motor to lsa group
             if (
-                // if double motor and not the last index of the LSA array, transfer the motor and a blank to the LSA group
+                // if double motor and the lsa group has at least two spaces, add the motor and a blank to the LSA group
                 offBussMotors[0].type == "vfd-2" &&
-                lsaGroups[lsaIndex]?.length <= 7
+                lsaGroups[lsaIndex].length <= 7
             ) {
-                console.log("double!");
-                const doubleMotor = [motor, emptyMotor];
-                // console.log(doubleMotor);
-                lsaGroups[lsaIndex] = [...lsaGroups[lsaIndex], ...doubleMotor];
+                // console.log("double!");
+                lsaGroups[lsaIndex] = [
+                    ...lsaGroups[lsaIndex],
+                    motor,
+                    emptyMotor,
+                ];
             } else if (
-                // if double motor at the last index of the LSA array, only transfer the motor
+                // if double motor at the last index of the LSA array, only add the motor
                 // (to avoid overflowing 9 motor limit)
                 offBussMotors[0].type == "vfd-2" &&
-                lsaGroups[lsaIndex]?.length == 8
+                lsaGroups[lsaIndex].length >= 8
             ) {
-                console.log("double at end!");
+                // console.log("double at end!");
                 lsaGroups[lsaIndex] = [...lsaGroups[lsaIndex], motor];
             } else {
-                // if single motor, transfer the motor from the offBussMotors array to the LSA group
+                // if single motor, add the motor to the LSA group
                 lsaGroups[lsaIndex] = [...lsaGroups[lsaIndex], motor];
             }
         });
