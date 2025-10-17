@@ -51,6 +51,24 @@ function EECButton() {
         return interlockArr;
     }
 
+    // Generate boolean if the machine includes any VFDs
+    function CheckVfdMachine() {
+        // Build an array of all included motor objects from assembly
+        let motorsArr = [];
+
+        for (const k in assembly) {
+            const kit = kitsData.filter((kit) => kit.id === k)[0];
+            motorsArr.push(kit);
+        }
+
+        // Add vfds to offBussMotors
+        const vfdsArr = motorsArr.filter(
+            (motor) => motor.type === "vfd-1" || motor.type === "vfd-2"
+        );
+
+        return vfdsArr.length > 0;
+    }
+
     function buildOnBuss() {
         let bussbarCapacity = 21;
         let onBussMotors = [];
@@ -441,13 +459,18 @@ function EECButton() {
                     type: "Boolean",
                 },
                 {
-                    name: "i_NmXFMR",
+                    name: "i_NumXFMR",
                     value: projectInfo.numXFMR,
                     type: "Integer",
                 },
                 {
                     name: "i_SystemVoltage",
                     value: 480,
+                    type: "Integer",
+                },
+                {
+                    name: "b_VFD_Machine",
+                    value: CheckVfdMachine(),
                     type: "Integer",
                 },
             ];
@@ -479,7 +502,7 @@ function EECButton() {
                 const LsaArr = checkMotors(lsaGroups45[i]);
                 LsaArr.forEach((motor) => {
                     let row = {
-                        name: `c_LSA_SubList_45_${parseInt(i) + 1}`,
+                        name: `c_LSA_SubList_45_${parseInt(i) + 1}_Labels`,
                         value: motor,
                         type: "String",
                     };
@@ -492,7 +515,7 @@ function EECButton() {
                 const LsaArr = checkMotors(lsaGroups54[i]);
                 LsaArr.forEach((motor) => {
                     let row = {
-                        name: `c_LSA_SubList_54_${parseInt(i) + 1}`,
+                        name: `c_LSA_SubList_54_${parseInt(i) + 1}_Labels`,
                         value: motor,
                         type: "String",
                     };
@@ -503,7 +526,7 @@ function EECButton() {
             // Add unplaced 54mm motors
             unplacedMotorsArr.forEach((motor) => {
                 let row = {
-                    name: "c_Unplaced_Motor",
+                    name: "c_Unplaced_Motors",
                     value: motor,
                     type: "String",
                 };
@@ -513,7 +536,7 @@ function EECButton() {
             // Add interlocked motor types
             interlockArr.forEach((motor) => {
                 let row = {
-                    name: "c_Interlocked_Motor_Type",
+                    name: "c_Interlocked_Motor_Types",
                     value: motor,
                     type: "String",
                 };
