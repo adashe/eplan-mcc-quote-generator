@@ -453,7 +453,7 @@ function EECButton() {
                 },
                 {
                     name: "i_NumXFMR",
-                    value: projectInfo.numXFMR,
+                    value: projectInfo.numXFMR | 1,
                     type: "Integer",
                 },
                 {
