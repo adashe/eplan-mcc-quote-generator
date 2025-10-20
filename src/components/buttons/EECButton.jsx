@@ -146,79 +146,70 @@ function EECButton() {
             noVfdNoConveyorMotorsArr,
             ({ type }) => type
         );
-        // console.log({ motorsGroupedByType });
+        console.log({ motorsGroupedByType });
 
         // Add whole groups to bussbar
-        // console.log("-------------1st iteration WHOLE GROUPS-------------");
+        console.log("-------------1st iteration WHOLE GROUPS-------------");
         priorityArr.forEach((type) => {
             const typeGroup = motorsGroupedByType[type];
             // console.log(type, { typeGroup });
 
-            if (bussbarCapacity > 0) {
-                if (typeGroup) {
-                    // Sort in order of HP descdending so onBussMotors is sorted
-                    typeGroup.sort((a, b) => b.hp - a.hp);
-                    // console.log(type, { typeGroup });
-                    if (typeGroup.length <= bussbarCapacity) {
-                        onBussMotors = [...onBussMotors, ...typeGroup];
-                        bussbarCapacity -= typeGroup.length;
-                        delete motorsGroupedByType[type];
-                        // console.log(
-                        //     "added",
-                        //     type,
-                        //     "typeCount",
-                        //     typeGroup.length,
-                        //     "bussCapacity",
-                        //     bussbarCapacity
-                        // );
-                    } else {
-                        // Add motors to offBuss if the whole group won't fit
-                        // Will later individually remove motors from this arr
-                        // in the next iteration
-                        // console.log(
-                        //     "not added",
-                        //     type,
-                        //     "typeCount",
-                        //     typeGroup.length,
-                        //     "bussCapacity",
-                        //     bussbarCapacity
-                        // );
-                        offBussMotors = [...offBussMotors, ...typeGroup];
-                    }
+            if (typeGroup) {
+                // Sort in order of HP descdending so onBussMotors is sorted
+                typeGroup.sort((a, b) => b.hp - a.hp);
+                console.log(type, { typeGroup });
+                if (typeGroup.length <= bussbarCapacity) {
+                    onBussMotors = [...onBussMotors, ...typeGroup];
+                    bussbarCapacity -= typeGroup.length;
+                    delete motorsGroupedByType[type];
+                    console.log(
+                        "added",
+                        type,
+                        "typeCount",
+                        typeGroup.length,
+                        "bussCapacity",
+                        bussbarCapacity
+                    );
                 } else {
-                    // console.log("none", type);
+                    // Add motors to offBuss if the whole group won't fit
+                    // Will later individually remove motors from offBussMotors in the next iteration
+                    console.log(
+                        "not added",
+                        type,
+                        "typeCount",
+                        typeGroup.length,
+                        "bussCapacity",
+                        bussbarCapacity
+                    );
+                    offBussMotors = [...offBussMotors, ...typeGroup];
                 }
             } else {
-                // console.log(
-                //     "・ :*:・ﾟ☆.・ ゜-: ✧ :- ⋇⋆✦⋆⋇⭒❃BUSSBAR COMPLETE.✮ :▹‧͙⁺ ˚*・༓ ☾.｡*ﾟ+. *."
-                // );
+                console.log("none", type);
             }
         });
 
         // Add individual motors to bussbar in descending order of type, then HP
         if (bussbarCapacity > 0) {
-            // console.log(
-            //     "----------------2nd iteration PARTIAL GROUPS--------------"
-            // );
+            console.log("------------2nd iteration PARTIAL GROUPS----------");
             priorityArr.forEach((type) => {
                 const typeGroup = motorsGroupedByType[type];
 
                 if (typeGroup) {
                     // Sort motors within the group by HP
                     typeGroup.sort((a, b) => b.hp - a.hp);
-                    // console.log(type, { typeGroup });
+                    console.log(type, { typeGroup });
 
                     // Add individual motors to onBussMotors
                     typeGroup.forEach((motor) => {
                         if (bussbarCapacity > 0) {
                             onBussMotors = [...onBussMotors, motor];
                             bussbarCapacity -= 1;
-                            // console.log(
-                            //     "added",
-                            //     motor.description,
-                            //     "bussCapacity",
-                            //     bussbarCapacity
-                            // );
+                            console.log(
+                                "added",
+                                motor.description,
+                                "bussCapacity",
+                                bussbarCapacity
+                            );
 
                             // Remove motor from offbuss array
                             const index = offBussMotors.findIndex(
@@ -491,7 +482,7 @@ function EECButton() {
 
             conveyorsArr.forEach((conveyor) => {
                 let row = {
-                    name: "c_Conveyors_Motors",
+                    name: "c_Conveyors_Macros",
                     value: conveyor.macro,
                     type: "String",
                 };
@@ -510,7 +501,7 @@ function EECButton() {
 
             onBussMotors.forEach((motor) => {
                 let row = {
-                    name: "c_OnBuss_Motors",
+                    name: "c_OnBuss_Macros",
                     value: motor.macro,
                     type: "String",
                 };
@@ -530,7 +521,7 @@ function EECButton() {
 
                 group.forEach((motor) => {
                     let row = {
-                        name: `c_LSA_SubList_45_${parseInt(i) + 1}_Motors`,
+                        name: `c_LSA_SubList_45_${parseInt(i) + 1}_Macros`,
                         value: motor.macro,
                         type: "String",
                     };
@@ -551,7 +542,7 @@ function EECButton() {
 
                 group.forEach((motor) => {
                     let row = {
-                        name: `c_LSA_SubList_54_${parseInt(i) + 1}_Motors`,
+                        name: `c_LSA_SubList_54_${parseInt(i) + 1}_Macros`,
                         value: motor.macro,
                         type: "String",
                     };
@@ -562,7 +553,7 @@ function EECButton() {
             // Add unplaced 54mm motor labels
             unplacedMotors.forEach((motor) => {
                 let row = {
-                    name: "c_Unplaced_Motors",
+                    name: "c_Unplaced_Motors_Labels",
                     value: motor.description,
                     type: "String",
                 };
@@ -574,7 +565,7 @@ function EECButton() {
 
             interlockedMotors.forEach((motor) => {
                 let row = {
-                    name: "c_Interlocked_Motor_Types",
+                    name: "c_Interlocked_Motors_Labels",
                     value: motor.description,
                     type: "String",
                 };
