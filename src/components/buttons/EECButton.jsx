@@ -24,7 +24,6 @@ function EECButton() {
                 interlockedMotors.push(kit);
             }
         }
-
         return interlockedMotors;
     }
 
@@ -76,7 +75,6 @@ function EECButton() {
 
         // Build an array of all included motor objects from assembly
         let motorsArr = [];
-
         for (const k in assembly) {
             const kit = kitsData.filter((kit) => kit.id === k)[0];
 
@@ -245,23 +243,23 @@ function EECButton() {
 
     function buildOffBuss(offBussMotors) {
         // Subdivide offbuss by size    // Ignores 72mm
+
+        // Build offbuss 45mm LSA groups
+        console.log("-------------------45MM OFF BUSS--------------------");
         const offBussMotors45 = offBussMotors.filter(
             (motor) => motor.shoeMM == 45
         );
+        const lsaGroups45 = buildLSAGroups(offBussMotors45);
+
+        // Build offbuss 54mm LSA groups
+        console.log("-------------------54MM OFF BUSS--------------------");
         const offBussMotors54 = offBussMotors.filter(
             (motor) => motor.shoeMM == 54
         );
 
-        // Build offbuss 45mm LSA groups
-        console.log("-------------------45MM OFF BUSS--------------------");
-        const lsaGroups45 = buildLSAGroups(offBussMotors45);
-
-        // Build offbuss 54mm LSA groups
-        // 54mm LSA groups are wired seprately if the group is 3 or fewer and added to an unplaced category
-        console.log("-------------------54MM OFF BUSS--------------------");
         let lsaGroups54 = buildLSAGroups(offBussMotors54);
 
-        // Break down 54mm motors into singles if there are not more than 3 on the link bar
+        // 54mm motors are wired separately if there are not more than 3 on the link bar
         const tooSmall54s = lsaGroups54.filter((group) => group.length <= 3);
 
         let unplacedMotors = [];
