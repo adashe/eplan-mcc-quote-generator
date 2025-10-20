@@ -6,7 +6,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 1.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd1hpWrapBnd",
@@ -15,7 +16,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 1.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd1hpTopBrush",
@@ -24,7 +26,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 1.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd1hpTopBrushRev",
@@ -33,7 +36,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 1.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd1hpTopBrushBnd",
@@ -42,7 +46,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 1.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd1hpOmni",
@@ -51,7 +56,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 1.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd1hpMitter",
@@ -60,7 +66,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 1.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "1hpMitter",
@@ -69,7 +76,8 @@
         "type": "mitter",
         "colorCode": null,
         "hp": 1.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "hoa"
     },
     {
         "id": "vfd3hpOmni1",
@@ -78,7 +86,8 @@
         "type": "vfd-2",
         "colorCode": "vfd-2",
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd3hpRocker1",
@@ -87,7 +96,8 @@
         "type": "vfd-2",
         "colorCode": "vfd-2",
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd3hpTireBrush1",
@@ -96,7 +106,8 @@
         "type": "vfd-2",
         "colorCode": "vfd-2",
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd3hpTireShine1",
@@ -105,7 +116,8 @@
         "type": "vfd-2",
         "colorCode": "vfd-2",
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd3hpSideBrush1",
@@ -114,7 +126,8 @@
         "type": "vfd-2",
         "colorCode": "vfd-2",
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd3hpGrillBrush1",
@@ -123,7 +136,8 @@
         "type": "vfd-2",
         "colorCode": "vfd-2",
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "vfd3hpWheelBlaster1",
@@ -132,7 +146,8 @@
         "type": "vfd-2",
         "colorCode": "vfd-2",
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "3hpBoosterPump",
@@ -141,7 +156,8 @@
         "type": "pump",
         "colorCode": null,
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "3hpPUOmni",
@@ -150,7 +166,8 @@
         "type": "omni",
         "colorCode": null,
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "3hpPUTireShine",
@@ -159,7 +176,8 @@
         "type": "tireShine",
         "colorCode": null,
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "3hpPUTopBrush",
@@ -168,7 +186,8 @@
         "type": "topBrush",
         "colorCode": null,
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "vfd3hpConveyor",
@@ -177,7 +196,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": null
     },
     {
         "id": "5hpBooster",
@@ -186,7 +206,8 @@
         "type": "booster",
         "colorCode": null,
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "5hpPrepGun",
@@ -195,7 +216,8 @@
         "type": "prepGun",
         "colorCode": "prepGun",
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "prepGun"
     },
     {
         "id": "5hpPU2FLOmni",
@@ -204,7 +226,8 @@
         "type": "omni",
         "colorCode": null,
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "5hpPUGrillBrush",
@@ -213,7 +236,8 @@
         "type": "otherBrush",
         "colorCode": null,
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "5hpPURockers",
@@ -222,7 +246,8 @@
         "type": "rocker",
         "colorCode": null,
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "5hpPUSideBrush",
@@ -231,7 +256,8 @@
         "type": "otherBrush",
         "colorCode": null,
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "5hpPUTopBrush",
@@ -240,7 +266,8 @@
         "type": "topBrush",
         "colorCode": null,
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "5hpPUTireBrush",
@@ -249,7 +276,8 @@
         "type": "otherBrush",
         "colorCode": null,
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "5hpPUTireShine",
@@ -258,7 +286,8 @@
         "type": "tireShine",
         "colorCode": null,
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "omni"
     },
     {
         "id": "5hpPUConveyor",
@@ -267,7 +296,8 @@
         "type": "conveyor",
         "colorCode": null,
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "conv2pu"
     },
     {
         "id": "5hpPUTwinConveyor",
@@ -276,7 +306,8 @@
         "type": "conveyor",
         "colorCode": null,
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "convTwin"
     },
     {
         "id": "breaker1hpRO",
@@ -285,7 +316,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 1.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker2hpOzone",
@@ -294,7 +326,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 2,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker3hpRO",
@@ -303,16 +336,18 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 3,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
-        "id": "breaker5hpHydraflex",
-        "description": "5HP Hydraflex Breaker",
+        "id": "breaker3hpHydraflex",
+        "description": "3HP Hydraflex Breaker",
         "fla": 6.6,
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker5hpAirComp",
@@ -321,7 +356,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker5hpBoosterPump",
@@ -330,7 +366,8 @@
         "type": "pumpBreaker",
         "colorCode": "breaker",
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker5hpRO",
@@ -339,7 +376,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker5hpReclaim",
@@ -348,7 +386,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker5hpRejectPump",
@@ -357,7 +396,8 @@
         "type": "pumpBreaker",
         "colorCode": "breaker",
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker5hpRepressPump",
@@ -366,7 +406,8 @@
         "type": "pumpBreaker",
         "colorCode": "breaker",
         "hp": 5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker6hpHydraflex",
@@ -375,7 +416,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 6,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker7hpAirComp",
@@ -384,7 +426,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 7,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker10hpAirComp",
@@ -393,7 +436,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "breaker"
     },
     {
         "id": "breaker25hpVacuum",
@@ -402,7 +446,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 25,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "breaker"
     },
     {
         "id": "breaker30hpVacuum",
@@ -411,7 +456,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 30,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "breaker"
     },
     {
         "id": "breaker40hpVacuum",
@@ -420,7 +466,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 40,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "breaker"
     },
     {
         "id": "breaker50hpVacuum",
@@ -429,7 +476,8 @@
         "type": "otherBreaker",
         "colorCode": "breaker",
         "hp": 50,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "breaker"
     },
     {
         "id": "7hp2FLOther",
@@ -438,7 +486,8 @@
         "type": "otherSpare",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "7hpHaloPump",
@@ -447,7 +496,8 @@
         "type": "pump",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "7hpPrepGun",
@@ -456,7 +506,8 @@
         "type": "prepGun",
         "colorCode": "prepGun",
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "prepGun"
     },
     {
         "id": "7hp2FLWraps",
@@ -465,7 +516,8 @@
         "type": "wrap",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "7hp2FLTireRocker",
@@ -474,7 +526,8 @@
         "type": "rocker",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "7hp2FL63inSides",
@@ -483,7 +536,8 @@
         "type": "none",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "7hp2FLGrillBrush",
@@ -492,7 +546,8 @@
         "type": "otherBrush",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "7hp2FLOmni",
@@ -501,7 +556,8 @@
         "type": "omni",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "7hp2FLTopBrushRocker",
@@ -510,7 +566,8 @@
         "type": "rocker",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "7hp3FLOmni",
@@ -519,7 +576,8 @@
         "type": "omni",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "7hpConveyor",
@@ -528,7 +586,8 @@
         "type": "conveyor",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "convSingle"
     },
     {
         "id": "7hp2FLConveyorTireShine",
@@ -537,16 +596,18 @@
         "type": "conveyor",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "convSingle"
     },
     {
         "id": "7hpTwinConveyor",
-        "description": "7.5HP 2FL Twin Conveyor",
+        "description": "7.5HP Twin Conveyor",
         "fla": 9.2,
         "type": "conveyor",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "convTwin"
     },
     {
         "id": "7hp2FLTwinConveyorTireShine",
@@ -555,7 +616,8 @@
         "type": "conveyor",
         "colorCode": null,
         "hp": 7.5,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "convTwin"
     },
     {
         "id": "10hpOther",
@@ -564,7 +626,8 @@
         "type": "otherSpare",
         "colorCode": null,
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "hoa"
     },
     {
         "id": "10hpPUOther",
@@ -573,7 +636,8 @@
         "type": "otherSpare",
         "colorCode": null,
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "10hp3FLWrapsTire",
@@ -582,7 +646,8 @@
         "type": "wrap",
         "colorCode": null,
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "10hp3FLTopBrushRocker",
@@ -591,7 +656,8 @@
         "type": "rocker",
         "colorCode": null,
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "10hp3FLTopSideOmniRocker",
@@ -600,7 +666,8 @@
         "type": "rocker",
         "colorCode": null,
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "puHoa"
     },
     {
         "id": "10hpBlower",
@@ -609,7 +676,8 @@
         "type": "blower",
         "colorCode": null,
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "hoa"
     },
     {
         "id": "10hpConveyor",
@@ -618,7 +686,8 @@
         "type": "conveyor",
         "colorCode": null,
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "convSingle"
     },
     {
         "id": "10hp2FLConveyorTireShine",
@@ -627,7 +696,8 @@
         "type": "conveyor",
         "colorCode": null,
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "convSingle"
     },
     {
         "id": "10hpTwinConveyor",
@@ -636,7 +706,8 @@
         "type": "conveyor",
         "colorCode": null,
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "convTwin"
     },
     {
         "id": "10hp2FLTwinConveyorTireShine",
@@ -645,7 +716,8 @@
         "type": "conveyor",
         "colorCode": null,
         "hp": 10,
-        "shoeMM": 45
+        "shoeMM": 45,
+        "macro": "convTwin"
     },
     {
         "id": "15hpPUOther",
@@ -654,7 +726,8 @@
         "type": "otherSpare",
         "colorCode": null,
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "puHoa"
     },
     {
         "id": "15hpOther",
@@ -663,7 +736,8 @@
         "type": "otherSpare",
         "colorCode": null,
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "hoa"
     },
     {
         "id": "15hpBlower",
@@ -672,7 +746,8 @@
         "type": "blower",
         "colorCode": null,
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "hoa"
     },
     {
         "id": "vfd15hpBlower",
@@ -681,7 +756,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": null
     },
     {
         "id": "15hpMammothBlower",
@@ -690,7 +766,8 @@
         "type": "blower",
         "colorCode": null,
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "hoa"
     },
     {
         "id": "vfd15hpMammothBlower",
@@ -699,7 +776,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": null
     },
     {
         "id": "15hpVacuum",
@@ -708,7 +786,8 @@
         "type": "vacuum",
         "colorCode": "vacuum",
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "vacuum"
     },
     {
         "id": "15hpOmniTop",
@@ -717,7 +796,8 @@
         "type": "h25",
         "colorCode": null,
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "omni"
     },
     {
         "id": "15hpOmniSides",
@@ -726,7 +806,8 @@
         "type": "h25",
         "colorCode": null,
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "omni"
     },
     {
         "id": "15hpOmniPend",
@@ -735,7 +816,8 @@
         "type": "h25",
         "colorCode": null,
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "omni"
     },
     {
         "id": "15hpOmniTurbo",
@@ -744,7 +826,8 @@
         "type": "h25",
         "colorCode": null,
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "omni"
     },
     {
         "id": "15hpOmniWheelBlaster",
@@ -753,7 +836,8 @@
         "type": "h25",
         "colorCode": null,
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "omni"
     },
     {
         "id": "15hpOmniMirrorRinse",
@@ -762,7 +846,8 @@
         "type": "h25",
         "colorCode": null,
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "omni"
     },
     {
         "id": "vfd15hpOmni",
@@ -771,7 +856,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": null
     },
     {
         "id": "vfd15hpSTIConveyor",
@@ -780,7 +866,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 15,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": null
     },
     {
         "id": "vfd20hpSTIConveyor",
@@ -789,7 +876,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 20,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": null
     },
     {
         "id": "20hpOmniPump",
@@ -798,7 +886,8 @@
         "type": "d35",
         "colorCode": null,
         "hp": 20,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "omni"
     },
     {
         "id": "20hpPUOther",
@@ -807,7 +896,8 @@
         "type": "otherSpare",
         "colorCode": null,
         "hp": 20,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "omni"
     },
     {
         "id": "20hpVacuum",
@@ -816,7 +906,8 @@
         "type": "vacuum",
         "colorCode": "vacuum",
         "hp": 20,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "vacuum"
     },
     {
         "id": "25hpVacuum",
@@ -825,7 +916,8 @@
         "type": "vacuum",
         "colorCode": "vacuum",
         "hp": 25,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "vacuum"
     },
     {
         "id": "30hpVacuum",
@@ -834,7 +926,8 @@
         "type": "vacuum",
         "colorCode": "vacuum",
         "hp": 30,
-        "shoeMM": 54
+        "shoeMM": 54,
+        "macro": "vacuum"
     },
     {
         "id": "40hpVacuum",
@@ -843,7 +936,8 @@
         "type": "vacuum",
         "colorCode": "vacuum",
         "hp": 40,
-        "shoeMM": 72
+        "shoeMM": 72,
+        "macro": "vacuum"
     },
     {
         "id": "50hpVacuum",
@@ -852,7 +946,8 @@
         "type": "vacuum",
         "colorCode": "vacuum",
         "hp": 50,
-        "shoeMM": 72
+        "shoeMM": 72,
+        "macro": "vacuum"
     },
     {
         "id": "vfd25hpVacuum",
@@ -861,7 +956,8 @@
         "type": "vfd-1",
         "colorCode": "vfd-1",
         "hp": 25,
-        "shoeMM": 72
+        "shoeMM": 72,
+        "macro": null
     },
     {
         "id": "40hpVacuumSS",
@@ -870,6 +966,7 @@
         "type": "vacuum",
         "colorCode": "vacuum-ss",
         "hp": 40,
-        "shoeMM": 72
+        "shoeMM": 72,
+        "macro": "softStart"
     }
 ]

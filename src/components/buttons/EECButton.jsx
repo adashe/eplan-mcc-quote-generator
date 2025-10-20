@@ -7,12 +7,25 @@ function EECButton() {
         useMcc();
 
     // Helper function to generate an array of motors descriptions
-    function checkMotors(arrayofMotorObjects) {
+    function generateMotorDescArr(arrayofMotorObjects) {
         let arr = [];
         arrayofMotorObjects.forEach((motor) => {
             arr.push(motor.description);
         });
         return arr;
+    }
+
+    // Generate array of interlocked motor types
+    function generateInterlockedMotors() {
+        let interlockedMotors = [];
+        for (const k in interlock) {
+            if (interlock[k] === true) {
+                const kit = kitsData.filter((kit) => kit.id === k)[0];
+                interlockedMotors.push(kit);
+            }
+        }
+
+        return interlockedMotors;
     }
 
     // Helper function to calculate the FLA of an array of motors
@@ -37,31 +50,16 @@ function EECButton() {
         return Math.max(...hpArr);
     }
 
-    // Generate array of interlocked motor types
-    function buildInterlockArr() {
-        let interlockArr = [];
-
-        for (const k in interlock) {
-            if (interlock[k] === true) {
-                const kit = kitsData.filter((kit) => kit.id === k)[0];
-                interlockArr.push(kit.description);
-            }
-        }
-
-        return interlockArr;
-    }
-
     // Generate boolean if the machine includes any VFDs
-    function CheckVfdMachine() {
+    function checkVfdMachine() {
         // Build an array of all included motor objects from assembly
         let motorsArr = [];
-
         for (const k in assembly) {
             const kit = kitsData.filter((kit) => kit.id === k)[0];
             motorsArr.push(kit);
         }
 
-        // Add vfds to offBussMotors
+        // Add vfds to a separate array
         const vfdsArr = motorsArr.filter(
             (motor) => motor.type === "vfd-1" || motor.type === "vfd-2"
         );
@@ -93,13 +91,14 @@ function EECButton() {
             (motor) => motor.type === "vfd-1" || motor.type === "vfd-2"
         );
 
+        // Sort vfds in order of HP descending
         vfdsArr.sort((a, b) => b.hp - a.hp);
         vfdsArr.forEach((motor) => {
             offBussMotors = [...offBussMotors, motor];
         });
 
         // CHECK: print vfds pulled from motorsArr
-        // console.log("removed vfds", checkMotors(offBussMotors));
+        // console.log("removed vfds", generateMotorDescArr(offBussMotors));
 
         // Remove vfds from motorsArr
         const noVfdMotorsArr = motorsArr.filter(
@@ -112,7 +111,7 @@ function EECButton() {
         );
 
         // CHECK: print conveyors pulled from motorsArr
-        // console.log("removed conveyors", checkMotors(conveyorsArr));
+        // console.log("removed conveyors", generateMotorDescArr(conveyorsArr));
 
         // Remove conveyors from motorsArr
         const noVfdNoConveyorMotorsArr = noVfdMotorsArr.filter(
@@ -120,7 +119,7 @@ function EECButton() {
         );
 
         // CHECK: print initial motors array
-        // console.log("filtered motors", checkMotors(noVfdNoConveyorMotorsArr));
+        // console.log("filtered motors", generateMotorDescArr(noVfdNoConveyorMotorsArr));
 
         // Build prioritized array of function groups to iterate over hp groups
         const priorityArr = [
@@ -239,14 +238,51 @@ function EECButton() {
         }
 
         // CHECK: print on buss motor list
-        console.log("ON BUSS", checkMotors(onBussMotors));
+        console.log("ON BUSS", generateMotorDescArr(onBussMotors));
 
         return { conveyorsArr, onBussMotors, offBussMotors };
     }
 
     function buildOffBuss(offBussMotors) {
+        // Subdivide offbuss by size    // Ignores 72mm
+        const offBussMotors45 = offBussMotors.filter(
+            (motor) => motor.shoeMM == 45
+        );
+        const offBussMotors54 = offBussMotors.filter(
+            (motor) => motor.shoeMM == 54
+        );
+
+        // Build offbuss 45mm LSA groups
+        console.log("-------------------45MM OFF BUSS--------------------");
+        const lsaGroups45 = buildLSAGroups(offBussMotors45);
+
+        // Build offbuss 54mm LSA groups
+        // 54mm LSA groups are wired seprately if the group is 3 or fewer and added to an unplaced category
+        console.log("-------------------54MM OFF BUSS--------------------");
+        let lsaGroups54 = buildLSAGroups(offBussMotors54);
+
+        // Break down 54mm motors into singles if there are not more than 3 on the link bar
+        const tooSmall54s = lsaGroups54.filter((group) => group.length <= 3);
+
+        let unplacedMotors = [];
+        tooSmall54s.forEach((group) => {
+            unplacedMotors = [...unplacedMotors, ...group];
+        });
+
+        console.log("UNPLACED", unplacedMotors);
+
+        // Omit groups smaller than 3 from the 54mm LSA groups
+        const filteredLsaGroups54 = lsaGroups54.filter(
+            (group) => group.length > 3
+        );
+        console.log("FINAL OFF BUSS 54mm", filteredLsaGroups54);
+
+        return { lsaGroups45, filteredLsaGroups54, unplacedMotors };
+    }
+
+    function buildLSAGroups(offBussSubgroup) {
         // CHECK: print off buss motor list
-        console.log("OFF BUSS", checkMotors(offBussMotors));
+        console.log("OFF BUSS", generateMotorDescArr(offBussSubgroup));
 
         // Initialize an array of arrays that will represent each group
         let lsaGroups = [[]];
@@ -260,14 +296,15 @@ function EECButton() {
             colorCode: null,
             hp: 0,
             shoeMM: 45,
+            macro: "empty",
         };
 
         // Initialize index for LSA groups
         let lsaIndex = 0;
 
         // Iterate over motors and add to lsa groups
-        offBussMotors.forEach((motor) => {
-            // Check if the current lsa group has quantity or FLA capacity
+        offBussSubgroup.forEach((motor) => {
+            // Check if the current lsa group has available space or FLA capacity
             // Add a new lsa group if not
             if (
                 lsaGroups[lsaIndex]?.length >= 9 ||
@@ -277,7 +314,7 @@ function EECButton() {
                 lsaGroups[lsaIndex] = [];
             }
 
-            // Add motor to lsa group as a single or double according to type
+            // Add motor to lsa group as a single or double VFD (with empty placeholder) according to type
             if (
                 // If double motor and the lsa group has at least two spaces, add the motor and a blank to the LSA group
                 motor.type == "vfd-2" &&
@@ -332,41 +369,8 @@ function EECButton() {
 
     function buildCSV() {
         const { conveyorsArr, onBussMotors, offBussMotors } = buildOnBuss();
-
-        const onBussArr = checkMotors(onBussMotors);
-
-        // Subdivide offbuss by size                    // Omits 72mm
-        const offBussMotors45 = offBussMotors.filter(
-            (motor) => motor.shoeMM == 45
-        );
-        const offBussMotors54 = offBussMotors.filter(
-            (motor) => motor.shoeMM == 54
-        );
-
-        // Build offbuss groups
-        console.log("-------------------45MM OFF BUSS--------------------");
-        const lsaGroups45 = buildOffBuss(offBussMotors45);
-        console.log("-------------------54MM OFF BUSS--------------------");
-        let lsaGroups54 = buildOffBuss(offBussMotors54);
-
-        // Break down 54mm motors into singles if there are not more than 3 on the link bar
-        const tooSmall54s = lsaGroups54.filter((group) => group.length <= 3);
-
-        let unplacedMotors = [];
-        tooSmall54s.forEach((group) => {
-            unplacedMotors = [...unplacedMotors, ...group];
-        });
-
-        console.log("UNPLACED", unplacedMotors);
-        const unplacedMotorsArr = checkMotors(unplacedMotors);
-
-        // Omit groups smaller than 3 from the 54mm LSA groups
-        const filteredLsaGroups54 = lsaGroups54.filter(
-            (group) => group.length > 3
-        );
-        console.log("FINAL OFF BUSS 54mm", filteredLsaGroups54);
-
-        const interlockArr = buildInterlockArr();
+        const { lsaGroups45, filteredLsaGroups54, unplacedMotors } =
+            buildOffBuss(offBussMotors);
 
         // FINALLY Generate the CSV rows
         if (window.confirm("Are you sure you want to download this file?")) {
@@ -470,74 +474,110 @@ function EECButton() {
                 },
                 {
                     name: "b_VFD_Machine",
-                    value: CheckVfdMachine(),
+                    value: checkVfdMachine(),
                     type: "Integer",
                 },
             ];
 
             rows = [...rows, ...projRows];
 
-            // Add conveyors
+            // Add conveyor labels and macros
             conveyorsArr.forEach((conveyor) => {
                 let row = {
-                    name: "c_Conveyors",
+                    name: "c_Conveyors_Labels",
                     value: conveyor.description,
                     type: "String",
                 };
                 rows = [...rows, row];
             });
 
-            // Add onbuss motors
-            onBussArr.forEach((motor) => {
+            conveyorsArr.forEach((conveyor) => {
                 let row = {
-                    name: "c_OnBussMotors",
-                    value: motor,
+                    name: "c_Conveyors_Motors",
+                    value: conveyor.macro,
                     type: "String",
                 };
                 rows = [...rows, row];
             });
 
-            // Add offbuss 45mm motors
+            // Add onbuss motor labels and macros
+            onBussMotors.forEach((motor) => {
+                let row = {
+                    name: "c_OnBuss_Labels",
+                    value: motor.description,
+                    type: "String",
+                };
+                rows = [...rows, row];
+            });
+
+            onBussMotors.forEach((motor) => {
+                let row = {
+                    name: "c_OnBuss_Motors",
+                    value: motor.macro,
+                    type: "String",
+                };
+                rows = [...rows, row];
+            });
+
+            // Add offbuss 45mm motor labels and macros
             lsaGroups45.forEach((group, i) => {
-                const LsaArr = checkMotors(lsaGroups45[i]);
-                LsaArr.forEach((motor) => {
+                group.forEach((motor) => {
                     let row = {
                         name: `c_LSA_SubList_45_${parseInt(i) + 1}_Labels`,
-                        value: motor,
+                        value: motor.description,
+                        type: "String",
+                    };
+                    rows = [...rows, row];
+                });
+
+                group.forEach((motor) => {
+                    let row = {
+                        name: `c_LSA_SubList_45_${parseInt(i) + 1}_Motors`,
+                        value: motor.macro,
                         type: "String",
                     };
                     rows = [...rows, row];
                 });
             });
 
-            // Add offbuss 54mm motors
+            // Add offbuss 54mm motor labels and macros
             filteredLsaGroups54.forEach((group, i) => {
-                const LsaArr = checkMotors(lsaGroups54[i]);
-                LsaArr.forEach((motor) => {
+                group.forEach((motor) => {
                     let row = {
                         name: `c_LSA_SubList_54_${parseInt(i) + 1}_Labels`,
-                        value: motor,
+                        value: motor.description,
+                        type: "String",
+                    };
+                    rows = [...rows, row];
+                });
+
+                group.forEach((motor) => {
+                    let row = {
+                        name: `c_LSA_SubList_54_${parseInt(i) + 1}_Motors`,
+                        value: motor.macro,
                         type: "String",
                     };
                     rows = [...rows, row];
                 });
             });
 
-            // Add unplaced 54mm motors
-            unplacedMotorsArr.forEach((motor) => {
+            // Add unplaced 54mm motor labels
+            unplacedMotors.forEach((motor) => {
                 let row = {
                     name: "c_Unplaced_Motors",
-                    value: motor,
+                    value: motor.description,
                     type: "String",
                 };
                 rows = [...rows, row];
             });
 
-            // Add interlocked motor types
-            interlockArr.forEach((motor) => {
+            // Add interlocked motor types (labels)
+            const interlockedMotors = generateInterlockedMotors();
+
+            interlockedMotors.forEach((motor) => {
                 let row = {
                     name: "c_Interlocked_Motor_Types",
-                    value: motor,
+                    value: motor.description,
                     type: "String",
                 };
                 rows = [...rows, row];
