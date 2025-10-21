@@ -443,12 +443,12 @@ function EECButton() {
                 },
                 {
                     name: "b_PMR",
-                    value: projectInfo.phaseMonitorRelay,
+                    value: projectInfo.phaseMonitorRelay | true,
                     type: "Boolean",
                 },
                 {
                     name: "b_VT",
-                    value: projectInfo.voltageTester,
+                    value: projectInfo.voltageTester | true,
                     type: "Boolean",
                 },
                 {
@@ -464,7 +464,7 @@ function EECButton() {
                 {
                     name: "b_VFD_Machine",
                     value: checkVfdMachine(),
-                    type: "Integer",
+                    type: "Boolean",
                 },
             ];
 
@@ -553,7 +553,7 @@ function EECButton() {
             // Add unplaced 54mm motor labels
             unplacedMotors.forEach((motor) => {
                 let row = {
-                    name: "c_Unplaced_Motors_Labels",
+                    name: "c_Unplaced_Labels",
                     value: motor.description,
                     type: "String",
                 };
@@ -565,7 +565,7 @@ function EECButton() {
 
             interlockedMotors.forEach((motor) => {
                 let row = {
-                    name: "c_Interlocked_Motors_Labels",
+                    name: "c_Interlocked_Labels",
                     value: motor.description,
                     type: "String",
                 };
