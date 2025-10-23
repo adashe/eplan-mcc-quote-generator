@@ -19,41 +19,40 @@ function OptionsForm() {
             <form>
                 <div>
                     <label>
-                        Size:
+                        Install:
                         <select
-                            name="size"
-                            value={options.size || "..."}
+                            name="install"
+                            value={options.install || "..."}
                             onChange={handleChangeOptions}
                         >
                             <option disabled="disabled" value="...">
                                 ...
                             </option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="xlarge">Extra Large</option>
+                            <option value="install">Install</option>
+                            <option value="standard">Standard</option>
                         </select>
                     </label>
                 </div>
 
                 <div>
                     <label>
-                        STC:
+                        Controller:
                         <select
-                            name="stc"
-                            value={options.stc || "..."}
+                            name="control"
+                            value={options.control || "..."}
                             onChange={handleChangeOptions}
                         >
                             <option disabled="disabled" value="...">
                                 ...
                             </option>
-                            <option value="STC-32">32</option>
-                            <option value="STC-48">48</option>
-                            <option value="STC-64">64</option>
-                            <option value="STC-80">80</option>
-                            <option value="STC-96">96</option>
-                            <option value="STC-112">112</option>
-                            <option value="STC-128">128</option>
+                            <option value="drb">DRB</option>
+                            <option value="ics">ICS</option>
+                            <option value="sonnys">Sonny's</option>
+                            <option value="Micrologic">MicroLogic</option>
+                            <option value="tapeSwitch">
+                                Other - Tape Switch
+                            </option>
+                            <option value="photoEye">Other - Photo Eye</option>
                         </select>
                     </label>
                 </div>
