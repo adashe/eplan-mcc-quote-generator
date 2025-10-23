@@ -7,7 +7,7 @@
         "colorCode": "vfd-1",
         "hp": 1.5,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "vfd1hpWrapBnd",
@@ -17,7 +17,7 @@
         "colorCode": "vfd-1",
         "hp": 1.5,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "vfd1hpTopBrush",
@@ -27,7 +27,7 @@
         "colorCode": "vfd-1",
         "hp": 1.5,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "vfd1hpTopBrushRev",
@@ -37,7 +37,7 @@
         "colorCode": "vfd-1",
         "hp": 1.5,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "vfd1hpTopBrushBnd",
@@ -47,7 +47,7 @@
         "colorCode": "vfd-1",
         "hp": 1.5,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "vfd1hpOmni",
@@ -57,7 +57,7 @@
         "colorCode": "vfd-1",
         "hp": 1.5,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "vfd1hpMitter",
@@ -67,7 +67,7 @@
         "colorCode": "vfd-1",
         "hp": 1.5,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "1hpMitter",
@@ -87,7 +87,7 @@
         "colorCode": "vfd-2",
         "hp": 3,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-2"
     },
     {
         "id": "vfd3hpRocker1",
@@ -97,7 +97,7 @@
         "colorCode": "vfd-2",
         "hp": 3,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-2"
     },
     {
         "id": "vfd3hpTireBrush1",
@@ -107,7 +107,7 @@
         "colorCode": "vfd-2",
         "hp": 3,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-2"
     },
     {
         "id": "vfd3hpTireShine1",
@@ -117,7 +117,7 @@
         "colorCode": "vfd-2",
         "hp": 3,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-2"
     },
     {
         "id": "vfd3hpSideBrush1",
@@ -127,7 +127,7 @@
         "colorCode": "vfd-2",
         "hp": 3,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-2"
     },
     {
         "id": "vfd3hpGrillBrush1",
@@ -137,7 +137,7 @@
         "colorCode": "vfd-2",
         "hp": 3,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-2"
     },
     {
         "id": "vfd3hpWheelBlaster1",
@@ -147,7 +147,7 @@
         "colorCode": "vfd-2",
         "hp": 3,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-2"
     },
     {
         "id": "3hpBoosterPump",
@@ -197,7 +197,7 @@
         "colorCode": "vfd-1",
         "hp": 3,
         "shoeMM": 45,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "5hpBooster",
@@ -757,7 +757,7 @@
         "colorCode": "vfd-1",
         "hp": 15,
         "shoeMM": 54,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "15hpMammothBlower",
@@ -777,7 +777,7 @@
         "colorCode": "vfd-1",
         "hp": 15,
         "shoeMM": 54,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "15hpVacuum",
@@ -857,7 +857,7 @@
         "colorCode": "vfd-1",
         "hp": 15,
         "shoeMM": 54,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "vfd15hpSTIConveyor",
@@ -867,7 +867,7 @@
         "colorCode": "vfd-1",
         "hp": 15,
         "shoeMM": 54,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "vfd20hpSTIConveyor",
@@ -877,7 +877,7 @@
         "colorCode": "vfd-1",
         "hp": 20,
         "shoeMM": 54,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "20hpOmniPump",
@@ -957,7 +957,7 @@
         "colorCode": "vfd-1",
         "hp": 25,
         "shoeMM": 72,
-        "macro": null
+        "macro": "vfd-1"
     },
     {
         "id": "40hpVacuumSS",

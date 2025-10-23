@@ -466,6 +466,11 @@ function EECButton() {
                     value: checkVfdMachine(),
                     type: "Boolean",
                 },
+                {
+                    name: "s_Install",
+                    value: projectInfo.install,
+                    type: "Boolean",
+                },
             ];
 
             rows = [...rows, ...projRows];

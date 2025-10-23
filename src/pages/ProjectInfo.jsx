@@ -17,7 +17,23 @@ function ProjectInfo() {
                 <EECButton />
             </TabNavigation>
             <h2>PROJECT DETAILS</h2>
-            <form>
+            <form className={styles.formDiv}>
+                <div>
+                    <label>
+                        Install:
+                        <select
+                            name="install"
+                            value={projectInfo.install || "..."}
+                            onChange={handleChangeProjectInfo}
+                        >
+                            <option disabled="disabled" value="...">
+                                ...
+                            </option>
+                            <option value="true">Install</option>
+                            <option value="false">Standard</option>
+                        </select>
+                    </label>
+                </div>
                 <div className={styles.formDiv}>
                     <label>
                         Project Name:

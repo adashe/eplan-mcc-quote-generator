@@ -19,23 +19,6 @@ function OptionsForm() {
             <form>
                 <div>
                     <label>
-                        Install:
-                        <select
-                            name="install"
-                            value={options.install || "..."}
-                            onChange={handleChangeOptions}
-                        >
-                            <option disabled="disabled" value="...">
-                                ...
-                            </option>
-                            <option value="install">Install</option>
-                            <option value="standard">Standard</option>
-                        </select>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
                         Controller:
                         <select
                             name="control"
