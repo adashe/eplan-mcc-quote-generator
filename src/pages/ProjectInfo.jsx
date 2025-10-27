@@ -83,21 +83,6 @@ function ProjectInfo() {
                 </div>
                 <div>
                     <label>
-                        System Voltage:
-                        <select
-                            name="systemVoltage"
-                            value={projectInfo.systemVoltage || "..."}
-                            onChange={handleChangeProjectInfo}
-                        >
-                            <option disabled="disabled" value="...">
-                                ...
-                            </option>
-                            <option value="480VAC">480 VAC</option>
-                        </select>
-                    </label>
-                </div>
-                <div>
-                    <label>
                         Control Voltage:
                         <select
                             name="controlVoltage"

@@ -458,7 +458,7 @@ function EECButton() {
                 },
                 {
                     name: "i_SystemVoltage",
-                    value: projectInfo.systemVoltage | "480VAC",
+                    value: "480V",
                     type: "String",
                 },
                 {
