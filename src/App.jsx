@@ -6,7 +6,7 @@ import AssemblyForm from "./pages/AssemblyForm/AssemblyForm";
 import ConveyorForm from "./pages/AssemblyForm/ConveyorForm";
 import ProjectInfo from "./pages/ProjectInfo";
 import KitSummary from "./pages/KitSummary/KitSummary";
-import Totals from "./pages/Totals";
+import MccSummary from "./pages/MccSummary";
 import RelayScheduleForm from "./pages/RelayScheduleForm/RelayScheduleForm";
 
 function App() {
@@ -17,13 +17,14 @@ function App() {
                     <Route index element={<GeneratorMenu />} />
                     <Route path="assembly" element={<AssemblyForm />} />
                     <Route path="conveyor" element={<ConveyorForm />} />
+                    <Route path="projectInfo" element={<ProjectInfo />} />
                     <Route
                         path="relaySchedule"
                         element={<RelayScheduleForm />}
                     />
                     <Route path="kitSummary" element={<KitSummary />} />
-                    <Route path="totals" element={<Totals />} />
-                    <Route path="projectInfo" element={<ProjectInfo />} />
+                    <Route path="mccSummary" element={<MccSummary />} />
+
                     <Route path="*" element={<AssemblyForm />} />
                 </Routes>
             </BrowserRouter>

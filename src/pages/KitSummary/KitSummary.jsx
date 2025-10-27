@@ -19,7 +19,7 @@ function KitSummary() {
             <TabNavigation>
                 <LinkButton route={"/assembly"}>Edit Inputs</LinkButton>
                 <Button isActive={false}>Kit Summary</Button>
-                <LinkButton route={"/totals"}>Totals</LinkButton>
+                <LinkButton route={"/mccSummary"}>MCC SUMMARY</LinkButton>
                 <LinkButton route={"/relaySchedule"}>Relay Schedule</LinkButton>
                 <EECButton />
             </TabNavigation>

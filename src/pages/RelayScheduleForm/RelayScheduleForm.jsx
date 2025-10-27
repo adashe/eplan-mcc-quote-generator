@@ -53,7 +53,7 @@ function RelayScheduleForm() {
             <TabNavigation>
                 <LinkButton route={"/assembly"}>Edit Inputs</LinkButton>
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
-                <LinkButton route={"/totals"}>Totals</LinkButton>
+                <LinkButton route={"/mccSummary"}>MCC Summary</LinkButton>
                 <Button isActive={false}>Relay Cards</Button>
                 <LinkButton route={"/projectInfo"}>Prepare CSV</LinkButton>
             </TabNavigation>
