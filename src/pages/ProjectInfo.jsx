@@ -18,22 +18,6 @@ function ProjectInfo() {
             </TabNavigation>
             <h2>PROJECT DETAILS</h2>
             <form className={styles.formDiv}>
-                <div>
-                    <label>
-                        Install:
-                        <select
-                            name="install"
-                            value={projectInfo.install || "..."}
-                            onChange={handleChangeProjectInfo}
-                        >
-                            <option disabled="disabled" value="...">
-                                ...
-                            </option>
-                            <option value="true">Install</option>
-                            <option value="false">Standard</option>
-                        </select>
-                    </label>
-                </div>
                 <div className={styles.formDiv}>
                     <label>
                         Project Name:
@@ -81,6 +65,71 @@ function ProjectInfo() {
                         />
                     </label>
                 </div>
+                <div>
+                    <label>
+                        Install:
+                        <select
+                            name="install"
+                            value={projectInfo.install || "..."}
+                            onChange={handleChangeProjectInfo}
+                        >
+                            <option disabled="disabled" value="...">
+                                ...
+                            </option>
+                            <option value="true">Install</option>
+                            <option value="false">Standard</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        System Voltage:
+                        <select
+                            name="systemVoltage"
+                            value={projectInfo.systemVoltage || "..."}
+                            onChange={handleChangeProjectInfo}
+                        >
+                            <option disabled="disabled" value="...">
+                                ...
+                            </option>
+                            <option value="480VAC">480 VAC</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Control Voltage:
+                        <select
+                            name="controlVoltage"
+                            value={projectInfo.controlVoltage || "..."}
+                            onChange={handleChangeProjectInfo}
+                        >
+                            <option disabled="disabled" value="...">
+                                ...
+                            </option>
+                            <option value="24VDC">24VDC</option>
+                            <option value="120VAC">120VAC</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Solenoid Voltage:
+                        <select
+                            name="solenoidVoltage"
+                            value={projectInfo.solenoidVoltage || "..."}
+                            onChange={handleChangeProjectInfo}
+                        >
+                            <option disabled="disabled" value="...">
+                                ...
+                            </option>
+                            <option value="24VAC">24VAC</option>
+                            <option value="120VAC">120VAC</option>
+                        </select>
+                    </label>
+                </div>
+
                 <div>
                     <label>
                         Number of Transformers:

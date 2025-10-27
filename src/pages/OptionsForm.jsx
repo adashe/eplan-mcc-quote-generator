@@ -12,7 +12,7 @@ function OptionsForm() {
     return (
         <PageNarrow>
             <TabNavigation>
-                <LinkButton route={"/assembly"}>&larr; Kits</LinkButton>
+                <LinkButton route={"/conveyor"}>&larr; Conveyor</LinkButton>
                 <LinkButton route={"/kitSummary"}>Submit &rarr;</LinkButton>
             </TabNavigation>
             <h2>MCC OPTIONS</h2>

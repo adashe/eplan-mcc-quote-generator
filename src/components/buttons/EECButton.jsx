@@ -458,8 +458,18 @@ function EECButton() {
                 },
                 {
                     name: "i_SystemVoltage",
-                    value: 480,
-                    type: "Integer",
+                    value: projectInfo.systemVoltage | "480VAC",
+                    type: "String",
+                },
+                {
+                    name: "s_ControlVoltage",
+                    value: projectInfo.controlVoltage,
+                    type: "String",
+                },
+                {
+                    name: "s_SolenoidVoltage",
+                    value: projectInfo.solenoidVoltage,
+                    type: "String",
                 },
                 {
                     name: "b_VFD_Machine",
@@ -532,6 +542,13 @@ function EECButton() {
                     };
                     rows = [...rows, row];
                 });
+
+                let row = {
+                    name: `c_LSA_SubList_45_${parseInt(i) + 1}_FLA`,
+                    value: calcGroupFLA(group).toFixed(2),
+                    type: "Integer",
+                };
+                group.length > 0 && (rows = [...rows, row]);
             });
 
             // Add offbuss 54mm motor labels and macros
@@ -553,6 +570,13 @@ function EECButton() {
                     };
                     rows = [...rows, row];
                 });
+
+                let row = {
+                    name: `c_LSA_SubList_54_${parseInt(i) + 1}_FLA`,
+                    value: calcGroupFLA(group).toFixed(2),
+                    type: "Integer",
+                };
+                group.length > 0 && (rows = [...rows, row]);
             });
 
             // Add unplaced 54mm motor labels

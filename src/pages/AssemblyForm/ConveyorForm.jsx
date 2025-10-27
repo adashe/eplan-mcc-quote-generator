@@ -10,7 +10,7 @@ import { KitRow } from "./KitRow.jsx";
 import LinkButton from "../../components/buttons/LinkButton.jsx";
 import ResetButton from "../../components/buttons/ResetButton.jsx";
 
-function AssemblyForm() {
+function ConveyorForm() {
     const { kitsData } = useMcc();
     const [filter, setFilter] = useState("");
 
@@ -23,20 +23,20 @@ function AssemblyForm() {
         e.preventDefault();
     }
 
-    const noConveyorsData = kitsData.filter(
-        (kit) => !kit.description.includes("Conveyor")
+    const conveyorsData = kitsData.filter((kit) =>
+        kit.description.includes("Conveyor")
     );
 
-    const filteredData = noConveyorsData.filter((kit) =>
+    const filteredData = conveyorsData.filter((kit) =>
         kit.description.toLowerCase().includes(filter.toLowerCase())
     );
 
     return (
         <PageMedium>
             <TabNavigation>
-                <LinkButton route={"/"}>&larr; Generators</LinkButton>
+                <LinkButton route={"/assembly"}>&larr; Kits</LinkButton>
                 <ResetButton />
-                <LinkButton route={"/conveyor"}>Conveyor &rarr;</LinkButton>
+                <LinkButton route={"/options"}>Options &rarr;</LinkButton>
             </TabNavigation>
             <h2>MCC KITS</h2>
 
@@ -60,4 +60,4 @@ function AssemblyForm() {
     );
 }
 
-export default AssemblyForm;
+export default ConveyorForm;

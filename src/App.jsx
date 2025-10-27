@@ -3,6 +3,7 @@ import { MccProvider } from "./contexts/MccContext";
 
 import GeneratorMenu from "./pages/GeneratorMenu";
 import AssemblyForm from "./pages/AssemblyForm/AssemblyForm";
+import ConveyorForm from "./pages/AssemblyForm/ConveyorForm";
 import OptionsForm from "./pages/OptionsForm";
 import ProjectInfo from "./pages/ProjectInfo";
 import KitSummary from "./pages/KitSummary/KitSummary";
@@ -16,6 +17,7 @@ function App() {
                 <Routes>
                     <Route index element={<GeneratorMenu />} />
                     <Route path="assembly" element={<AssemblyForm />} />
+                    <Route path="conveyor" element={<ConveyorForm />} />
                     <Route path="options" element={<OptionsForm />} />
                     <Route
                         path="relaySchedule"
