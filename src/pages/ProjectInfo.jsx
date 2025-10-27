@@ -13,8 +13,8 @@ function ProjectInfo() {
     return (
         <PageNarrow>
             <TabNavigation>
-                <LinkButton route={"/kitSummary"}>&larr; Summary</LinkButton>
-                <EECButton />
+                <LinkButton route={"/conveyor"}>&larr; Conveyor</LinkButton>
+                <LinkButton route={"/kitSummary"}>Summary &rarr;</LinkButton>
             </TabNavigation>
             <h2>PROJECT DETAILS</h2>
             <form className={styles.formDiv}>
@@ -63,6 +63,28 @@ function ProjectInfo() {
                             value={projectInfo.drawingNumber || ""}
                             onChange={handleChangeProjectInfo}
                         />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Controller:
+                        <select
+                            name="control"
+                            value={projectInfo.control || "..."}
+                            onChange={handleChangeProjectInfo}
+                        >
+                            <option disabled="disabled" value="...">
+                                ...
+                            </option>
+                            <option value="drb">DRB</option>
+                            <option value="ics">ICS</option>
+                            <option value="sonnys">Sonny's</option>
+                            <option value="Micrologic">MicroLogic</option>
+                            <option value="tapeSwitch">
+                                Other - Tape Switch
+                            </option>
+                            <option value="photoEye">Other - Photo Eye</option>
+                        </select>
                     </label>
                 </div>
                 <div>

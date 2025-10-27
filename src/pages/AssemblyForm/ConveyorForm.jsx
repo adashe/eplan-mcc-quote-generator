@@ -36,7 +36,9 @@ function ConveyorForm() {
             <TabNavigation>
                 <LinkButton route={"/assembly"}>&larr; Kits</LinkButton>
                 <ResetButton />
-                <LinkButton route={"/options"}>Options &rarr;</LinkButton>
+                <LinkButton route={"/projectInfo"}>
+                    Project Info &rarr;
+                </LinkButton>
             </TabNavigation>
             <h2>MCC KITS</h2>
 

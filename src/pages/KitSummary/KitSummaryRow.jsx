@@ -38,10 +38,7 @@ function KitSummaryRow({ kit }) {
             <div>
                 {isOpen ? (
                     <div>
-                        <KitSummaryDropdownList
-                            kit={kit}
-                            kitQuantity={quantity}
-                        />
+                        <KitSummaryDropdownList kit={kit} />
                     </div>
                 ) : (
                     ""

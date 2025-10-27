@@ -1,22 +1,12 @@
 import { createContext, useState, useContext } from "react";
 
 import kitsData from "../data/v460mccKits.json";
-import optionsData from "../data/mccOptionsKits.json";
-import partsData from "../data/mccParts";
 
 const MccContext = createContext();
 
 // Build initial assembly object based on kits in kitsData
 const initialAssembly = kitsData.reduce((prev, curr) => {
     prev[curr.id] = 1;
-    return prev;
-}, {});
-
-const initialOptions = {};
-
-// Build initial options assembly object based on kits in kitsData
-const initialBaseAssembly = optionsData.reduce((prev, curr) => {
-    prev[curr.id] = 0;
     return prev;
 }, {});
 
@@ -43,17 +33,11 @@ const initialInterlock = kitsData.reduce((prev, curr) => {
 
 function MccProvider({ children }) {
     const [assembly, setAssembly] = useState(initialAssembly);
-    // options stores the selections in the options form that will make up the baseAssembly object
-    const [options, setOptions] = useState(initialOptions);
-    // baseAssembly is the assembly object built out of selected options
-    const [baseAssembly, setBaseAssembly] = useState(initialBaseAssembly);
     const [projectInfo, setProjectInfo] = useState(initialProjectInfo);
     const [interlock, setInterlock] = useState(initialInterlock);
 
     function handleReset() {
         setAssembly(initialAssembly);
-        setOptions(initialOptions);
-        setBaseAssembly(initialBaseAssembly);
         setProjectInfo(initialProjectInfo);
     }
 
@@ -74,42 +58,6 @@ function MccProvider({ children }) {
             ...previous,
             [kitID]: assembly[kitID] + value,
         }));
-    }
-
-    function handleChangeOptions(e) {
-        const { name, value } = e.target;
-
-        // Use setOptions to control the dropdown form element
-        setOptions((previous) => ({
-            ...previous,
-            [name]: value,
-        }));
-
-        // setAssembly with size and stc kits, resetting mutually exclusive options to 0
-        if (name === "size") {
-            setBaseAssembly((previous) => ({
-                ...previous,
-                ["small"]: 0,
-                ["medium"]: 0,
-                ["large"]: 0,
-                ["xlarge"]: 0,
-                ["spareShippedLoose"]: 1,
-                [value]: 1,
-            }));
-        } else if (name === "stc") {
-            setBaseAssembly((previous) => ({
-                ...previous,
-                ["stc32"]: 0,
-                ["stc48"]: 0,
-                ["stc64"]: 0,
-                ["stc80"]: 0,
-                ["stc96"]: 0,
-                ["stc112"]: 0,
-                ["stc128"]: 0,
-                ["spareShippedLoose"]: 1,
-                [value]: 1,
-            }));
-        }
     }
 
     function handleChangeProjectInfo(e) {
@@ -134,17 +82,12 @@ function MccProvider({ children }) {
         <MccContext.Provider
             value={{
                 kitsData,
-                optionsData,
-                partsData,
                 assembly,
-                options,
-                baseAssembly,
                 projectInfo,
                 interlock,
                 handleReset,
                 handleChangeAssembly,
                 handleIncrementAssembly,
-                handleChangeOptions,
                 handleChangeProjectInfo,
                 handleChangeInterlock,
                 calcTotalFLA,
