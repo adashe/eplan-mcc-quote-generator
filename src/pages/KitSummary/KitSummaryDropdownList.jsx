@@ -1,6 +1,6 @@
-import styles from "./KitSummaryPartsList.module.css";
+import styles from "./KitSummaryDropdownList.module.css";
 
-function KitSummaryPartsList({ kit }) {
+function KitSummaryDropdownList({ kit }) {
     return (
         <ul>
             <li className={styles.listItem}>HP: {kit.hp}hp</li>
@@ -11,4 +11,4 @@ function KitSummaryPartsList({ kit }) {
     );
 }
 
-export default KitSummaryPartsList;
+export default KitSummaryDropdownList;

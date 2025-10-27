@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useMcc } from "../../contexts/MccContext";
 import styles from "./KitSummaryRow.module.css";
 
-import KitSummaryPartsList from "./KitSummaryPartsList";
+import KitSummaryDropdownList from "./KitSummaryDropdownList";
 
 function KitSummaryRow({ kit }) {
     const { assembly, baseAssembly } = useMcc();
@@ -38,7 +38,10 @@ function KitSummaryRow({ kit }) {
             <div>
                 {isOpen ? (
                     <div>
-                        <KitSummaryPartsList kit={kit} kitQuantity={quantity} />
+                        <KitSummaryDropdownList
+                            kit={kit}
+                            kitQuantity={quantity}
+                        />
                     </div>
                 ) : (
                     ""
