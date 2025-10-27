@@ -48,7 +48,7 @@ function Totals() {
                         </li>
                         <li className={styles.totalsLi}>
                             INSTALL:
-                            {projectInfo.install ? " Install" : " Standard"}
+                            {projectInfo.install}
                         </li>
                         <li className={styles.totalsLi}>
                             NUMBER TRANSFORMERS: {projectInfo.numXFMR}
