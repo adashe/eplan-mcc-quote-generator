@@ -55,16 +55,22 @@ export function KitRow({ kit }) {
             </div>
 
             <div className={styles.column}>{kit.fla}A</div>
-            <div className={styles.column}>
-                <input
-                    className={styles.kitRowCheckbox}
-                    name={kit.id}
-                    value={interlock[kit.id]}
-                    checked={interlock[kit.id]}
-                    onChange={handleChangeInterlock}
-                    type="checkbox"
-                />
-            </div>
+
+            {/* 2 Motor VFDs are never interlocked */}
+            {kit.colorCode != "vfd-2" ? (
+                <div className={styles.column}>
+                    <input
+                        className={styles.kitRowCheckbox}
+                        name={kit.id}
+                        value={interlock[kit.id]}
+                        checked={interlock[kit.id]}
+                        onChange={handleChangeInterlock}
+                        type="checkbox"
+                    />
+                </div>
+            ) : (
+                <div className={styles.column}></div>
+            )}
         </div>
     );
 }
