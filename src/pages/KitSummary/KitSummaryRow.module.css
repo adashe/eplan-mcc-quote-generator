@@ -1,23 +1,37 @@
 .headerRow {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 4px;
+    margin-top: 16px;
+    border-bottom: 1px solid var(--color-light--1);
+}
+div.headerRowWide {
+    width: 440px;
+    text-align: left;
+}
+div.headerRowNarrow {
+    width: 120px;
+    text-align: center;
+}
+div.headerRow {
+    min-width: 200px;
+}
+
+.kitRow {
+    display: flex;
     text-align: left;
     align-items: center;
     justify-content: space-between;
     padding: 4px;
     margin-top: 16px;
     border-bottom: 1px solid var(--color-light--1);
-    cursor: pointer;
-}
-div.headerRow {
-    min-width: 200px;
-}
-.materialSymbolsOutlined {
-    font-family: "Material Symbols Outlined";
-    font-size: 16px;
 }
 .kitCol {
     width: 120px;
-    text-align: left;
+    text-align: center;
     font-size: 14px;
 }
 .kitDesc {
@@ -28,8 +42,4 @@ div.headerRow {
 }
 .kitQty {
     width: 60px;
-}
-.materialSymbolsOutlined {
-    font-family: "Material Symbols Outlined";
-    font-size: 16px;
 }

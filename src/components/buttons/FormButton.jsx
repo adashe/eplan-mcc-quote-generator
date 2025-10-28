@@ -1,13 +1,13 @@
 import styles from "./Button.module.css";
 
-function Button({ onClick, isActive = true, children }) {
+function FormButton({ onClick, isActive = true, children }) {
     return (
         <button
             onClick={onClick}
             className={
                 isActive
-                    ? styles.btn
-                    : `${styles.btn} ${styles.inactive} ${styles.type}}`
+                    ? styles.formBtn
+                    : `${styles.formBtn} ${styles.inactive} ${styles.type}}`
             }
         >
             {children}
@@ -15,4 +15,4 @@ function Button({ onClick, isActive = true, children }) {
     );
 }
 
-export default Button;
+export default FormButton;

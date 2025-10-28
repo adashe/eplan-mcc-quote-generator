@@ -1,22 +1,26 @@
-import { useMcc } from "../contexts/MccContext";
+import { useMcc } from "../../contexts/MccContext";
 import styles from "./ProjectInfo.module.css";
 
-import PageNarrow from "../components/PageNarrow";
-import TabNavigation from "../components/TabNavigation";
+import PageMedium from "../../components/PageMedium";
+import TabNavigation from "../../components/TabNavigation";
 
-import LinkButton from "../components/buttons/LinkButton";
-import EECButton from "../components/buttons/EECButton";
-import PageWide from "../components/PageWide";
+import FormLinkButton from "../../components/buttons/FormLinkButton";
+
+import FormButton from "../../components/buttons/FormButton";
 
 function ProjectInfo() {
     const { projectInfo, handleChangeProjectInfo } = useMcc();
 
     return (
-        <PageWide>
+        <PageMedium>
             <TabNavigation>
-                <LinkButton route={"/conveyor"}>&larr; Conveyors</LinkButton>
-                <LinkButton route={"/kitSummary"}>Summary &rarr;</LinkButton>
+                <FormLinkButton route={"/"}>Generators</FormLinkButton>
+                <FormLinkButton route={"/assembly"}>Kits</FormLinkButton>
+                <FormLinkButton route={"/conveyor"}>Conveyors</FormLinkButton>
+                <FormButton isActive={false}>Project Info</FormButton>
+                <FormLinkButton route={"/kitSummary"}>Summary</FormLinkButton>
             </TabNavigation>
+
             <h2>PROJECT DETAILS</h2>
             <form className={styles.formDiv}>
                 <div className={styles.twoCol}>
@@ -221,7 +225,7 @@ function ProjectInfo() {
                     </div>
                 </div>
             </form>
-        </PageWide>
+        </PageMedium>
     );
 }
 

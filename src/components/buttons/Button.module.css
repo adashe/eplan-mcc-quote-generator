@@ -2,24 +2,45 @@
     color: var(--color-dark--0);
     background-color: var(--color-brand--0);
     text-transform: uppercase;
-    width: 160px;
     height: 40px;
     margin: 10px auto;
     padding: 10px;
     font-size: 16px;
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    min-width: 160px;
 }
 .btn:hover {
     background-color: var(--color-brand--1);
 }
+
+.formBtn {
+    color: white;
+    background-color: var(--color-brand--7);
+    text-transform: uppercase;
+    height: 40px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 120px;
+}
+.formBtn:hover {
+    background-color: var(--color-brand--6);
+}
 .inactive {
+    color: var(--color-dark--0);
     background-color: var(--color-light--0);
 }
 .inactive:hover {
+    color: var(--color-dark--0);
     background-color: var(--color-light--0);
     cursor: auto;
 }

@@ -7,8 +7,8 @@ import TabNavigation from "../../components/TabNavigation.jsx";
 
 import { KitsForm } from "./KitsForm.jsx";
 import { KitRow } from "./KitRow.jsx";
-import LinkButton from "../../components/buttons/LinkButton.jsx";
-import ResetButton from "../../components/buttons/ResetButton.jsx";
+import FormLinkButton from "../../components/buttons/FormLinkButton.jsx";
+import FormButton from "../../components/buttons/FormButton.jsx";
 
 function AssemblyForm() {
     const { kitsData } = useMcc();
@@ -23,6 +23,11 @@ function AssemblyForm() {
         e.preventDefault();
     }
 
+    // Select the entire value when user clicks in the input box (for easier editing)
+    function handleSelect(e) {
+        e.target.select();
+    }
+
     const noConveyorsData = kitsData.filter(
         (kit) => !kit.description.includes("Conveyor")
     );
@@ -34,9 +39,13 @@ function AssemblyForm() {
     return (
         <PageMedium>
             <TabNavigation>
-                <LinkButton route={"/"}>&larr; Generators</LinkButton>
-                <ResetButton />
-                <LinkButton route={"/conveyor"}>Conveyors &rarr;</LinkButton>
+                <FormLinkButton route={"/"}>Generators</FormLinkButton>
+                <FormButton isActive={false}>Kits</FormButton>
+                <FormLinkButton route={"/conveyor"}>Conveyors</FormLinkButton>
+                <FormLinkButton route={"/projectInfo"}>
+                    Project Info
+                </FormLinkButton>
+                <FormLinkButton route={"/kitSummary"}>Summary</FormLinkButton>
             </TabNavigation>
             <h2>MCC KITS</h2>
 
@@ -46,6 +55,7 @@ function AssemblyForm() {
                     name="search"
                     type="text"
                     onChange={handleUpdateFilter}
+                    onFocus={handleSelect}
                     value={filter}
                     placeholder="Search"
                 />

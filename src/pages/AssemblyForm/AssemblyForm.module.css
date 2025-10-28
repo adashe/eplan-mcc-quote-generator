@@ -1,6 +1,21 @@
 .searchBar {
     margin-bottom: 40px;
 }
+.searchBar {
+    border: 1px solid var(--color-dark--1);
+    border-radius: 1px;
+    user-select: all;
+    width: 180px;
+}
 .searchBar::placeholder {
     font-style: italic;
+}
+.searchBar::selection {
+    background-color: var(--color-light--0);
+}
+input.searchBar:focus {
+    border: none;
+    outline: 1px solid var(--color-dark--1);
+    border-radius: 1px;
+    background-color: var(--color-light--0);
 }

@@ -1,4 +1,5 @@
 import { useMcc } from "../../contexts/MccContext";
+import styles from "./KitSummaryRow.module.css";
 
 import PageWide from "../../components/PageWide";
 import TabNavigation from "../../components/TabNavigation";
@@ -24,6 +25,13 @@ function KitSummary() {
                 <EECButton />
             </TabNavigation>
             <h2>KIT SUMMARY</h2>
+
+            <div className={styles.headerRow}>
+                <div className={styles.headerRowWide}>STARTERS</div>
+                <div className={styles.headerRowNarrow}>QTY</div>
+                <div className={styles.headerRowNarrow}>FLA</div>
+                <div className={styles.headerRowNarrow}>TOTAL FLA</div>
+            </div>
             {selectedKitsArr.map((kit, i) => (
                 <KitSummaryRow kit={kit} key={i} />
             ))}

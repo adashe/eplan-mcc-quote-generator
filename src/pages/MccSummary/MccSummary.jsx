@@ -1,12 +1,12 @@
-import { useMcc } from "../contexts/MccContext";
+import { useMcc } from "../../contexts/MccContext";
 import styles from "./MccSummary.module.css";
 
-import PageWide from "../components/PageWide";
-import TabNavigation from "../components/TabNavigation";
+import PageWide from "../../components/PageWide";
+import TabNavigation from "../../components/TabNavigation";
 
-import Button from "../components/buttons/Button";
-import LinkButton from "../components/buttons/LinkButton";
-import EECButton from "../components/buttons/EECButton";
+import Button from "../../components/buttons/Button";
+import LinkButton from "../../components/buttons/LinkButton";
+import EECButton from "../../components/buttons/EECButton";
 
 function MccSummary() {
     const { assembly, calcTotalFLA, projectInfo } = useMcc();
@@ -102,13 +102,17 @@ function MccSummary() {
                             </div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.phaseMonitorRelay ? " Yes" : " No"}
+                            {projectInfo.phaseMonitorRelay
+                                ? " PMR INCLUDED"
+                                : " PMR NOT INCLUDED"}
                             <div className={styles.totalsLabel}>
                                 PHASE MONITOR
                             </div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.voltageTester ? " Yes" : " No"}
+                            {projectInfo.voltageTester
+                                ? " VT INCLUDED"
+                                : " VT NOT INCLUDED"}
                             <div className={styles.totalsLabel}>
                                 VOLTAGE TESTER
                             </div>

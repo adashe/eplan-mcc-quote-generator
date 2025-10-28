@@ -7,8 +7,8 @@ import TabNavigation from "../../components/TabNavigation.jsx";
 
 import { KitsForm } from "./KitsForm.jsx";
 import { KitRow } from "./KitRow.jsx";
-import LinkButton from "../../components/buttons/LinkButton.jsx";
-import ResetButton from "../../components/buttons/ResetButton.jsx";
+import FormLinkButton from "../../components/buttons/FormLinkButton.jsx";
+import FormButton from "../../components/buttons/FormButton.jsx";
 
 function ConveyorForm() {
     const { kitsData } = useMcc();
@@ -34,11 +34,13 @@ function ConveyorForm() {
     return (
         <PageMedium>
             <TabNavigation>
-                <LinkButton route={"/assembly"}>&larr; Kits</LinkButton>
-                <ResetButton />
-                <LinkButton route={"/projectInfo"}>
-                    Project Info &rarr;
-                </LinkButton>
+                <FormLinkButton route={"/"}>Generators</FormLinkButton>
+                <FormLinkButton route={"/assembly"}>Kits</FormLinkButton>
+                <FormButton isActive={false}>Conveyors</FormButton>
+                <FormLinkButton route={"/projectInfo"}>
+                    Project Info
+                </FormLinkButton>
+                <FormLinkButton route={"/kitSummary"}>Summary</FormLinkButton>
             </TabNavigation>
             <h2>CONVEYORS</h2>
 
