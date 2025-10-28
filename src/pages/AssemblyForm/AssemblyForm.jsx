@@ -36,7 +36,7 @@ function AssemblyForm() {
             <TabNavigation>
                 <LinkButton route={"/"}>&larr; Generators</LinkButton>
                 <ResetButton />
-                <LinkButton route={"/conveyor"}>Conveyor &rarr;</LinkButton>
+                <LinkButton route={"/conveyor"}>Conveyors &rarr;</LinkButton>
             </TabNavigation>
             <h2>MCC KITS</h2>
 

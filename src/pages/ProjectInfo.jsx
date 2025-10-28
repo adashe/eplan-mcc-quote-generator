@@ -6,186 +6,222 @@ import TabNavigation from "../components/TabNavigation";
 
 import LinkButton from "../components/buttons/LinkButton";
 import EECButton from "../components/buttons/EECButton";
+import PageWide from "../components/PageWide";
 
 function ProjectInfo() {
     const { projectInfo, handleChangeProjectInfo } = useMcc();
 
     return (
-        <PageNarrow>
+        <PageWide>
             <TabNavigation>
-                <LinkButton route={"/conveyor"}>&larr; Conveyor</LinkButton>
+                <LinkButton route={"/conveyor"}>&larr; Conveyors</LinkButton>
                 <LinkButton route={"/kitSummary"}>Summary &rarr;</LinkButton>
             </TabNavigation>
             <h2>PROJECT DETAILS</h2>
             <form className={styles.formDiv}>
-                <div className={styles.formDiv}>
-                    <label>
-                        Project Name:
-                        <input
-                            type="text"
-                            name="projectName"
-                            value={projectInfo.projectName || ""}
-                            onChange={handleChangeProjectInfo}
-                        />
-                    </label>
-                    <div className={styles.exampleText}>
-                        ex. "WestRiver208V"
+                <div className={styles.twoCol}>
+                    <div>
+                        <label className={styles.formLabel}>
+                            <input
+                                type="text"
+                                name="projectName"
+                                value={projectInfo.projectName || ""}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formInput}
+                            />
+                            <div className={styles.formLabelText}>
+                                Project Name
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <label className={styles.formLabel}>
+                            <input
+                                type="text"
+                                name="productionOrderNumber"
+                                value={projectInfo.productionOrderNumber || ""}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formInput}
+                            />
+                            <div className={styles.formLabelText}>
+                                Production Order Number
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <label className={styles.formLabel}>
+                            <input
+                                type="text"
+                                name="salesOrderNumber"
+                                value={projectInfo.salesOrderNumber || ""}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formInput}
+                            />
+                            <div className={styles.formLabelText}>
+                                Sales Order Number
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <label className={styles.formLabel}>
+                            <input
+                                type="text"
+                                name="drawingNumber"
+                                value={projectInfo.drawingNumber || ""}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formInput}
+                            />
+                            <div className={styles.formLabelText}>
+                                Drawing Number
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <label className={styles.formLabel}>
+                            <select
+                                name="control"
+                                value={projectInfo.control || "..."}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formSelect}
+                            >
+                                <option disabled="disabled" value="...">
+                                    ...
+                                </option>
+                                <option value="drb">DRB</option>
+                                <option value="ics">ICS</option>
+                                <option value="sonnys">Sonny's</option>
+                                <option value="Micrologic">MicroLogic</option>
+                                <option value="tapeSwitch">
+                                    Other - Tape Switch
+                                </option>
+                                <option value="photoEye">
+                                    Other - Photo Eye
+                                </option>
+                            </select>
+                            <div className={styles.formLabelText}>
+                                Controller
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <label className={styles.formLabel}>
+                            <select
+                                name="install"
+                                value={projectInfo.install || "..."}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formSelect}
+                            >
+                                <option disabled="disabled" value="...">
+                                    ...
+                                </option>
+                                <option value="true">Install</option>
+                                <option value="false">Standard</option>
+                            </select>
+                            <div className={styles.formLabelText}>Install</div>
+                        </label>
                     </div>
                 </div>
-                <div className={styles.formDiv}>
-                    <label>
-                        Production Order Number:
-                        <input
-                            type="text"
-                            name="productionOrderNumber"
-                            value={projectInfo.productionOrderNumber || ""}
-                            onChange={handleChangeProjectInfo}
-                        />
-                    </label>
-                </div>
-                <div className={styles.formDiv}>
-                    <label>
-                        Sales Order Number:
-                        <input
-                            type="text"
-                            name="salesOrderNumber"
-                            value={projectInfo.salesOrderNumber || ""}
-                            onChange={handleChangeProjectInfo}
-                        />
-                    </label>
-                </div>
-                <div className={styles.formDiv}>
-                    <label>
-                        Drawing Number:
-                        <input
-                            type="text"
-                            name="drawingNumber"
-                            value={projectInfo.drawingNumber || ""}
-                            onChange={handleChangeProjectInfo}
-                        />
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        Controller:
-                        <select
-                            name="control"
-                            value={projectInfo.control || "..."}
-                            onChange={handleChangeProjectInfo}
-                        >
-                            <option disabled="disabled" value="...">
-                                ...
-                            </option>
-                            <option value="drb">DRB</option>
-                            <option value="ics">ICS</option>
-                            <option value="sonnys">Sonny's</option>
-                            <option value="Micrologic">MicroLogic</option>
-                            <option value="tapeSwitch">
-                                Other - Tape Switch
-                            </option>
-                            <option value="photoEye">Other - Photo Eye</option>
-                        </select>
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        Install:
-                        <select
-                            name="install"
-                            value={projectInfo.install || "..."}
-                            onChange={handleChangeProjectInfo}
-                        >
-                            <option disabled="disabled" value="...">
-                                ...
-                            </option>
-                            <option value="true">Install</option>
-                            <option value="false">Standard</option>
-                        </select>
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        Control Voltage:
-                        <select
-                            name="controlVoltage"
-                            value={projectInfo.controlVoltage || "..."}
-                            onChange={handleChangeProjectInfo}
-                        >
-                            <option disabled="disabled" value="...">
-                                ...
-                            </option>
-                            <option value="24VDC">24VDC</option>
-                            <option value="120VAC">120VAC</option>
-                        </select>
-                    </label>
-                </div>
 
                 <div>
-                    <label>
-                        Solenoid Voltage:
-                        <select
-                            name="solenoidVoltage"
-                            value={projectInfo.solenoidVoltage || "..."}
-                            onChange={handleChangeProjectInfo}
-                        >
-                            <option disabled="disabled" value="...">
-                                ...
-                            </option>
-                            <option value="24VAC">24VAC</option>
-                            <option value="120VAC">120VAC</option>
-                        </select>
-                    </label>
-                </div>
+                    <div>
+                        <label className={styles.formLabel}>
+                            <select
+                                name="controlVoltage"
+                                value={projectInfo.controlVoltage || "..."}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formSelect}
+                            >
+                                <option disabled="disabled" value="...">
+                                    ...
+                                </option>
+                                <option value="24VDC">24VDC</option>
+                                <option value="120VAC">120VAC</option>
+                            </select>
+                            <div className={styles.formLabelText}>
+                                Control Voltage
+                            </div>
+                        </label>
+                    </div>
 
-                <div>
-                    <label>
-                        Number of Transformers:
-                        <select
-                            name="numXFMR"
-                            value={projectInfo.numXFMR || "..."}
-                            onChange={handleChangeProjectInfo}
-                        >
-                            <option disabled="disabled" value="...">
-                                ...
-                            </option>
-                            <option value="1">1</option>
-                        </select>
-                    </label>
-                </div>
+                    <div>
+                        <label className={styles.formLabel}>
+                            <select
+                                name="solenoidVoltage"
+                                value={projectInfo.solenoidVoltage || "..."}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formSelect}
+                            >
+                                <option disabled="disabled" value="...">
+                                    ...
+                                </option>
+                                <option value="24VAC">24VAC</option>
+                                <option value="120VAC">120VAC</option>
+                            </select>
+                            <div className={styles.formLabelText}>
+                                Solenoid Voltage
+                            </div>
+                        </label>
+                    </div>
 
-                <div>
-                    <label>
-                        Phase Monitor Relay:
-                        <select
-                            name="phaseMonitorRelay"
-                            value={projectInfo.phaseMonitorRelay || "..."}
-                            onChange={handleChangeProjectInfo}
-                        >
-                            <option disabled="disabled" value="...">
-                                ...
-                            </option>
-                            <option value="true">Yes</option>
-                        </select>
-                    </label>
-                </div>
+                    <div>
+                        <label className={styles.formLabel}>
+                            <select
+                                name="numXFMR"
+                                value={projectInfo.numXFMR || "..."}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formSelect}
+                            >
+                                <option disabled="disabled" value="...">
+                                    ...
+                                </option>
+                                <option value="1">1</option>
+                            </select>
+                            <div className={styles.formLabelText}>
+                                Number of Transformers
+                            </div>
+                        </label>
+                    </div>
 
-                <div>
-                    <label>
-                        Voltage Tester:
-                        <select
-                            name="voltageTester"
-                            value={projectInfo.voltageTester || "..."}
-                            onChange={handleChangeProjectInfo}
-                        >
-                            <option disabled="disabled" value="...">
-                                ...
-                            </option>
-                            <option value="true">Yes</option>
-                        </select>
-                    </label>
+                    <div>
+                        <label className={styles.formLabel}>
+                            <select
+                                name="phaseMonitorRelay"
+                                value={projectInfo.phaseMonitorRelay || "..."}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formSelect}
+                            >
+                                <option disabled="disabled" value="...">
+                                    ...
+                                </option>
+                                <option value="true">Yes</option>
+                            </select>
+                            <div className={styles.formLabelText}>
+                                Phase Monitor Relay
+                            </div>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label className={styles.formLabel}>
+                            <select
+                                name="voltageTester"
+                                value={projectInfo.voltageTester || "..."}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formSelect}
+                            >
+                                <option disabled="disabled" value="...">
+                                    ...
+                                </option>
+                                <option value="true">Yes</option>
+                            </select>
+                            <div className={styles.formLabelText}>
+                                Voltage Tester
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </form>
-        </PageNarrow>
+        </PageWide>
     );
 }
 

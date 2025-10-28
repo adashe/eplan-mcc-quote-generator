@@ -40,7 +40,7 @@ function ConveyorForm() {
                     Project Info &rarr;
                 </LinkButton>
             </TabNavigation>
-            <h2>MCC KITS</h2>
+            <h2>CONVEYORS</h2>
 
             <form onSubmit={handleSubmit}>
                 <input

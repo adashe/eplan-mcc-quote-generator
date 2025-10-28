@@ -11,6 +11,7 @@ import Button from "../../components/buttons/Button.jsx";
 import { Autocomplete, TextField } from "@mui/material";
 
 import relayOptions from "../../data/relaySchedule.json";
+import EECButton from "../../components/buttons/EECButton.jsx";
 
 const initialValues = { relayNumber: "0", description: "", controlVoltage: "" };
 
@@ -55,7 +56,7 @@ function RelayScheduleForm() {
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <LinkButton route={"/mccSummary"}>MCC Summary</LinkButton>
                 <Button isActive={false}>Relay Cards</Button>
-                <LinkButton route={"/projectInfo"}>Prepare CSV</LinkButton>
+                <EECButton />
             </TabNavigation>
             <h2>RELAY SCHEDULE</h2>
             <form className={styles.relayForm}>

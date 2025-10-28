@@ -6,6 +6,7 @@ import TabNavigation from "../components/TabNavigation";
 
 import Button from "../components/buttons/Button";
 import LinkButton from "../components/buttons/LinkButton";
+import EECButton from "../components/buttons/EECButton";
 
 function MccSummary() {
     const { assembly, calcTotalFLA, projectInfo } = useMcc();
@@ -23,39 +24,38 @@ function MccSummary() {
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <Button isActive={false}>MCC SUMMARY</Button>
                 <LinkButton route={"/relaySchedule"}>Relay Schedule</LinkButton>
-                <LinkButton route={"/projectInfo"}>Prepare CSV</LinkButton>
+                <EECButton />
             </TabNavigation>
             <h2>MCC SUMMARY</h2>
             <div className={styles.twoCol}>
                 <div>
                     <ul className={styles.totalsUl}>
                         <li className={styles.totalsLi}>
-                            {projectInfo.projectName | "Project Name"}
+                            {projectInfo.projectName || "N/A"}
                             <div className={styles.totalsLabel}>
                                 PROJECT NAME
                             </div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.productionOrderNumber | "PO Number"}
+                            {projectInfo.productionOrderNumber || "N/A"}
                             <div className={styles.totalsLabel}>
                                 PRODUCTION ORDER NUMBER
                             </div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.salesOrderNumber |
-                                "Sales Order Number"}
+                            {projectInfo.salesOrderNumber || "N/A"}
                             <div className={styles.totalsLabel}>
                                 SALES ORDER NUMBER
                             </div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.drawingNumber | "Drawing Number"}
+                            {projectInfo.drawingNumber || "N/A"}
                             <div className={styles.totalsLabel}>
                                 DRAWING NUMBER
                             </div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.control | "Controller"}
+                            {projectInfo.control || "N/A"}
                             <div className={styles.totalsLabel}>CONTROLLER</div>
                         </li>
                         <li className={styles.totalsLi}>
@@ -80,13 +80,13 @@ function MccSummary() {
                             </div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.controlVoltage | "Control Voltage"}
+                            {projectInfo.controlVoltage || "N/A"}
                             <div className={styles.totalsLabel}>
                                 CONTROL VOLTAGE
                             </div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.solenoidVoltage | "Solenoid Voltage"}
+                            {projectInfo.solenoidVoltage || "N/A"}
                             <div className={styles.totalsLabel}>
                                 SOLENOID VOLTAGE
                             </div>
@@ -102,14 +102,13 @@ function MccSummary() {
                             </div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.phaseMonitorRelay |
-                                "Phase Monitor Relay"}
+                            {projectInfo.phaseMonitorRelay ? " Yes" : " No"}
                             <div className={styles.totalsLabel}>
                                 PHASE MONITOR
                             </div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.voltageTester | "Voltage Tester"}
+                            {projectInfo.voltageTester ? " Yes" : " No"}
                             <div className={styles.totalsLabel}>
                                 VOLTAGE TESTER
                             </div>
