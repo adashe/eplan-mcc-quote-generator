@@ -607,10 +607,14 @@ function EECButton() {
 
             // create workbook and append worksheet
             const wb = utils.book_new();
-            utils.book_append_sheet(wb, ws, "DEMO_CSV");
+            utils.book_append_sheet(
+                wb,
+                ws,
+                `${projectInfo.drawingNumber || "eec_input"}`
+            );
 
             // export to Excel as csv
-            writeFile(wb, "DEMO_CSV.csv");
+            writeFile(wb, `${projectInfo.drawingNumber || "eec_input"}.xlsx`);
         }
     }
 
