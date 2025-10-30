@@ -15,7 +15,20 @@ function KitSummaryRow({ kit }) {
     return (
         <div>
             <div className={styles.kitRow} onClick={handleOpen}>
-                <div className={styles.kitDesc}>{kit.description}</div>
+                <div className={styles.kitColWide}>
+                    <span
+                        className={`${styles.kitDesc} 
+                        ${kit.colorCode === "vfd-1" ? styles.vfd1Row : ""} 
+                        ${kit.colorCode === "vfd-2" ? styles.vfd2Row : ""} 
+                        ${kit.colorCode === "vacuum" ? styles.vacuumRow : ""} 
+                        ${kit.colorCode === "breaker" ? styles.breakerRow : ""} 
+                        ${kit.colorCode === "prepGun" ? styles.prepGunRow : ""} 
+                        ${kit.colorCode === "softStart" ? styles.ssRow : ""}`}
+                    >
+                        {kit.description}
+                    </span>
+                </div>
+
                 <div className={styles.kitCol}>{quantity}</div>
                 <div className={styles.kitCol}>{kit.fla}A</div>
                 <div className={styles.kitCol}>

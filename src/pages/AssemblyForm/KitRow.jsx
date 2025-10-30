@@ -47,7 +47,7 @@ export function KitRow({ kit }) {
                         ${kit.colorCode === "vacuum" ? styles.vacuumRow : ""} 
                         ${kit.colorCode === "breaker" ? styles.breakerRow : ""} 
                         ${kit.colorCode === "prepGun" ? styles.prepGunRow : ""} 
-                        ${kit.colorCode === "vacuum-ss" ? styles.ssRow : ""}`}
+                        ${kit.colorCode === "softStart" ? styles.ssRow : ""}`}
                     >
                         {kit.description}
                     </span>

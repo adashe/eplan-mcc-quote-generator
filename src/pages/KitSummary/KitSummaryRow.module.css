@@ -8,6 +8,9 @@
     margin-top: 16px;
     border-bottom: 1px solid var(--color-light--1);
 }
+div.headerRow {
+    min-width: 200px;
+}
 div.headerRowWide {
     width: 380px;
     text-align: left;
@@ -16,17 +19,12 @@ div.headerRowNarrow {
     width: 100px;
     text-align: center;
 }
-div.headerRow {
-    min-width: 200px;
-}
-
 .kitRow {
     display: flex;
     text-align: left;
     align-items: center;
     justify-content: space-between;
-    padding: 4px;
-    margin-top: 16px;
+    padding: 16px 0;
     border-bottom: 1px solid var(--color-light--1);
 }
 .kitCol {
@@ -34,12 +32,52 @@ div.headerRow {
     text-align: center;
     font-size: 14px;
 }
-.kitDesc {
+.kitColWide {
     width: 380px;
+}
+.kitDesc {
     text-align: left;
     font-weight: 500;
     text-transform: uppercase;
 }
 .kitQty {
     width: 60px;
+}
+.vfd1Row {
+    background-color: var(--color-brand--0);
+    padding: 6px 10px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.vfd2Row {
+    background-color: var(--color-brand--6);
+    color: white;
+    padding: 6px 10px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.breakerRow {
+    background-color: var(--color-brand--4);
+    color: white;
+    padding: 6px 10px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.vacuumRow {
+    background-color: var(--color-brand--2);
+    padding: 6px 10px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.prepGunRow {
+    background-color: var(--color-brand--2);
+    padding: 6px 10px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.ssRow {
+    background-color: var(--color-light--1);
+    padding: 6px 10px;
+    font-weight: 500;
+    border-radius: 10px;
 }
