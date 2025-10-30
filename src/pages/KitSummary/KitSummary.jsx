@@ -31,6 +31,7 @@ function KitSummary() {
                 <div className={styles.headerRowNarrow}>FLA</div>
                 <div className={styles.headerRowNarrow}>TOTAL FLA</div>
             </div>
+
             {selectedKitsArr.map((kit, i) => (
                 <KitSummaryRow kit={kit} key={i} />
             ))}
