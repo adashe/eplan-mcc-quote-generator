@@ -14,11 +14,12 @@ function ProjectInfo() {
     return (
         <PageMedium>
             <TabNavigation>
-                <FormLinkButton route={"/"}>Generators</FormLinkButton>
                 <FormLinkButton route={"/assembly"}>Kits</FormLinkButton>
                 <FormLinkButton route={"/conveyor"}>Conveyors</FormLinkButton>
                 <FormButton isActive={false}>Project Info</FormButton>
-                <FormLinkButton route={"/kitSummary"}>Summary</FormLinkButton>
+                <FormLinkButton route={"/kitSummary"}>
+                    Summary &rarr;
+                </FormLinkButton>
             </TabNavigation>
 
             <h2>PROJECT DETAILS</h2>

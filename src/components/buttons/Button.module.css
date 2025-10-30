@@ -30,7 +30,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    min-width: 120px;
+    min-width: 160px;
 }
 .formBtn:hover {
     background-color: var(--color-brand--6);

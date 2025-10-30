@@ -4,7 +4,7 @@ import { Header } from "./Header";
 function PageNarrow({ children }) {
     return (
         <div className={styles.page}>
-            <Header>MCC Quote Generator</Header>
+            <Header>460V MCC Quote Generator</Header>
             {children}
         </div>
     );

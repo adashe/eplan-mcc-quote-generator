@@ -18,7 +18,7 @@ function KitSummary() {
     return (
         <PageWide>
             <TabNavigation>
-                <LinkButton route={"/assembly"}>Edit Inputs</LinkButton>
+                <LinkButton route={"/assembly"}>&larr; Edit Inputs</LinkButton>
                 <Button isActive={false}>Kit Summary</Button>
                 <LinkButton route={"/mccSummary"}>MCC SUMMARY</LinkButton>
                 <LinkButton route={"/relaySchedule"}>Relay Schedule</LinkButton>

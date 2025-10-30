@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MccProvider } from "./contexts/MccContext";
 
-import GeneratorMenu from "./pages/GeneratorMenu";
 import AssemblyForm from "./pages/AssemblyForm/AssemblyForm";
 import ConveyorForm from "./pages/AssemblyForm/ConveyorForm";
 import ProjectInfo from "./pages/ProjectInfoForm/ProjectInfo";
@@ -16,7 +15,6 @@ function App() {
                 <Routes>
                     <Route index element={<AssemblyForm />} />
                     <Route path="*" element={<AssemblyForm />} />
-                    <Route path="generator" element={<GeneratorMenu />} />
                     <Route path="assembly" element={<AssemblyForm />} />
                     <Route path="conveyor" element={<ConveyorForm />} />
                     <Route path="projectInfo" element={<ProjectInfo />} />

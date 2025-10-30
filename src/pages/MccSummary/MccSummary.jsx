@@ -20,7 +20,7 @@ function MccSummary() {
     return (
         <PageWide>
             <TabNavigation>
-                <LinkButton route={"/assembly"}>Edit Inputs</LinkButton>
+                <LinkButton route={"/assembly"}>&larr; Edit Inputs</LinkButton>
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <Button isActive={false}>MCC SUMMARY</Button>
                 <LinkButton route={"/relaySchedule"}>Relay Schedule</LinkButton>

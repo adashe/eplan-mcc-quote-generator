@@ -39,13 +39,14 @@ function AssemblyForm() {
     return (
         <PageMedium>
             <TabNavigation>
-                <FormLinkButton route={"/"}>Generators</FormLinkButton>
                 <FormButton isActive={false}>Kits</FormButton>
                 <FormLinkButton route={"/conveyor"}>Conveyors</FormLinkButton>
                 <FormLinkButton route={"/projectInfo"}>
                     Project Info
                 </FormLinkButton>
-                <FormLinkButton route={"/kitSummary"}>Summary</FormLinkButton>
+                <FormLinkButton route={"/kitSummary"}>
+                    Summary &rarr;
+                </FormLinkButton>
             </TabNavigation>
             <h2>MCC KITS</h2>
 

@@ -52,10 +52,10 @@ function RelayScheduleForm() {
     return (
         <PageWide>
             <TabNavigation>
-                <LinkButton route={"/assembly"}>Edit Inputs</LinkButton>
+                <LinkButton route={"/assembly"}>&larr; Edit Inputs</LinkButton>
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <LinkButton route={"/mccSummary"}>MCC Summary</LinkButton>
-                <Button isActive={false}>Relay Cards</Button>
+                <Button isActive={false}>Relay Schedule</Button>
                 <EECButton />
             </TabNavigation>
             <h2>RELAY SCHEDULE</h2>
