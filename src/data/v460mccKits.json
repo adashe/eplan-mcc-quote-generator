@@ -774,16 +774,6 @@
         "macro": "vfd-1"
     },
     {
-        "id": "15hpVacuum",
-        "description": "15HP Vacuum",
-        "fla": 18.3,
-        "type": "vacuum",
-        "colorCode": "vacuum",
-        "hp": 15,
-        "shoeMM": 54,
-        "macro": "vacuum"
-    },
-    {
         "id": "15hpOmniTop",
         "description": "15HP Omni Top",
         "fla": 18.3,
@@ -873,6 +863,16 @@
         "hp": 20,
         "shoeMM": 54,
         "macro": "omni"
+    },
+    {
+        "id": "15hpVacuum",
+        "description": "15HP Vacuum",
+        "fla": 18.3,
+        "type": "vacuum",
+        "colorCode": "vacuum",
+        "hp": 15,
+        "shoeMM": 54,
+        "macro": "vacuum"
     },
     {
         "id": "20hpVacuum",

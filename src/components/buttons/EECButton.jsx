@@ -140,6 +140,7 @@ function EECButton() {
             "hydraflex",
             "otherBreaker",
             "mitter",
+            "none",
         ];
 
         const motorsGroupedByType = Object.groupBy(
