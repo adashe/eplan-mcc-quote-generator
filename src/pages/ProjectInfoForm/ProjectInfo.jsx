@@ -11,10 +11,15 @@ import FormButton from "../../components/buttons/FormButton";
 function ProjectInfo() {
     const { projectInfo, handleChangeProjectInfo } = useMcc();
 
+    // Select the entire value when user clicks in the input box (for easier editing)
+    function handleSelect(e) {
+        e.target.select();
+    }
+
     return (
         <PageMedium>
             <TabNavigation>
-                <FormLinkButton route={"/assembly"}>Kits</FormLinkButton>
+                <FormLinkButton route={"/assembly"}>Starters</FormLinkButton>
                 <FormLinkButton route={"/conveyor"}>Conveyors</FormLinkButton>
                 <FormButton isActive={false}>Project Info</FormButton>
                 <FormLinkButton route={"/relaySchedule"}>
@@ -25,7 +30,7 @@ function ProjectInfo() {
                 </FormLinkButton>
             </TabNavigation>
 
-            <h2>PROJECT DETAILS</h2>
+            <h2>PROJECT INFO</h2>
             <form className={styles.formDiv}>
                 <div className={styles.twoCol}>
                     <div>
@@ -36,6 +41,7 @@ function ProjectInfo() {
                                 value={projectInfo.projectName || ""}
                                 onChange={handleChangeProjectInfo}
                                 className={styles.formInput}
+                                onFocus={handleSelect}
                             />
                             <div className={styles.formLabelText}>
                                 Project Name
@@ -50,6 +56,7 @@ function ProjectInfo() {
                                 value={projectInfo.productionOrderNumber || ""}
                                 onChange={handleChangeProjectInfo}
                                 className={styles.formInput}
+                                onFocus={handleSelect}
                             />
                             <div className={styles.formLabelText}>
                                 Production Order Number
@@ -64,6 +71,7 @@ function ProjectInfo() {
                                 value={projectInfo.salesOrderNumber || ""}
                                 onChange={handleChangeProjectInfo}
                                 className={styles.formInput}
+                                onFocus={handleSelect}
                             />
                             <div className={styles.formLabelText}>
                                 Sales Order Number
@@ -78,6 +86,7 @@ function ProjectInfo() {
                                 value={projectInfo.drawingNumber || ""}
                                 onChange={handleChangeProjectInfo}
                                 className={styles.formInput}
+                                onFocus={handleSelect}
                             />
                             <div className={styles.formLabelText}>
                                 Drawing Number

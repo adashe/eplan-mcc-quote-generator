@@ -34,7 +34,7 @@ function ConveyorForm() {
     return (
         <PageMedium>
             <TabNavigation>
-                <FormLinkButton route={"/assembly"}>Kits</FormLinkButton>
+                <FormLinkButton route={"/assembly"}>Starters</FormLinkButton>
                 <FormButton isActive={false}>Conveyors</FormButton>
                 <FormLinkButton route={"/projectInfo"}>
                     Project Info

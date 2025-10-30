@@ -51,7 +51,7 @@ function RelayScheduleForm() {
     return (
         <PageMedium>
             <TabNavigation>
-                <FormLinkButton route={"/assembly"}>Kits</FormLinkButton>
+                <FormLinkButton route={"/assembly"}>Starters</FormLinkButton>
                 <FormLinkButton route={"/conveyor"}>Conveyors</FormLinkButton>
                 <FormLinkButton route={"/projectInfo"}>
                     Project Info

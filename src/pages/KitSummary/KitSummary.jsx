@@ -19,11 +19,11 @@ function KitSummary() {
         <PageMedium>
             <TabNavigation>
                 <LinkButton route={"/assembly"}>&larr; Edit Inputs</LinkButton>
-                <Button isActive={false}>Kit Summary</Button>
+                <Button isActive={false}>Starters Summary</Button>
                 <LinkButton route={"/mccSummary"}>MCC SUMMARY</LinkButton>
                 <EECButton />
             </TabNavigation>
-            <h2>KIT SUMMARY</h2>
+            <h2>STARTERS SUMMARY</h2>
 
             <div className={styles.headerRow}>
                 <div className={styles.headerRowWide}>STARTERS</div>

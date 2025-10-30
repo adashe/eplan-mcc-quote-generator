@@ -39,7 +39,7 @@ function AssemblyForm() {
     return (
         <PageMedium>
             <TabNavigation>
-                <FormButton isActive={false}>Kits</FormButton>
+                <FormButton isActive={false}>Starters</FormButton>
                 <FormLinkButton route={"/conveyor"}>Conveyors</FormLinkButton>
                 <FormLinkButton route={"/projectInfo"}>
                     Project Info
@@ -51,7 +51,7 @@ function AssemblyForm() {
                     Summary &rarr;
                 </FormLinkButton>
             </TabNavigation>
-            <h2>MCC KITS</h2>
+            <h2>MCC STARTERS</h2>
 
             <form onSubmit={handleSubmit}>
                 <input

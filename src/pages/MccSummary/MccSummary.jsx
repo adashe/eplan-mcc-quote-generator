@@ -21,7 +21,7 @@ function MccSummary() {
         <PageMedium>
             <TabNavigation>
                 <LinkButton route={"/assembly"}>&larr; Edit Inputs</LinkButton>
-                <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
+                <LinkButton route={"/kitSummary"}>Starters Summary</LinkButton>
                 <Button isActive={false}>MCC SUMMARY</Button>
                 <EECButton />
             </TabNavigation>
