@@ -1,7 +1,7 @@
 import { useMcc } from "../../contexts/MccContext";
 import styles from "./MccSummary.module.css";
 
-import PageWide from "../../components/PageWide";
+import PageMedium from "../../components/PageMedium";
 import TabNavigation from "../../components/TabNavigation";
 
 import Button from "../../components/buttons/Button";
@@ -18,12 +18,11 @@ function MccSummary() {
     );
 
     return (
-        <PageWide>
+        <PageMedium>
             <TabNavigation>
                 <LinkButton route={"/assembly"}>&larr; Edit Inputs</LinkButton>
                 <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
                 <Button isActive={false}>MCC SUMMARY</Button>
-                <LinkButton route={"/relaySchedule"}>Relay Schedule</LinkButton>
                 <EECButton />
             </TabNavigation>
             <h2>MCC SUMMARY</h2>
@@ -120,7 +119,7 @@ function MccSummary() {
                     </ul>
                 </div>
             </div>
-        </PageWide>
+        </PageMedium>
     );
 }
 

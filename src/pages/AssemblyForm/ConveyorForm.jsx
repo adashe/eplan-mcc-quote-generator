@@ -39,6 +39,9 @@ function ConveyorForm() {
                 <FormLinkButton route={"/projectInfo"}>
                     Project Info
                 </FormLinkButton>
+                <FormLinkButton route={"/relaySchedule"}>
+                    Relay Schedule
+                </FormLinkButton>
                 <FormLinkButton route={"/kitSummary"}>
                     Summary &rarr;
                 </FormLinkButton>

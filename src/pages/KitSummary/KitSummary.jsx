@@ -1,7 +1,7 @@
 import { useMcc } from "../../contexts/MccContext";
 import styles from "./KitSummaryRow.module.css";
 
-import PageWide from "../../components/PageWide";
+import PageMedium from "../../components/PageMedium";
 import TabNavigation from "../../components/TabNavigation";
 
 import KitSummaryRow from "./KitSummaryRow";
@@ -16,12 +16,11 @@ function KitSummary() {
     const selectedKitsArr = kitsData.filter((kit) => assembly[kit.id] > 0);
 
     return (
-        <PageWide>
+        <PageMedium>
             <TabNavigation>
                 <LinkButton route={"/assembly"}>&larr; Edit Inputs</LinkButton>
                 <Button isActive={false}>Kit Summary</Button>
                 <LinkButton route={"/mccSummary"}>MCC SUMMARY</LinkButton>
-                <LinkButton route={"/relaySchedule"}>Relay Schedule</LinkButton>
                 <EECButton />
             </TabNavigation>
             <h2>KIT SUMMARY</h2>
@@ -35,7 +34,7 @@ function KitSummary() {
             {selectedKitsArr.map((kit, i) => (
                 <KitSummaryRow kit={kit} key={i} />
             ))}
-        </PageWide>
+        </PageMedium>
     );
 }
 

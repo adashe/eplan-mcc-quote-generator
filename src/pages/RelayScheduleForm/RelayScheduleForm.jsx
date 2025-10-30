@@ -1,17 +1,16 @@
 import { useState } from "react";
 // import { useMcc } from "../../contexts/MccContext.jsx";
 
-import PageWide from "../../components/PageWide.jsx";
+import PageMedium from "../../components/PageMedium.jsx";
 import TabNavigation from "../../components/TabNavigation.jsx";
 import styles from "./RelayScheduleForm.module.css";
 
-import LinkButton from "../../components/buttons/LinkButton.jsx";
-import Button from "../../components/buttons/Button.jsx";
+import FormLinkButton from "../../components/buttons/FormLinkButton.jsx";
+import FormButton from "../../components/buttons/FormButton.jsx";
 
 import { Autocomplete, TextField } from "@mui/material";
 
 import relayOptions from "../../data/relaySchedule.json";
-import EECButton from "../../components/buttons/EECButton.jsx";
 
 const initialValues = { relayNumber: "0", description: "", controlVoltage: "" };
 
@@ -50,13 +49,17 @@ function RelayScheduleForm() {
     );
 
     return (
-        <PageWide>
+        <PageMedium>
             <TabNavigation>
-                <LinkButton route={"/assembly"}>&larr; Edit Inputs</LinkButton>
-                <LinkButton route={"/kitSummary"}>Kit Summary</LinkButton>
-                <LinkButton route={"/mccSummary"}>MCC Summary</LinkButton>
-                <Button isActive={false}>Relay Schedule</Button>
-                <EECButton />
+                <FormLinkButton route={"/assembly"}>Kits</FormLinkButton>
+                <FormLinkButton route={"/conveyor"}>Conveyors</FormLinkButton>
+                <FormLinkButton route={"/projectInfo"}>
+                    Project Info
+                </FormLinkButton>
+                <FormButton isActive={false}>Relay Schedule</FormButton>
+                <FormLinkButton route={"/kitSummary"}>
+                    Summary &rarr;
+                </FormLinkButton>
             </TabNavigation>
             <h2>RELAY SCHEDULE</h2>
             <form className={styles.relayForm}>
@@ -125,7 +128,7 @@ function RelayScheduleForm() {
                     </li>
                 ))}
             </ul>
-        </PageWide>
+        </PageMedium>
     );
 }
 
