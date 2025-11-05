@@ -49,8 +49,8 @@ function EECButton() {
         return Math.max(...hpArr);
     }
 
-    // Generate boolean if the machine includes any VFDs
-    function checkVfdMachine() {
+    // Generate array of VFD motors
+    function generateVFDMotors() {
         // Build an array of all included motor objects from assembly
         let motorsArr = [];
         for (const k in assembly) {
@@ -63,7 +63,7 @@ function EECButton() {
             (motor) => motor.type === "vfd-1" || motor.type === "vfd-2"
         );
 
-        return vfdsArr.length > 0;
+        return vfdsArr;
     }
 
     function buildOnBuss() {
@@ -474,8 +474,13 @@ function EECButton() {
                 },
                 {
                     name: "b_VFD_Machine",
-                    value: checkVfdMachine(),
+                    value: generateVFDMotors().length > 0,
                     type: "Boolean",
+                },
+                {
+                    name: "i_NumVFDs",
+                    value: generateVFDMotors().length,
+                    type: "Integer",
                 },
                 {
                     name: "s_Install",
