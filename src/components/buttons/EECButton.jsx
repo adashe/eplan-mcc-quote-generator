@@ -368,79 +368,34 @@ function EECButton() {
             // Add project info
             const projRows = [
                 {
-                    name: "PropId_10013",
-                    value: "ANDREA",
-                    type: "String",
-                },
-                {
-                    name: "PropId_10011",
-                    value: "DEMO_1",
-                    type: "String",
-                },
-                {
-                    name: "ProductionOrderNumber",
-                    value: projectInfo.productionOrderNumber,
-                    type: "String",
-                },
-                {
-                    name: "SalesOrderNumber",
-                    value: projectInfo.salesOrderNumber,
-                    type: "String",
-                },
-                {
-                    name: "NP_BuildStandard",
-                    value: "ANDY",
-                    type: "String",
-                },
-                {
-                    name: "NP_DrawingNumber",
+                    name: "s_DrawingNumber",
                     value: projectInfo.drawingNumber,
                     type: "String",
                 },
                 {
-                    name: "NP_EnclosureRating",
-                    value: "SANJA",
+                    name: "s_ProjectDescription",
+                    value: projectInfo.projectName,
                     type: "String",
                 },
                 {
-                    name: "NP_Frequency",
-                    value: "DZENAN",
+                    name: "s_ProductionOrderNumber",
+                    value: projectInfo.productionOrderNumber,
                     type: "String",
                 },
                 {
-                    name: "NP_INTERRUPT_SCCR",
-                    value: "BRETT",
-                    type: "String",
-                },
-                {
-                    name: "NP_LargestMotor",
-                    value: calcLargestMotor(),
-                    type: "String",
-                },
-                {
-                    name: "NP_Phase",
-                    value: "JOHN",
-                    type: "String",
-                },
-                {
-                    name: "NP_SalesOrder",
+                    name: "s_SalesOrderNumber",
                     value: projectInfo.salesOrderNumber,
                     type: "String",
                 },
                 {
-                    name: "NP_ServiceVoltage",
-                    value: "ERNESTO",
+                    name: "s_LargestMotor",
+                    value: calcLargestMotor(),
                     type: "String",
                 },
                 {
-                    name: "NP_TotalPanelFLC",
+                    name: "i_FLA",
                     value: calcTotalFLA(assembly).toFixed(2),
-                    type: "String",
-                },
-                {
-                    name: "NP_Wire",
-                    value: "BILL",
-                    type: "String",
+                    type: "Integer",
                 },
                 {
                     name: "b_PMR",
