@@ -504,12 +504,19 @@ function EECButton() {
                     rows = [...rows, row];
                 });
 
-                let row = {
+                let flaRow = {
                     name: `c_LSA_SubList_45_${parseInt(i) + 1}_FLA`,
                     value: calcGroupFLA(group).toFixed(2),
                     type: "Integer",
                 };
-                group.length > 0 && (rows = [...rows, row]);
+
+                let sizeRow = {
+                    name: `c_LSA_SubList_45_${parseInt(i) + 1}_Size`,
+                    value: 45,
+                    type: "Integer",
+                };
+
+                group.length > 0 && (rows = [...rows, flaRow, sizeRow]);
             });
 
             // Add offbuss 54mm motor labels and macros
@@ -532,12 +539,19 @@ function EECButton() {
                     rows = [...rows, row];
                 });
 
-                let row = {
+                let flaRow = {
                     name: `c_LSA_SubList_54_${parseInt(i) + 1}_FLA`,
                     value: calcGroupFLA(group).toFixed(2),
                     type: "Integer",
                 };
-                group.length > 0 && (rows = [...rows, row]);
+
+                let sizeRow = {
+                    name: `c_LSA_SubList_54_${parseInt(i) + 1}_Size`,
+                    value: 54,
+                    type: "Integer",
+                };
+
+                group.length > 0 && (rows = [...rows, flaRow, sizeRow]);
             });
 
             // Add unplaced 54mm motor labels
