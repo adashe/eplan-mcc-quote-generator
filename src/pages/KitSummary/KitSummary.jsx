@@ -8,6 +8,7 @@ import KitSummaryRow from "./KitSummaryRow";
 import Button from "../../components/buttons/Button";
 import LinkButton from "../../components/buttons/LinkButton";
 import EECButton from "../../components/buttons/EECButton";
+import ImxButton from "../../components/buttons/ImxButton";
 
 function KitSummary() {
     const { kitsData, assembly } = useMcc();
@@ -22,6 +23,7 @@ function KitSummary() {
                 <Button isActive={false}>Starters Summary</Button>
                 <LinkButton route={"/mccSummary"}>MCC SUMMARY</LinkButton>
                 <EECButton />
+                <ImxButton />
             </TabNavigation>
             <h2>STARTERS SUMMARY</h2>
 

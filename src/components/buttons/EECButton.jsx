@@ -79,6 +79,7 @@ function EECButton() {
             const kit = kitsData.filter((kit) => kit.id === k)[0];
 
             // Include duplicate motors in the array
+            // TODO: Add ID at this step?
             for (let i = 0; i < assembly[kit.id]; i++) {
                 motorsArr.push(kit);
             }

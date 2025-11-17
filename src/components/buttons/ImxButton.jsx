@@ -1,7 +1,11 @@
+import { useMcc } from "../../contexts/MccContext";
 import Button from "./Button";
 
 function ImxButton() {
     function downloadImx() {
+        const { kitsData, assembly, projectInfo, interlock, calcTotalFLA } =
+            useMcc();
+
         if (window.confirm("Are you sure you want to download this file?")) {
             const projName = "208VMCC"; // placeholder for input from proj info form
             const libName = "ConstructionKit_208VMCC"; // placeholder for input from proj info form
@@ -27,6 +31,7 @@ function ImxButton() {
 
             console.log(imxStr);
 
+            // Build imx output
             const element = document.createElement("a");
             const file = new Blob([imxStr], {
                 type: "text/plain",

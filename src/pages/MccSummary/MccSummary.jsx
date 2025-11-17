@@ -7,6 +7,7 @@ import TabNavigation from "../../components/TabNavigation";
 import Button from "../../components/buttons/Button";
 import LinkButton from "../../components/buttons/LinkButton";
 import EECButton from "../../components/buttons/EECButton";
+import ImxButton from "../../components/buttons/ImxButton";
 
 function MccSummary() {
     const { assembly, calcTotalFLA, projectInfo } = useMcc();
@@ -24,6 +25,7 @@ function MccSummary() {
                 <LinkButton route={"/kitSummary"}>Starters Summary</LinkButton>
                 <Button isActive={false}>MCC SUMMARY</Button>
                 <EECButton />
+                <ImxButton />
             </TabNavigation>
             <h2>MCC SUMMARY</h2>
             <div className={styles.twoCol}>
