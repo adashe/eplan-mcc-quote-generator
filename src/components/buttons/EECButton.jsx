@@ -344,7 +344,7 @@ function EECButton() {
     function organizeOffBussPages(lsaGroups) {
         // lsaGroups is an array with arrays of motor objects
 
-        const pageMax = 14;
+        const pageMax = 12;
 
         // iterate over the groups in increments of 2 and check if i + i+1 is fewer than 14
         for (let i = 0; i < lsaGroups.length + 1; i += 2) {
