@@ -23,7 +23,7 @@ function KitSummary() {
                 <Button isActive={false}>Starters Summary</Button>
                 <LinkButton route={"/mccSummary"}>MCC SUMMARY</LinkButton>
                 <EECButton />
-                <ImxButton />
+                {/* <ImxButton /> */}
             </TabNavigation>
             <h2>STARTERS SUMMARY</h2>
 

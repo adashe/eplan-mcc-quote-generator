@@ -25,7 +25,7 @@ function MccSummary() {
                 <LinkButton route={"/kitSummary"}>Starters Summary</LinkButton>
                 <Button isActive={false}>MCC SUMMARY</Button>
                 <EECButton />
-                <ImxButton />
+                {/* <ImxButton /> */}
             </TabNavigation>
             <h2>MCC SUMMARY</h2>
             <div className={styles.twoCol}>

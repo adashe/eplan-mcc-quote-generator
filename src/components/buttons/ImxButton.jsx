@@ -1,10 +1,10 @@
-import { useMcc } from "../../contexts/MccContext";
+// import { useMcc } from "../../contexts/MccContext";
 import Button from "./Button";
 
 function ImxButton() {
     function downloadImx() {
-        const { kitsData, assembly, projectInfo, interlock, calcTotalFLA } =
-            useMcc();
+        // const { kitsData, assembly, projectInfo, interlock, calcTotalFLA } =
+        //     useMcc();
 
         if (window.confirm("Are you sure you want to download this file?")) {
             const projName = "208VMCC"; // placeholder for input from proj info form
