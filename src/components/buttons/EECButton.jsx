@@ -511,13 +511,13 @@ function EECButton() {
                 });
 
                 let flaRow = {
-                    name: `c_LSA_SubList_45_${parseInt(i) + 1}_FLA`,
+                    name: `i_LSA_SubList_45_${parseInt(i) + 1}_FLA`,
                     value: calcGroupFLA(group).toFixed(2),
                     type: "Integer",
                 };
 
                 let sizeRow = {
-                    name: `c_LSA_SubList_45_${parseInt(i) + 1}_Size`,
+                    name: `i_LSA_SubList_45_${parseInt(i) + 1}_Size`,
                     value: 45,
                     type: "Integer",
                 };
@@ -546,13 +546,13 @@ function EECButton() {
                 });
 
                 let flaRow = {
-                    name: `c_LSA_SubList_54_${parseInt(i) + 1}_FLA`,
+                    name: `i_LSA_SubList_54_${parseInt(i) + 1}_FLA`,
                     value: calcGroupFLA(group).toFixed(2),
                     type: "Integer",
                 };
 
                 let sizeRow = {
-                    name: `c_LSA_SubList_54_${parseInt(i) + 1}_Size`,
+                    name: `i_LSA_SubList_54_${parseInt(i) + 1}_Size`,
                     value: 54,
                     type: "Integer",
                 };
