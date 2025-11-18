@@ -443,6 +443,11 @@ function EECButton() {
                     value: projectInfo.install,
                     type: "Boolean",
                 },
+                {
+                    name: "s_Feed",
+                    value: projectInfo.feed,
+                    type: "String",
+                },
             ];
 
             rows = [...rows, ...projRows];
