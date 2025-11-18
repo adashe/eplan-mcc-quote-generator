@@ -64,9 +64,15 @@ function MccSummary() {
                             <div className={styles.totalsLabel}>INSTALL</div>
                         </li>
                         <li className={styles.totalsLi}>
-                            {projectInfo.numXFMR | "1"}
+                            {projectInfo.numXFMR || "1"}
                             <div className={styles.totalsLabel}>
                                 NUMBER TRANSFORMERS
+                            </div>
+                        </li>
+                        <li className={styles.totalsLi}>
+                            {projectInfo.feed || "Top Feed"}
+                            <div className={styles.totalsLabel}>
+                                FEED LOCATION
                             </div>
                         </li>
                     </ul>
@@ -100,6 +106,12 @@ function MccSummary() {
                             {motorCount}
                             <div className={styles.totalsLabel}>
                                 MOTOR COUNT
+                            </div>
+                        </li>
+                        <li className={styles.totalsLi}>
+                            {motorCount}
+                            <div className={styles.totalsLabel}>
+                                ON BUSS COUNT
                             </div>
                         </li>
                         <li className={styles.totalsLi}>

@@ -236,6 +236,26 @@ function ProjectInfo() {
                             </div>
                         </label>
                     </div>
+
+                    <div>
+                        <label className={styles.formLabel}>
+                            <select
+                                name="feed"
+                                value={projectInfo.feed || "..."}
+                                onChange={handleChangeProjectInfo}
+                                className={styles.formSelect}
+                            >
+                                <option disabled="disabled" value="...">
+                                    ...
+                                </option>
+                                <option value="top">Top Feed</option>
+                                <option value="bottom">Bottom Feed</option>
+                            </select>
+                            <div className={styles.formLabelText}>
+                                Feed Location
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </form>
         </PageMedium>
