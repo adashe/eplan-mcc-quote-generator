@@ -11,13 +11,6 @@ const RelayScheduleForm = lazy(() =>
     import("./pages/RelayScheduleForm/RelayScheduleForm")
 );
 
-// import AssemblyForm from "./pages/AssemblyForm/AssemblyForm";
-// import ConveyorForm from "./pages/AssemblyForm/ConveyorForm";
-// import ProjectInfo from "./pages/ProjectInfoForm/ProjectInfo";
-// import KitSummary from "./pages/KitSummary/KitSummary";
-// import MccSummary from "./pages/MccSummary/MccSummary";
-// import RelayScheduleForm from "./pages/RelayScheduleForm/RelayScheduleForm";
-
 function App() {
     return (
         <MccProvider>
