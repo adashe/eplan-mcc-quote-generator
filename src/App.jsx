@@ -1,14 +1,14 @@
+import { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MccProvider } from "./contexts/MccContext";
-import { lazy } from "react";
 
 const AssemblyForm = lazy(() => import("./pages/AssemblyForm/AssemblyForm"));
 const ConveyorForm = lazy(() => import("./pages/AssemblyForm/ConveyorForm"));
-const ProjectInfo = lazy(() => import("./pages/AssemblyForm/ProjectInfo"));
-const KitSummary = lazy(() => import("./pages/AssemblyForm/KitSummary"));
-const MccSummary = lazy(() => import("./pages/AssemblyForm/MccSummary"));
+const ProjectInfo = lazy(() => import("./pages/ProjectInfoForm/ProjectInfo"));
+const KitSummary = lazy(() => import("./pages/KitSummary/KitSummary"));
+const MccSummary = lazy(() => import("./pages/MccSummary/MccSummary"));
 const RelayScheduleForm = lazy(() =>
-    import("./pages/AssemblyForm/RelayScheduleForm")
+    import("./pages/RelayScheduleForm/RelayScheduleForm")
 );
 
 // import AssemblyForm from "./pages/AssemblyForm/AssemblyForm";
