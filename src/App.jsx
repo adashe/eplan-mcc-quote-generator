@@ -1,12 +1,22 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MccProvider } from "./contexts/MccContext";
+import { lazy } from "react";
 
-import AssemblyForm from "./pages/AssemblyForm/AssemblyForm";
-import ConveyorForm from "./pages/AssemblyForm/ConveyorForm";
-import ProjectInfo from "./pages/ProjectInfoForm/ProjectInfo";
-import KitSummary from "./pages/KitSummary/KitSummary";
-import MccSummary from "./pages/MccSummary/MccSummary";
-import RelayScheduleForm from "./pages/RelayScheduleForm/RelayScheduleForm";
+const AssemblyForm = lazy(() => import("./pages/AssemblyForm/AssemblyForm"));
+const ConveyorForm = lazy(() => import("./pages/AssemblyForm/ConveyorForm"));
+const ProjectInfo = lazy(() => import("./pages/AssemblyForm/ProjectInfo"));
+const KitSummary = lazy(() => import("./pages/AssemblyForm/KitSummary"));
+const MccSummary = lazy(() => import("./pages/AssemblyForm/MccSummary"));
+const RelayScheduleForm = lazy(() =>
+    import("./pages/AssemblyForm/RelayScheduleForm")
+);
+
+// import AssemblyForm from "./pages/AssemblyForm/AssemblyForm";
+// import ConveyorForm from "./pages/AssemblyForm/ConveyorForm";
+// import ProjectInfo from "./pages/ProjectInfoForm/ProjectInfo";
+// import KitSummary from "./pages/KitSummary/KitSummary";
+// import MccSummary from "./pages/MccSummary/MccSummary";
+// import RelayScheduleForm from "./pages/RelayScheduleForm/RelayScheduleForm";
 
 function App() {
     return (
