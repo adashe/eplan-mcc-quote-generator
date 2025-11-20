@@ -26,7 +26,10 @@ function App() {
                     />
                     <Route path="kitSummary" element={<KitSummary />} />
                     <Route path="mccSummary" element={<MccSummary />} />
-                    <Route path="*" element={<AssemblyForm />} />
+                    <Route
+                        path="*"
+                        element={<Navigate replace to="assembly" />}
+                    />
                 </Routes>
             </BrowserRouter>
         </MccProvider>
