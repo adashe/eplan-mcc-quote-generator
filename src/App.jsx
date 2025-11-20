@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { MccProvider } from "./contexts/MccContext";
 
 const AssemblyForm = lazy(() => import("./pages/AssemblyForm/AssemblyForm"));
@@ -16,8 +16,7 @@ function App() {
         <MccProvider>
             <BrowserRouter basename="/eplan-mcc-quote-generator/">
                 <Routes>
-                    <Route index element={<AssemblyForm />} />
-                    <Route path="*" element={<AssemblyForm />} />
+                    <Route index element={<Navigate replace to="assembly" />} />
                     <Route path="assembly" element={<AssemblyForm />} />
                     <Route path="conveyor" element={<ConveyorForm />} />
                     <Route path="projectInfo" element={<ProjectInfo />} />
@@ -27,6 +26,7 @@ function App() {
                     />
                     <Route path="kitSummary" element={<KitSummary />} />
                     <Route path="mccSummary" element={<MccSummary />} />
+                    <Route path="*" element={<AssemblyForm />} />
                 </Routes>
             </BrowserRouter>
         </MccProvider>
