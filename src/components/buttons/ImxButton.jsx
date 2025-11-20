@@ -2,13 +2,7 @@
 import Button from "./Button";
 
 function ImxButton() {
-<<<<<<< Updated upstream
-    function downloadImx() {
-        // const { kitsData, assembly, projectInfo, interlock, calcTotalFLA } =
-        //     useMcc();
-=======
   const { kitsData, assembly, projectInfo, interlock, calcTotalFLA } = useMcc();
->>>>>>> Stashed changes
 
   // A Lot of this code was imported from EECButton.jsx
   // Helper function to generate an array of motors descriptions
